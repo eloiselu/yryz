@@ -1,0 +1,89 @@
+/*顶部图片*/
+.texture-head {
+    width: 100%;
+    height: 4.37rem;
+}
+
+/*中间材质部分*/
+.texture-name-wrap {
+    margin: .6rem 0;
+}
+
+.texture-name-img {
+    width: 2.3rem;
+    height: 1.56rem;
+    margin-left: .8rem;
+    vertical-align: middle;
+}
+
+.texture-name {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: .3rem;
+}
+
+.texture-title {
+    font-size: .4rem;
+}
+
+.texture-subtitle {
+    font-size: .4rem;
+}
+
+.texture-color {
+    font-size: .24rem;
+    color: #666;
+}
+
+/*介绍部分*/
+.texture-text-wrap {
+    width: 100%;
+    padding: .7rem .3rem;
+    background: url("../images/textureDetail-back.png");
+}
+
+/*每一行*/
+.texture-text-line {
+    margin-bottom: .6rem;
+}
+
+/*左侧名称部分*/
+.texture-text-name {
+    display: inline-block;
+    width: 2rem;
+}
+
+.texture-name-title,
+.texture-name-subtitle {
+    font-size: .24rem;
+    font-weight: 700;
+}
+
+/*右侧描述部分*/
+.texture-desc {
+    display: inline-block;
+    vertical-align: top;
+    width: 4.50rem;
+    margin-left: .3rem;
+}
+
+/*描述文字样式*/
+.texture-desc p {
+    font-size: .24rem;
+    line-height: .40rem;
+}
+
+.texture-scaleplate {
+    width: 4.54rem;
+    height: .2rem;
+}
+
+.texture-hardness {
+    width: 4.58rem;
+    height: .2rem;
+}
+
+
+
+
+

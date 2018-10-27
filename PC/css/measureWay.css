@@ -1,0 +1,63 @@
+/*主体部分*/
+.main {
+    background-color: #fff;
+}
+
+.measureWay-head {
+    width: 100%;
+}
+
+.measureWay-step {
+    position: relative;
+    height: 1200px;
+    margin-top: 100px;
+}
+
+.measureWay-step > * {
+    position: absolute;
+}
+
+.measureWay-step1 {
+    width: 600px;
+}
+
+.measureWay-step2 {
+    width: 480px;
+    right: 20px;
+}
+
+.measureWay-step3 {
+    width: 339px;
+    top: 530px;
+    right: 80px;
+}
+
+.measureWay-step4 {
+    width: 482px;
+    top: 632px;
+    left: 60px;
+}
+
+.measureWay-step-line1 {
+    top: 230px;
+    left: 570px;
+    width: 100px;
+    height: 1px;
+    background-color: #666;
+}
+
+.measureWay-step-line2 {
+    top: 430px;
+    left: 900px;
+    width: 1px;
+    height: 80px;
+    background-color: #666;
+}
+
+.measureWay-step-line3 {
+    top: 830px;
+    left: 610px;
+    width: 100px;
+    height: 1px;
+    background-color: #666;
+}

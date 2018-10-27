@@ -1,0 +1,116 @@
+/*主体部分*/
+.main {
+    background-color: #fff;
+}
+
+/*顶部图片1*/
+.texture-head1 {
+    width: 100%;
+}
+
+/*顶部图片2*/
+.texture-head2 {
+    width: 100%;
+}
+
+/*中间材质部分*/
+.texture-name-wrap {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.texture-name-img {
+    width: 174px;
+    vertical-align: middle;
+}
+
+.texture-name {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.texture-title {
+    font-size: 30px;
+}
+
+.texture-subtitle {
+    font-size: 30px;
+}
+
+.texture-color {
+    font-size: 20px;
+    color: #666;
+}
+
+/*介绍部分*/
+.texture-text-wrap {
+    width: 100%;
+    padding: 70px 0;
+    /*background: url("../images/textureDetail-back.png");*/
+}
+
+.texture-text-left,
+.texture-text-right {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.texture-text-left {
+    border-right: 1px solid #999;
+}
+
+/*每一行*/
+.texture-text-line {
+    margin-bottom: 60px;
+}
+
+/*左侧名称部分*/
+.texture-text-name {
+    display: inline-block;
+    width: 120px;
+}
+
+.texture-name-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.texture-name-subtitle {
+    font-size: 14px;
+}
+
+/*右侧描述部分*/
+.texture-desc {
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    margin-left: 20px;
+}
+
+/*右侧硬度进度图片部分*/
+.texture-desc.hardness {
+    margin-top: 8px;
+}
+
+/*描述文字样式*/
+.texture-desc p {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.texture-scaleplate {
+    width: 405px;
+}
+
+.texture-hardness {
+    width: 403px;
+}
+
+
+
+
+

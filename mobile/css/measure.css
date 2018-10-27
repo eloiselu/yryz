@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+    background-color: #e8e8e8;
+}
+
+/*主体部分*/
+.con {
+    width: 100%;
+    padding: .5rem 0;
+}
+
+.con-title {
+    font-size: .28rem;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.con-img {
+    width: 7.47rem;
+    height: 6.47rem;
+    margin-bottom: .5rem;
+
+}
+
+.con-text {
+    padding: 0 .3rem;
+    font-size: .24rem;
+    line-height: .45rem;
+}

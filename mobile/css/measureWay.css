@@ -1,0 +1,28 @@
+/*主体部分*/
+.main-module {
+    margin-top: .8rem;
+}
+
+.measureWay-head {
+    width: 100%;
+}
+
+.measureWay-intro {
+    width: 7.0rem;
+}
+
+.measureWay-img {
+    vertical-align: top;
+    width: 2.8rem;
+    height: 5.09rem;
+    margin-left: -0.53rem;
+}
+
+.measureWay-img:first-of-type {
+    margin-left: 0;
+}
+
+.measureWay-desc {
+    width: 100%;
+    margin-bottom: .8rem;
+}

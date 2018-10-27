@@ -1,0 +1,61 @@
+/*主体部分*/
+.main {
+    overflow: hidden;
+}
+
+.main * {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main .texture-list li {
+    margin-top: -1px;
+}
+
+.texture-top {
+    height: 3.2rem;
+    background-image: url('../images/texture-top.png');
+}
+
+.texture-white {
+    height: 1.65rem;
+    background-image: url('../images/texture-white.png');
+}
+
+.texture-lightbrown {
+    height: 1.05rem;
+    background-image: url('../images/texture-lightbrown.png');
+}
+
+.texture-gray {
+    height: 1rem;
+    background-image: url('../images/texture-gray.png');
+}
+
+.texture-pink {
+    height: 1.05rem;
+    background-image: url('../images/texture-pink.png');
+}
+
+.texture-deepgray {
+    height: 1.10rem;
+    background-image: url('../images/texture-deepgray.png');
+}
+
+.texture-deepred {
+    height: 1.40rem;
+    background-image: url('../images/texture-deepred.png');
+}
+
+.texture-bottom {
+    height: .9rem;
+    background-image: url('../images/texture-bottom.png');
+}
+
+.texture-btn {
+    width: 4.03rem;
+    height: .77rem;
+    margin: .3rem auto 1rem;
+    background-image: url('../images/texture-selectbtn.png');
+}

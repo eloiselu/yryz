@@ -1,0 +1,85 @@
+/*主体部分*/
+.main {
+    background-color: #fff;
+    text-align: center;
+}
+
+/*顶部文字*/
+.texture-top {
+    width: 680px;
+}
+
+/*枕头图片*/
+.texture-img {
+    width: 800px;
+    height: 200px;
+    margin-left: 280px;
+    overflow: hidden;
+}
+
+.texture-img img {
+    /*width: 227px;
+    margin-left: -100px;*/
+    width: 90px;
+    margin: -80px 5px 0;
+    cursor: pointer;
+    transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+
+    transition: .2s;
+}
+
+.texture-img img:hover {
+    transform: rotate(35deg) translateY(20px);
+    /*-ms-transform: rotate(35deg) translateY(30px);
+    -moz-transform: rotate(35deg) translateY(30px);
+    -webkit-transform: rotate(35deg) translateY(30px);
+    -o-transform: rotate(35deg) translateY(30px);*/
+}
+
+/*材质分类条部分*/
+.texture-classify {
+    width: 1112px;
+}
+
+/*材质文字部分*/
+.texture-text {
+    height: 320px;
+}
+
+.texture-text a {
+    display: inline-block;
+    height: 100%;
+    color: #835f41;
+    text-align: start;
+    margin-left: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    writing-mode: vertical-lr; /*从左向右 从右向左是 writing-mode: vertical-rl;*/
+    writing-mode: tb-lr; /*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/
+}
+
+.texture-text a:hover {
+    color: #cc905e;
+}
+
+.texture-text a span {
+    display: block;
+}
+
+.texture-text .texture-text-name {
+    font-size: 24px;
+}
+
+.texture-text .texture-text-desc {
+    font-size: 18px;
+}
+
+/*选择按钮*/
+.texture-selectbtn {
+    width: 400px;
+    margin-bottom: 150px;
+}

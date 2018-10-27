@@ -1,0 +1,138 @@
+/*主体部分*/
+.main-module {
+    margin-top: .8rem;
+}
+
+.measureStore-text {
+    padding: 0 .3rem;
+}
+
+.measureStore-text h6 {
+    text-align: center;
+    font-size: .48rem;
+    margin-bottom: .35rem;
+}
+
+.measureStore-text p {
+    font-size: .32rem;
+    line-height: .55rem;
+}
+
+.measureStore-intro {
+    width: 7.0rem;
+}
+
+.measureStore-img {
+    vertical-align: top;
+    width: 2.8rem;
+    height: 5.09rem;
+    margin-left: -0.53rem;
+}
+
+.measureStore-img:first-of-type {
+    margin-left: 0;
+}
+
+.measureWay-desc {
+    width: 100%;
+}
+
+/*材质部分*/
+.texture-warp * {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main .texture-list li {
+    margin-top: -1px;
+}
+
+.texture-top {
+    height: 3.2rem;
+    background-image: url('../images/texture-top.png');
+}
+
+.texture-white {
+    height: 1.65rem;
+    background-image: url('../images/texture-white.png');
+}
+
+.texture-lightbrown {
+    height: 1.05rem;
+    background-image: url('../images/texture-lightbrown.png');
+}
+
+.texture-gray {
+    height: 1rem;
+    background-image: url('../images/texture-gray.png');
+}
+
+.texture-pink {
+    height: 1.05rem;
+    background-image: url('../images/texture-pink.png');
+}
+
+.texture-deepgray {
+    height: 1.10rem;
+    background-image: url('../images/texture-deepgray.png');
+}
+
+.texture-deepred {
+    height: 1.40rem;
+    background-image: url('../images/texture-deepred.png');
+}
+
+.texture-bottom {
+    height: .9rem;
+    background-image: url('../images/texture-bottom.png');
+}
+
+.texture-btn {
+    width: 4.03rem;
+    height: .77rem;
+    margin: .3rem auto 1rem;
+    background-image: url('../images/texture-selectbtn.png');
+}
+
+/*店铺介绍部分*/
+.measureStore-intro {
+    text-align: center;
+}
+
+.measureStore-intro-title,
+.measureStore-intro-text {
+    color: #835f41;
+}
+
+.measureStore-intro-title {
+    font-size: .46rem;
+    margin-bottom: .3rem;
+}
+
+.measureStore-intro-text {
+    font-size: .3rem;
+}
+
+.measureStore-intro-img {
+    width: 5.32rem;
+    height: 3.65rem;
+    margin-top: .5rem;
+}
+
+/*店铺地址部分*/
+.measureStore-addr {
+    padding-left: .3rem;
+    margin-bottom: 1.5rem;
+}
+
+.measureStore-addr-line {
+    color: #835f41;
+    margin: .15rem 0;
+    font-size: .24rem;
+}
+
+.measureStore-addr-line img {
+    width: .18rem;
+    vertical-align: middle;
+}
