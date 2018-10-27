@@ -12,7 +12,7 @@ measurePage.prototype.init = function () {
     // $(".nav-wrap").load("nav.html");
 
     // 设置选中导航
-    $('.nav-list[data-type="measure"]').addClass("select");
+    // $('.nav-list[data-type="measure"]').addClass("select");
 }
 
 $(function () {

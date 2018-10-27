@@ -8,10 +8,30 @@ var navPage = function () {
 
 // 初始化
 navPage.prototype.init = function () {
+    var that = this;
+
     // 加载顶部导航模板
-    $(".nav-wrap").load("./nav.html");
+    $(".nav-wrap").load("./nav.html", function (response,status) {
+        that.setNav();
+    });
     // 初始化事件
     this.initEvent();
+}
+
+// 设置导航选中
+navPage.prototype.setNav = function () {
+    var link = window.location.href;
+
+    // 判断是否包含对应的关键词
+    if (link.indexOf('texture') > -1) {
+        $('.nav-list[data-type="texture"]').addClass("select");
+    }
+    else if (link.indexOf('measure') > -1) {
+        $('.nav-list[data-type="measure"]').addClass("select");
+    }
+    else if (link.indexOf('service') > -1) {
+        $('.nav-list[data-type="service"]').addClass("select");
+    }
 }
 
 // 初始化事件
