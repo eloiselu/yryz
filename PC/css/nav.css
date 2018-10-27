@@ -61,7 +61,8 @@
     -o-transition: background .2s;
 }
 
-.nav .nav-list.active > a {
+.nav .nav-list.active > a,
+.nav .nav-list.select > a {
     color: #333;
     background-color: #f3f2eb;
     border: 1px solid #c7c7c7;

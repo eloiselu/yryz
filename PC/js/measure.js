@@ -10,6 +10,9 @@ var measurePage = function () {
 measurePage.prototype.init = function () {
     // 加载顶部导航模板
     // $(".nav-wrap").load("nav.html");
+
+    // 设置选中导航
+    $('.nav-list[data-type="measure"]').addClass("select");
 }
 
 $(function () {

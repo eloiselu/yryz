@@ -46,7 +46,19 @@ indexPage.prototype.initSwiper = function () {
 
 // 初始化事件
 indexPage.prototype.initEvent = function () {
+    $(window).scroll(function () {
+        // 获取滚动高度
+        var scrollTop = $(window).scrollTop();
+        // 获取轮播图高度
+        var swiperHight = $(".swiper-container").outerHeight();
 
+        if (scrollTop > swiperHight) {
+            $('.nav-list[data-type="pillow"]').addClass("select");
+        }
+        else {
+            $('.nav-list[data-type="pillow"]').removeClass("select");
+        }
+    })
 }
 
 $(function () {
