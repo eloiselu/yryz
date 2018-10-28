@@ -13,6 +13,12 @@
     margin-top: -1px;
 }
 
+.main .texture-list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .texture-top {
     height: 3.2rem;
     background-image: url('../images/texture-top.png');
