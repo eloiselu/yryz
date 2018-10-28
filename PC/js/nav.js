@@ -11,7 +11,7 @@ navPage.prototype.init = function () {
     var that = this;
 
     // 加载顶部导航模板
-    $(".nav-wrap").load("./nav.html", function (response,status) {
+    $(".nav-wrap").load("./nav.html", function () {
         that.setNav();
     });
     // 初始化事件

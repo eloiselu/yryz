@@ -8,9 +8,6 @@ var pillowPage = function () {
 
 // 初始化
 pillowPage.prototype.init = function () {
-    // 加载顶部导航模板
-    $(".nav-wrap").load("../view/nav.html");
-
     // 设置购买枕头列表数据
     this.setData();
     // 设置购买枕头列表数据
@@ -75,7 +72,7 @@ pillowPage.prototype.setDataListHtml = function () {
         htmlArr.push('<li class="fix">');
         // 左侧图片部分
         htmlArr.push('<div class="list-left">');
-        htmlArr.push('<img src="../images/' + this.listData[i].img + '">');
+        htmlArr.push('<img src="./images/' + this.listData[i].img + '">');
         htmlArr.push('<div class="img-bottom"></div>');
         htmlArr.push('</div>');
         // 右侧文本部分

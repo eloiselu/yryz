@@ -9,7 +9,7 @@ var measurePage = function () {
 // 初始化
 measurePage.prototype.init = function () {
     // 加载顶部导航模板
-    $(".nav-wrap").load("../view/nav.html");
+    // $(".nav-wrap").load("../view/nav.html");
 }
 
 $(function () {

@@ -8,9 +8,6 @@ var indexPage = function () {
 
 // 初始化
 indexPage.prototype.init = function () {
-    // 加载顶部导航模板
-    $(".nav-wrap").load("view/nav.html");
-
     // 初始化轮播图
     this.initSwiper();
     // 初始化事件

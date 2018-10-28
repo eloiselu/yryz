@@ -9,10 +9,9 @@ var textureDetailPage = function () {
 // 初始化
 textureDetailPage.prototype.init = function () {
     // 加载顶部导航模板
-    $(".nav-wrap").load("../view/nav.html");
+    // $(".nav-wrap").load("../view/nav.html");
 
-    // 设置购买枕头列表数据// 加载顶部导航模板
-    $(".nav-wrap").load("../view/nav.html");
+    // 设置购买枕头列表数据
     this.setData();
     // 设置购买枕头列表数据
     this.setDataListHtml();
@@ -121,11 +120,98 @@ textureDetailPage.prototype.setData = function () {
 textureDetailPage.prototype.setDataListHtml = function () {
     var htmlArr = [];
 
-    for(var i = 0; i < this.listData.length; i++) {
+    // 获取链接中的参数
+    var type = window.location.href.split('?')[1].split('=')[1];
+    // 获取对应的数据
+    var data = this.listData[type];
 
-    }
+    var htmlArr = [];
 
-    $('.main-list > ul').html(htmlArr.join(''));
+    <!--顶部图片-->
+    htmlArr.push('<img class="texture-head" src="./images/' + data.headImg + '">');
+    <!--中间材质部分-->
+    htmlArr.push('<div class="texture-name-wrap">');
+    htmlArr.push('<img class="texture-name-img" src="./images/' + data.textureImg + '">');
+    htmlArr.push('<div class="texture-name">');
+    htmlArr.push('<p class="texture-title">' + data.title + '</p>');
+    htmlArr.push('<p class="texture-subtitle">' + data.subtitle + '</p>');
+    htmlArr.push('<p class="texture-color">颜色 Color: ' + data.color + '</p>');
+    htmlArr.push('</div>');
+    htmlArr.push('</div>');
+    <!--介绍部分-->
+    htmlArr.push('<div class="texture-text-wrap">');
+    <!--每一行-->
+    <!--硬度-->
+    htmlArr.push('<div class="texture-text-line">');
+    <!--左侧名称部分-->
+    htmlArr.push('<div class="texture-text-name">');
+    htmlArr.push('<div class="texture-name-title">硬度: </div>');
+    htmlArr.push('<div class="texture-name-subtitle">Hardness</div>');
+    htmlArr.push('</div>');
+    <!--右侧描述部分-->
+    htmlArr.push('<div class="texture-desc">');
+    htmlArr.push('<img class="texture-scaleplate" src="./images/textureDetail-scaleplate.png">');
+    htmlArr.push('<img class="texture-hardness" src="./images/' + data.hardnessImg + '">');
+    htmlArr.push('</div>');
+    htmlArr.push('</div>');
+    <!--弹性-->
+    htmlArr.push('<div class="texture-text-line">');
+    <!--左侧名称部分-->
+    htmlArr.push('<div class="texture-text-name">');
+    htmlArr.push('<div class="texture-name-title">弹性: </div>');
+    htmlArr.push('<div class="texture-name-subtitle">Elasticity</div>');
+    htmlArr.push('</div>');
+    <!--右侧描述部分-->
+    htmlArr.push('<div class="texture-desc">');
+    htmlArr.push('<img class="texture-scaleplate" src="./images/textureDetail-scaleplate.png">');
+    htmlArr.push('<img class="texture-hardness" src="./images/' + data.elasticityImg + '">');
+    htmlArr.push('</div>');
+    htmlArr.push('</div>');
+    <!--特性-->
+    htmlArr.push('<div class="texture-text-line">');
+    <!--左侧名称部分-->
+    htmlArr.push('<div class="texture-text-name">');
+    htmlArr.push('<div class="texture-name-title">特性: </div>');
+    htmlArr.push('<div class="texture-name-subtitle">Feature</div>');
+    htmlArr.push('</div>');
+    <!--右侧描述部分-->
+    htmlArr.push('<div class="texture-desc">');
+    htmlArr.push('<p>');
+    htmlArr.push(data.feature);
+    htmlArr.push('</p>');
+    htmlArr.push('</div>');
+    htmlArr.push('</div>');
+    <!--适宜人群-->
+    htmlArr.push('<div class="texture-text-line">');
+    <!--左侧名称部分-->
+    htmlArr.push('<div class="texture-text-name">');
+    htmlArr.push('<div class="texture-name-title">适宜人群: </div>');
+    htmlArr.push('<div class="texture-name-subtitle">Suitable Crowd</div>');
+    htmlArr.push('</div>');
+    <!--右侧描述部分-->
+    htmlArr.push('<div class="texture-desc">');
+    htmlArr.push('<p>');
+    htmlArr.push(data.suitableCrowd);
+    htmlArr.push('</p>');
+    htmlArr.push('</div>');
+    htmlArr.push('</div>');
+    <!--适宜人群-->
+    htmlArr.push('<div class="texture-text-line">');
+    <!--左侧名称部分-->
+    htmlArr.push('<div class="texture-text-name">');
+    htmlArr.push('<div class="texture-name-title">洗涤方式: </div>');
+    htmlArr.push('<div class="texture-name-subtitle">Washing Method</div>');
+    htmlArr.push('</div>');
+    <!--右侧描述部分-->
+    htmlArr.push('<div class="texture-desc">');
+    htmlArr.push('<p>');
+    htmlArr.push(data.washingMethod);
+    htmlArr.push('</p>');
+    htmlArr.push('</div>');
+    htmlArr.push('</div>');
+    htmlArr.push('</div>');
+
+    $('.main').html(htmlArr.join(''));
 }
 
 // 初始化事件
