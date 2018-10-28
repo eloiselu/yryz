@@ -50,10 +50,10 @@
     border: 1px solid #4a4a4a;
     background-color: #000;
 
-    transition: background .2s;
-    -moz-transition: background .2s;
-    -webkit-transition: background .2s;
-    -o-transition: background .2s;
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
 }
 
 .nav .nav-list li.active {
