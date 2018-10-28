@@ -19,13 +19,24 @@ indexPage.prototype.initSwiper = function () {
     this.mySwiper = new Swiper ('.swiper-container', {
         // 循环模式选项
         loop: true,
-        speed: 300,
+        speed: 500,
         autoplay : {
-            delay: 2000,
+            delay: 2500,
+            disableOnInteraction: false,
         },
         // 如果需要分页器
         pagination: {
             el: '.swiper-pagination'
+        },
+        on:{
+            init: function(){
+                swiperAnimateCache(this); //隐藏动画元素
+                this.emit('slideChangeTransitionEnd');//在初始化时触发一次slideChangeTransitionEnd事件
+            },
+            slideChangeTransitionEnd: function(){
+                swiperAnimate(this); //每个slide切换结束时运行当前slide动画
+                // this.slides.eq(this.activeIndex).find('.ani').removeClass('ani');//动画只展示一次
+            }
         }
     })
 }
