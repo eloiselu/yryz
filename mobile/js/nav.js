@@ -22,7 +22,7 @@ navPage.prototype.init = function () {
 // 设置导航选中
 navPage.prototype.setNav = function () {
     var link = window.location.href;
-
+    
     // 判断是否包含对应的关键词
     if (link.indexOf('texture.html') > -1 && link.indexOf('jump') < 0) {
         $('.nav-list li[data-index="texture"]').trigger('click');
