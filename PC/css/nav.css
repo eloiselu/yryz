@@ -94,3 +94,8 @@
 .nav-pulldown > a:last-of-type {
     border-right: 0;
 }
+
+/*单独设置颈部测量的导航与上部的导航对齐，形成视觉上的感觉好看*/
+.nav-list[data-type="measure"] .nav-pulldown > a:first-of-type {
+    margin-left: 31px;
+}

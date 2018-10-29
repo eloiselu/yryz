@@ -24,7 +24,7 @@ indexPage.prototype.initSwiper = function () {
         loop: true,
         speed: 500,
         autoplay : {
-            delay: 2500,
+            delay: 3500,
             disableOnInteraction: false,
         },
         // 如果需要分页器

@@ -115,19 +115,26 @@
 }
 
 /*文字描述部分*/
-.intention .intention-text {
+.intention .intention-text,
+.intention .intention-desc {
     width: 100%;
-    font-size: 22px;
     color: #fff;
+}
+
+.intention .intention-text {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intention .intention-desc {
+    font-size: 22px;
 }
 
 /*图片部分*/
 .intention .vcollection-wrap .vcollection {
-    width: 700px;
-    margin-top: 30px;
+    width: 600px;
+    margin-top: 50px;
 }
-
-
 
 /*初衷底部*/
 .intention-bottom {
