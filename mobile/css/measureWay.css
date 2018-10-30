@@ -26,3 +26,19 @@
     width: 100%;
     margin-bottom: .8rem;
 }
+
+/*二维码部分*/
+.measureWay-QRcode-wrap {
+    width: 100%;
+    text-align: center;
+    margin-bottom: .8rem;
+}
+
+.measureWay-QRcode-wrap img {
+    width: 2.79rem;
+}
+
+.measureWay-QRcode-wrap p {
+    font-size: .28rem;
+    color: #ab9875;
+}
