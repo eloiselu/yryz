@@ -81,7 +81,7 @@ navPage.prototype.initEvent = function () {
         e.stopPropagation();
     })
 
-    $("html").click(function () {
+    $(window).on("touch", function () {
         // 设置小三角旋转
         $('.nav-list li[class*="active"]').removeClass("rotate180");
         // 设置导航下拉框隐藏
