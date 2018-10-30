@@ -28,22 +28,24 @@
 
 <!--主体部分-->
 <main class="main">
-    <div class="service-back" onclick="alert('image loaded')">
-        <div class="service-back1"></div>
-        <div class="service-back2"></div>
-        <div class="service-back3"></div>
-    </div>
-    <div class="service-con">
+    <div class="service-wrap">
+        <!--标题与描述图片-->
+        <img class="service-title" src="images/service-title.png" alt="">
+        <img class="service-desc" src="images/service-desc.png" alt="">
+
+        <!--二维码与联系我们部分-->
         <img class="service-qrcode" id="officialAccounts" src="images/service-qrcode.png">
         <div id="contact">
-            <p class="service-text1">联系我们333</p>
+            <p class="service-text1">联系我们</p>
             <p class="service-text2">客服电话：400-5689732</p>
         </div>
+
+        <!--底部图片-->
+        <img class="service-img" src="images/service-img.png" alt="">
     </div>
 </main>
 
 <script src="./js/jQuery-2.1.4.min.js"></script>
-<!--<script src="./js/jquery.mobile-1.4.5.min.js"></script>-->
 <script src="./js/flexible.js"></script>
 <script src="./plugins/swiper-4.4.1/js/swiper.min.js"></script>
 <script src="./js/nav.js"></script>
