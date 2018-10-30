@@ -50,7 +50,7 @@
 /*左侧名称部分*/
 .texture-text-name {
     display: inline-block;
-    width: 2rem;
+    width: 2.1rem;
 }
 
 .texture-name-title,
@@ -63,8 +63,8 @@
 .texture-desc {
     display: inline-block;
     vertical-align: top;
-    width: 4.50rem;
-    /*margin-left: .3rem;*/
+    width: 4.60rem;
+    margin-left: .15rem;
 }
 
 /*描述文字样式*/
