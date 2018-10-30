@@ -81,13 +81,13 @@ navPage.prototype.initEvent = function () {
         e.stopPropagation();
     })
 
-    $('html').on("tap", function () {
+    $(window).click(function () {
         // 设置小三角旋转
         $('.nav-list li[class*="active"]').removeClass("rotate180");
         // 设置导航下拉框隐藏
         $('#navPulldown .nav-pulldown-list').slideUp(100);
     })
-
+    
     // 绑定页面滚动事件
     $(window).scroll(function () {
         // 获取页面移动高度
