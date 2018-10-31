@@ -1,0 +1,26 @@
+{
+  "name": "yryz",
+  "version": "1.0.0",
+  "description": "一人一枕",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lupanpan/yryz.git"
+  },
+  "author": "panlu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lupanpan/yryz/issues"
+  },
+  "homepage": "https://github.com/lupanpan/yryz#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^1.0.2",
+    "gulp-imagemin": "^4.1.0"
+  }
+}
