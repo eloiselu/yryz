@@ -11,6 +11,7 @@
     width: 7.0rem;
 }
 
+/*三个图片部分*/
 .measureWay-img {
     vertical-align: top;
     width: 2.8rem;
@@ -22,6 +23,25 @@
     margin-left: 0;
 }
 
+/*颈部测量图片部分*/
+.measureWay-pic {
+    position: relative;
+    width: 100%;
+    height: 3.1rem;
+}
+
+.measureWay-left {
+    position: absolute;
+    width: 2.96rem;
+}
+
+.measureWay-right {
+    position: absolute;
+    right: 0;
+    width: 4.42rem;
+}
+
+/*二维码与文字描述部分*/
 .measureWay-desc {
     width: 100%;
     margin-bottom: .8rem;
@@ -29,9 +49,10 @@
 
 /*二维码部分*/
 .measureWay-QRcode-wrap {
-    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 2.79rem;
     text-align: center;
-    margin-bottom: .8rem;
 }
 
 .measureWay-QRcode-wrap img {
@@ -39,6 +60,14 @@
 }
 
 .measureWay-QRcode-wrap p {
-    font-size: .28rem;
     color: #ab9875;
+}
+
+.measureWay-text {
+    display: inline-block;
+    vertical-align: top;
+    width: 4.6rem;
+    line-height: .45rem;
+    color: #ab9875;
+    margin-top: .3rem;
 }
