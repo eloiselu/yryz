@@ -21,36 +21,39 @@
 
 /*左侧图片部分*/
 .main-list .list-left {
-    position: relative;
+    /*position: relative;*/
     float: left;
-    width: 2.8rem;
-    height: 3.1rem;
+    /*width: 2.9rem;*/
+    /*height: 3rem;*/
     background-color: #ddd;
+    padding: .2rem;
 }
 
 .main-list .list-left img {
-    position: absolute;
-    top: .3rem;
-    left: .1rem;
+    /*position: absolute;*/
+    /*top: .2rem;*/
+    /*left: .2rem;*/
     width: 2.46rem;
     height: 2.05rem;
 }
 
 .main-list .list-left .img-bottom {
-    position: absolute;
-    bottom: .3rem;
-    left: .1rem;
+    /*position: absolute;*/
+    /*bottom: .3rem;*/
+    /*left: .2rem;*/
+    margin-top: -.1rem;
     width: 2.46rem;
     height: .57rem;
     background: url("../images/pillow-img-bottom.png") no-repeat;
     background-size: contain;
+
 }
 
 /*右侧文本部分*/
 .list-right {
     position: relative;
     float: left;
-    width:  4.7rem;
+    width:  4.6rem;
     padding: 0 .3rem;
 }
 

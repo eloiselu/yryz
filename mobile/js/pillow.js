@@ -79,7 +79,7 @@ pillowPage.prototype.setDataListHtml = function () {
         htmlArr.push('<div class="list-right">');
         htmlArr.push('<p class="list-title">' + this.listData[i].title + '</p>');
         htmlArr.push('<p class="list-subtitle">' + this.listData[i].subtitle + '</p>');
-        htmlArr.push('<button class="buy-button">立即购买</button>');
+        htmlArr.push('<button class="buy-button">了解详情</button>');
         htmlArr.push('<p class="list-desc">' + this.listData[i].desc + '</p>');
         htmlArr.push('</div>');
         htmlArr.push('</li>');
