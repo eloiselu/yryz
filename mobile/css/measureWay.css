@@ -61,6 +61,7 @@
 
 .measureWay-QRcode-wrap p {
     color: #ab9875;
+    font-size: .24rem;
 }
 
 .measureWay-text {
@@ -70,4 +71,5 @@
     line-height: .45rem;
     color: #ab9875;
     margin-top: .3rem;
+    font-size: .24rem;
 }
