@@ -34,7 +34,7 @@ pillowPage.prototype.setData = function () {
         {
             img: 'pillow-brown.png',
             title: '三角荞麦壳枕／深咖色',
-            subtitle: 'TPE Elastome',
+            subtitle: 'Buckwheat Shell',
             desc: '荞麦壳呈棱形，坚而不硬，凉爽舒适，壳与壳之间自然形成完美透气通道，透气性佳，在地下埋藏百年不变质'
         },
         {
@@ -52,13 +52,13 @@ pillowPage.prototype.setData = function () {
         {
             img: 'pillow-white.png',
             title: '纤维棉枕／白色',
-            subtitle: 'TPE Elastome',
+            subtitle: 'Fiber cotton',
             desc: '云绒纤维棉是由两种不同结构的纤维通过一定比例交织在一起而形成，提供最细腻的睡眠头部支撑感同时拥有有软度又具有支撑力'
         },
         {
             img: 'pillow-deepgray.png',
             title: '竹炭软管枕／深灰色',
-            subtitle: 'TPE Elastome',
+            subtitle: 'Bamboo charcoal',
             desc: '用崖柏做熏香让崖柏的香气环绕在病人周围，可以改善病人心情，提高免疫力竹炭弹性体＋天然的崖柏木颗粒，同时提供柔软和弹性对于是头部压力的两个重要体验要素'
         }
     ]
