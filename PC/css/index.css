@@ -112,6 +112,7 @@
     background: url("../images/index-vcollection-back.png");
     text-align: center;
     padding-top: 60px;
+    margin-top: -5px;
 }
 
 /*文字描述部分*/

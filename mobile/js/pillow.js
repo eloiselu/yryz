@@ -23,43 +23,50 @@ pillowPage.prototype.setData = function () {
             img: 'pillow-paperwhite.png',
             title: '芝士乳胶条枕／本白色',
             subtitle: 'Cheese Latex',
-            desc: '精心选择的“天然芝士乳胶条”（天然乳胶含量达百分之八十）弹性好，有乳胶独特气味，很好的吸湿性和透气性无污染无毒'
+            desc: '精心选择的“天然芝士乳胶条”（天然乳胶含量达百分之八十）弹性好，有乳胶独特气味，很好的吸湿性和透气性无污染无毒',
+            srcType: 'white'
         },
         {
             img: 'pillow-gray.png',
             title: 'TPE弹性体枕／浅灰色',
             subtitle: 'TPE Elastome',
-            desc: '除螨抑菌触感柔软，环保无味极易清洁具有高强度，高回弹性等特点软管枕具有透气排热的特点，能够有效排出枕头内的热量，保持枕头内部温度，提高睡眠质量'
+            desc: '除螨抑菌触感柔软，环保无味极易清洁具有高强度，高回弹性等特点软管枕具有透气排热的特点，能够有效排出枕头内的热量，保持枕头内部温度，提高睡眠质量',
+            srcType: 'lightbrown'
         },
         {
             img: 'pillow-brown.png',
             title: '三角荞麦壳枕／深咖色',
             subtitle: 'Buckwheat Shell',
-            desc: '荞麦壳呈棱形，坚而不硬，凉爽舒适，壳与壳之间自然形成完美透气通道，透气性佳，在地下埋藏百年不变质'
+            desc: '荞麦壳呈棱形，坚而不硬，凉爽舒适，壳与壳之间自然形成完美透气通道，透气性佳，在地下埋藏百年不变质',
+            srcType: 'deepred'
         },
         {
             img: 'pillow-pink.png',
             title: '粉色软管枕／浅粉色',
             subtitle: 'TPE Elastome',
-            desc: 'VCollection从日本精心选购的PE+TPE弹性体是一种热塑性弹性体材料软管枕具有透气排热的特点，能够有效排出枕头内的热量，保持枕头内部温度提高睡眠质量'
+            desc: 'VCollection从日本精心选购的PE+TPE弹性体是一种热塑性弹性体材料软管枕具有透气排热的特点，能够有效排出枕头内的热量，保持枕头内部温度提高睡眠质量',
+            srcType: 'pink'
         },
         {
             img: 'pillow-blue.png',
             title: '粉色软管枕／蓝色',
             subtitle: 'TPE Elastome',
-            desc: '从日本精心选购的PE+TPE弹性体是一种热塑性弹性体材料有良好的透气性，除螨抑菌，触感柔软，环保无味极易清洁，特点是能够有效排出枕头内的热量保持枕头内部温度提高睡眠质量'
+            desc: '从日本精心选购的PE+TPE弹性体是一种热塑性弹性体材料有良好的透气性，除螨抑菌，触感柔软，环保无味极易清洁，特点是能够有效排出枕头内的热量保持枕头内部温度提高睡眠质量',
+            srcType: 'blue'
         },
         {
             img: 'pillow-white.png',
             title: '纤维棉枕／白色',
             subtitle: 'Fiber cotton',
-            desc: '云绒纤维棉是由两种不同结构的纤维通过一定比例交织在一起而形成，提供最细腻的睡眠头部支撑感同时拥有有软度又具有支撑力'
+            desc: '云绒纤维棉是由两种不同结构的纤维通过一定比例交织在一起而形成，提供最细腻的睡眠头部支撑感同时拥有有软度又具有支撑力',
+            srcType: 'gray'
         },
         {
             img: 'pillow-deepgray.png',
             title: '竹炭软管枕／深灰色',
             subtitle: 'Bamboo charcoal',
-            desc: '用崖柏做熏香让崖柏的香气环绕在病人周围，可以改善病人心情，提高免疫力竹炭弹性体＋天然的崖柏木颗粒，同时提供柔软和弹性对于是头部压力的两个重要体验要素'
+            desc: '用崖柏做熏香让崖柏的香气环绕在病人周围，可以改善病人心情，提高免疫力竹炭弹性体＋天然的崖柏木颗粒，同时提供柔软和弹性对于是头部压力的两个重要体验要素',
+            srcType: 'deepgray'
         }
     ]
 }
@@ -79,7 +86,7 @@ pillowPage.prototype.setDataListHtml = function () {
         htmlArr.push('<div class="list-right">');
         htmlArr.push('<p class="list-title">' + this.listData[i].title + '</p>');
         htmlArr.push('<p class="list-subtitle">' + this.listData[i].subtitle + '</p>');
-        htmlArr.push('<button class="buy-button">了解详情</button>');
+        htmlArr.push('<a class="buy-button" href="./texture-detail.html?type='+ this.listData[i].srcType +'">了解详情</a>');
         htmlArr.push('<p class="list-desc">' + this.listData[i].desc + '</p>');
         htmlArr.push('</div>');
         htmlArr.push('</li>');
