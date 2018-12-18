@@ -1,0 +1,17 @@
+
+.base {
+    width: 100%;
+    background-color: #392524;
+    text-align: center;
+    height: 6.10rem;
+    /*margin-bottom: 0.7rem;*/
+}
+.head-img{
+    width: 3.55rem;
+    height: 2.20rem;
+    margin-top: 0.72rem;
+}
+.head-text{
+    width: 6.24rem;
+    height: 0.97rem;
+}
