@@ -1,0 +1,67 @@
+/*模块名称部分*/
+.head-name {
+    text-align: center;
+    background-color: #442c2b;
+}
+.measure1-title {
+    display: inline-block;
+    width: 9.95rem;
+    height: 3.07rem;
+    line-height: 3.07rem;
+    color: #efb588;
+    background-color: #32171c;
+    font-size: 1.24rem;
+    text-align: center;
+    border-radius: 2.2rem;
+    margin-top: 1.16rem;
+    margin-bottom: 1.02rem;
+}
+
+/*主体模块部分*/
+.main {
+    background-color: #f5f3ef;
+    color: #b4a078;
+}
+
+.measure1-subtitle {
+    font-size: 1.42rem;
+    text-align: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: #b4a078;
+}
+
+/*测量描述*/
+.measure1-describe {
+    font-size: 0.84rem;
+}
+
+.measure1-describe span {
+    display: inline-block;
+    width: 0.48rem;
+    height: 0.48rem;
+    border-radius: 0.24rem;
+    background-color: #b4a078;
+    margin-left: 2.40rem;
+}
+
+.measure1-describe p {
+    display: inline;
+    padding-left: 1rem;
+}
+
+/*二级图片介绍部分*/
+.measure1-subimg {
+    margin-left: 1.7rem;
+    margin-top: 1.22rem;
+}
+
+.measure1-subimg img{
+    width:3.87rem;
+    height: 4.75rem;
+    margin-left: 0.62rem;
+}
+
+.measure1-subimg p {
+    display: inline-block;
+}
