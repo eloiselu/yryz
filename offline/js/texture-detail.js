@@ -9,6 +9,7 @@ var textureDetailPage = function () {
 textureDetailPage.prototype.init = function () {
     //设置购买枕头列表数据
     this.setData();
+    //设置购买枕头列表数据
     this.setDataListHtml();
     //初始化事件
     this.initEvent();
@@ -93,7 +94,7 @@ textureDetailPage.prototype.setDataListHtml = function () {
 
 
 //初始化事件
-textureDetailPage().prototype.initEvent = function () {
+textureDetailPage.prototype.initEvent = function () {
 
 }
 
