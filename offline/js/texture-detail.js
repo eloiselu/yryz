@@ -13,7 +13,6 @@ textureDetailPage.prototype.init = function () {
     this.setDataListHtml();
     //初始化事件
     this.initEvent();
-
 }
 
 //枕头列表数据
@@ -54,7 +53,7 @@ textureDetailPage.prototype.setData = function () {
             'feature': 'PE+TPE弹性体是一种热塑性弹性体材料中空管状弹性体在提供完美支撑力的同时有良好的透气性除螨抑菌触感柔软，环保无味极易清洁。具有高强度，高回弹性等特点，由于拥有舒适的手感，广泛用于人造皮肤通过欧盟EU-10/2011食品级测试标准及欧盟RoHS环保安全标准。在睡眠时，头部保持低温，有效降低大脑皮层活跃度，利于大脑皮层休息。软管枕具有透气排热的特点，能够有效排出枕头内的热量，保持枕头内部温度提高睡眠质量',
             'suitableCrowd': '颈椎不舒服，长时间坐姿工作压力大年轻人',
             'washingMethod': '可水洗，一般每3-6个月清洗一次即可，洗后脱水后用电扇吹干平铺晾干或烘箱低温烘干。切忌日晒，日晒会使其弹性降低，使用寿命缩短'
-        },
+        }
     }
 }
 
@@ -70,11 +69,11 @@ textureDetailPage.prototype.setDataListHtml = function () {
     var htmlArr = [];
 
         <!--顶部图片-->
-        htmlArr.push('<img class="texture-head1" src="./images/' + data.headImg + ' ">');
+        htmlArr.push('<img class="texture-head1" src="../images/' + data.headImg + ' ">');
 
         <!--中间材质部分-->
         htmlArr.push('<div class="texture-name-wrap">');
-        htmlArr.push('<img class="texture-name-img" src="./images/' + data.textureImg + '">');
+        htmlArr.push('<img class="texture-name-img" src="../images/' + data.textureImg + '">');
         htmlArr.push('<div class="texture-name">');
         htmlArr.push('<p class="texture-title">' + data.title + '</p>');
         htmlArr.push('<p class="texture-subtitle">' + data.subtitle + '</p>');
@@ -82,7 +81,7 @@ textureDetailPage.prototype.setDataListHtml = function () {
         htmlArr.push('</div>');
         htmlArr.push('</div>');
         <!--顶部图片2-->
-        htmlArr.push('<img class="texture-head2" src="./images/' + data.textureHead2 + '">');
+        htmlArr.push('<img class="texture-head2" src="../images/' + data.textureHead2 + '">');
 
         <!--介绍部分-->
         htmlArr.push('<div class="texture-text-wrap fix">');
