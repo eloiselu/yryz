@@ -1,16 +1,19 @@
 /*内容*/
-.content {
+.head-name {
     background-color: #442C2B;
-    padding-top: 0.7rem;
-}
-.contText {
+    padding: 0.7rem 0;
     text-align: center;
-    padding-bottom: 0.7rem;
-
 }
-.contText .texture-detail1{
+
+.texture-detail1 {
     width: 13.06rem;
     height: 4.36rem;
+    line-height: 4.36rem;
+    display: inline-block;
+    background-color: #32171c;
+    font-size: 1.69rem;
+    color: #d9a18f;
+    border-radius: 2.2rem;
 }
 
 
