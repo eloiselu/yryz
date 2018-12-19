@@ -7,10 +7,10 @@ var textureDetailPage = function () {
 
 //初始化
 textureDetailPage.prototype.init = function () {
-//   设置购买枕头列表数据
-//     this.setData();
-//     this.setDataListHtml();
-//    初始化事件
+    //设置购买枕头列表数据
+    this.setData();
+    this.setDataListHtml();
+    //初始化事件
     this.initEvent();
 
 }
