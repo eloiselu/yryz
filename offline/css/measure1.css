@@ -34,8 +34,10 @@
 /*测量描述*/
 .measure1-describe {
     font-size: 0.84rem;
+
 }
 
+    /*小圆圈*/
 .measure1-describe span {
     display: inline-block;
     width: 0.48rem;
@@ -43,25 +45,23 @@
     border-radius: 0.24rem;
     background-color: #b4a078;
     margin-left: 2.40rem;
-}
-
-.measure1-describe p {
-    display: inline;
-    padding-left: 1rem;
+    margin-right: 1rem;
 }
 
 /*二级图片介绍部分*/
-.measure1-subimg {
-    margin-left: 1.7rem;
-    margin-top: 1.22rem;
-}
 
 .measure1-subimg img{
-    width:3.87rem;
-    height: 4.75rem;
-    margin-left: 0.62rem;
+    width: 27.16rem;
+    height: 7.04rem;
+    margin-top: 1.22rem;
+    padding-left: 1.7rem;
+    clear: both;
 }
 
-.measure1-subimg p {
-    display: inline-block;
+/*注释部分*/
+.measure1-note {
+    font-size: 0.46rem;
+    margin-top: 1.16rem;
+    margin-left: 3.55rem;
+    margin-right: 3.35rem;
 }
