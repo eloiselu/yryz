@@ -1,0 +1,59 @@
+
+/*模块名称部分*/
+.head-name {
+    background-color: #442c2b;
+    text-align: center;
+    color: #eeb7a3;
+}
+
+/*曲线测量部分*/
+.measure-step2-title     {
+    display: inline-block;
+    width: 9.95rem;
+    height: 3.07rem;
+    line-height: 3.07rem;
+    background-color: #32171c;
+    font-size: 1.24rem;
+    text-align: center;
+    border-radius: 2.2rem;
+    margin-top: 2.09rem;
+}
+
+/*"侧"部分*/
+.measure-step2-subtitle {
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 1rem;
+    width: 3.02rem;
+    height: 3.02rem;
+    background-color: #32171c;
+    border-radius: 1.51rem;
+    padding-top: 1rem;
+    margin-left: 2.46rem;
+}
+
+/*主体模块部分*/
+
+/*人物图片*/
+.measure-step2-img {
+    width: 24.94rem;
+    height: 37.76rem;
+}
+
+/*底部相机按钮图片*/
+.measure-step2-camera {
+    background-color: #d9cfbb;
+    text-align: center;
+    padding-top: 1.16rem;
+    padding-bottom: 1rem;
+
+}
+
+.measure-step2-camera a {
+    display: inline-block;
+}
+
+.measure-step2-camera img {
+    width: 3.15rem;
+    height: 3.15rem;
+}

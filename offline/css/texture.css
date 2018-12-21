@@ -1,0 +1,49 @@
+/*丰富材质底部高度*/
+.tit-bottom {
+ margin-bottom: 1.1rem;
+}
+
+/*主体部分*/
+.main {
+    background-color: #ffffff;
+}
+
+/*左部分*/
+.details-left {
+    width: 9.5rem;
+    margin-top: 0.6rem;
+    margin-left: 1.26rem;
+    float: left;
+}
+/*左部分文字*/
+.details-left  .details-left-text {
+    font-size: 0.26rem;
+    color: #666666;
+    float: left;
+    width: 4.68rem;
+}
+.details-left  .left-text-title {
+    font-size: 0.48rem;
+    color: #000000;
+}
+.details-left  .left-text-subtitle {
+    font-size: 0.4rem;
+    color: #000000;
+}
+
+
+/*左部分图片*/
+.details-left  .details-left-img {
+    width: 4.26rem;
+    float: right;
+}
+
+/*右边图片部分*/
+ .details-bigimg{
+     float: right;
+     width: 12.99rem;
+ }
+
+ .details-buttom {
+     margin-bottom: 1.3rem;
+ }

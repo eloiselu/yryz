@@ -23,7 +23,7 @@
     color: #b4a078;
 }
 
-.measure1-subtitle {
+.measure1-choose {
     font-size: 1.42rem;
     text-align: center;
     padding-top: 0.75rem;
@@ -55,13 +55,15 @@
     height: 7.04rem;
     margin-top: 1.22rem;
     padding-left: 1.7rem;
-    clear: both;
 }
 
 /*注释部分*/
 .measure1-note {
-    font-size: 0.46rem;
     margin-top: 1.16rem;
-    margin-left: 3.55rem;
-    margin-right: 3.35rem;
+}
+
+.measure1-note p {
+    width: 18.06rem;
+    font-size: 0.46rem;
+    margin: 0 auto;
 }

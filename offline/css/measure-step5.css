@@ -1,0 +1,53 @@
+
+/*主体部分*/
+.main {
+    background-color: #442c2b;
+}
+
+/*我的曲线测量模块部分*/
+.head-name .measure-step5-title {
+    display: inline-block;
+    width: 10.06rem;
+    height: 1.96rem;
+    font-size: 0.9rem;
+    line-height: 1.96rem;
+    text-align: center;
+    margin-top: 1.16rem;
+    background-color: #32171c;
+    border-radius: 2.2rem;
+}
+
+/*身体测量图部分*/
+.main  .measure-step5-img {
+    margin-top: 1.16rem;
+    margin-left: 1.36rem;
+    width:21.79rem;
+    /*height: 24.27rem;*/
+}
+
+/*底部模块部分*/
+.measure-step5-foot {
+    display: inline-block;
+    width: 8.96rem;
+    height: 3rem;
+    background-color: #efb588;
+    color: #333333;
+    text-align: center;
+    font-size: 0.62rem;
+    border-radius: 2.2rem;
+    margin-top: 1.4rem;
+    margin-left: 2.8rem;
+}
+
+.measure5-link{
+    display: inline-block;
+    color: #333333;;
+}
+
+.measure-step5-foot .foot-top {
+    margin-top: 0.48rem;
+}
+
+.measure-step5-foot .foot-down {
+    font-size: 0.88rem;
+}

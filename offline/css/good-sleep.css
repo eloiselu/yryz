@@ -18,7 +18,7 @@
 }
 
 /*曲线测量*/
-.goodsleep-a1{
+.goodsleep-link{
     padding-top: 2.04rem;
     display: block;
     text-align: center;
@@ -27,7 +27,7 @@
 
 
 .goodsleep-img1 {
-    height: 4.30rem;
+    /*height: 4.30rem;*/
     width: 6.92rem;
 }
 .goodsleep-subtitle {
@@ -45,14 +45,7 @@
 }
 
 /*丰富材质*/
-.goodsleep-a2{
-    padding-top: 1.44rem;
-    display: block;
-    text-align: center;
-    cursor:pointer; /*变小手*/
-}
-
 .goodsleep-img2 {
-    height: 3.40rem;
+    /*height: 3.40rem;*/
     width: 6.50rem;
 }

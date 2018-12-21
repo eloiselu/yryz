@@ -1,0 +1,39 @@
+
+/*P标签修改*/
+.userlist-text {
+    margin-top: 0.2rem;
+    line-height: 1.13rem;
+    font-size: 1.06rem;
+}
+
+/*主体部分*/
+.main {
+    background-color: #442c2b;
+}
+
+.userlist .userlist-dot{
+    display: inline-block;
+    background-color: #6d4e40;
+    width: 4.83rem;
+    height: 4.83rem;
+    border-radius: 4.83rem;
+    margin-top: 2.26rem;
+}
+
+.userlist .userlist-left {
+    margin-left: 3.66rem;
+}
+
+.userlist .userlist-middle {
+    margin-left: 1.63rem;
+    margin-right: 1.63rem;
+}
+
+/*底部文字*/
+.userlist-foot {
+    font-size: 1.56rem;
+    color: #000000;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+
+/*主体模块部分*/
+.main {
+    background-color: #442c2b;
+}
+
+/*人物图片*/
+.measure-step3-img {
+    width: 23.37rem;
+    height: 28rem;
+    margin-top: 0.97rem;
+}
+
+/*底部相机按钮图片*/
+.measure-step3-camera {
+    background-color: #d9cfbb;
+    text-align: center;
+    padding-top: 1.16rem;
+    padding-bottom: 1rem;
+    margin-top: -0.1rem;
+
+}
+
+.measure-step3-camera a {
+    display: inline-block;
+}
+
+.measure-step3-camera img {
+    width: 3.15rem;
+    height: 3.15rem;
+}
