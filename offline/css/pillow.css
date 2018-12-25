@@ -1,0 +1,53 @@
+
+/*修改公共head*/
+.pillow-head{
+    height: 4.38rem;
+    /* line-height: 3.07rem; */
+    line-height: normal;
+}
+.pillow-text {
+    margin-top: 0.5rem;
+}
+
+/*主体部分*/
+.main {
+    text-align: center;
+    background-color: #442c2b;
+    color: #d9a18f;
+}
+
+/*title部分*/
+.main .pillow-title {
+    font-size: 1.3rem;
+    padding-top: 1.94rem;
+}
+
+.main .pillow-subtitle {
+    font-size: 1.88rem;
+    padding-top: 1.1rem;
+}
+
+/*图片部分*/
+.main .pillow-img {
+    width: 18.12rem;
+    padding-top: 0.5rem;
+}
+
+/*图片下文字*/
+/*.main .pillow-VD {*/
+    /*font-size: 1.08rem;*/
+    /*margin-top: 0.68rem;*/
+/*}*/
+
+/*底部文字*/
+.pillow-foot {
+    background-color: #442c2b;
+    color: #d9a18f;
+    padding-top: 2.32rem;
+    padding-left: 2.92rem;
+    padding-right: 2.82rem;
+}
+.pillow-foot .pillow-footext {
+    /*width: 19.22rem;   样式图里文字宽度*/
+    font-size: 0.52rem;
+}

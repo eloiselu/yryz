@@ -1,0 +1,18 @@
+/*公共部分修改*/
+.pillow-introduce {
+    padding-bottom: 4.26rem;
+}
+
+/*主体部分*/
+.main {
+    background-color: #6d5a5a;
+    padding: 3.88rem 4.2rem 4.2rem 4.13rem;
+}
+
+.main .introduce-text {
+    font-size: 0.8rem;
+}
+
+.alla{
+    height: 100%;
+}

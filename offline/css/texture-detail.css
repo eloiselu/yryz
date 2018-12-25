@@ -67,6 +67,7 @@
 .texture-text-wrap {
     width: 100%;
     padding: 3.26rem 0;
+    margin-left: 1.72rem;
     /*background: url("../images/textureDetail-back.png");*/
 }
 
