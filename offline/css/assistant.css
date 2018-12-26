@@ -1,0 +1,66 @@
+/*修改公共head*/
+.assistant-head {
+    height: 2.86rem;
+    font-size: 0.86rem;
+    line-height: normal;
+    margin-top: 0.64rem;
+    margin-bottom: 0.7rem;
+}
+
+.assistant-text {
+    margin-top: 0.3rem;
+}
+
+/*主体部分*/
+.main {
+    background-color: #fcfcfc;
+}
+
+.main .assistant {
+    background-color: skyblue;
+    margin-top: 1.56rem;
+    margin-left: 0.46rem;
+}
+
+/*左边部分*/
+.assistant .assistant-left {
+    padding-top: 0.74rem;
+    padding-left: 0.46rem;
+    padding-bottom: 0.7rem;
+    width: 15.9rem;
+}
+
+/*左边图片*/
+.assistant .left-img {
+    display: inline-block;
+    float: left;
+}
+
+.assistant .assistant-img {
+    width: 6.92rem;
+}
+
+/*右边文字*/
+.assistant .right-text {
+    float: right;
+    display: inline-block;
+    font-size: 0.78rem;
+    color: #333333;
+    padding-top: 0.4rem;
+}
+
+.text-subtitle {
+    font-size: 0.52rem;
+    padding-top: 0.2rem;
+}
+
+.text-money {
+    font-size: 0.74rem;
+    color: #ba0909;
+}
+
+.text-intro {
+    width: 7.66rem;
+    font-size: 0.48rem;
+    padding-top: 0.3rem;
+}
