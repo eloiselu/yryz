@@ -47,6 +47,7 @@
 
 /*开始测量按钮*/
 .measure-button {
+    display: inline-block;
     width: 7.27rem;
     height: 1.87rem;
     color: #efb588;

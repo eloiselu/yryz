@@ -9,6 +9,7 @@
     width: 23.37rem;
     height: 28rem;
     margin-top: 0.97rem;
+    vertical-align: middle;/*清除图片底部边框问题*/
 }
 
 /*底部相机按钮图片*/
@@ -17,8 +18,6 @@
     text-align: center;
     padding-top: 1.16rem;
     padding-bottom: 1rem;
-    margin-top: -0.1rem;
-
 }
 
 .measure-step3-camera a {

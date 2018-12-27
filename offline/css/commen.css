@@ -33,6 +33,11 @@ li,dd {
     list-style: none;
 }
 
+/* button按钮的点击时候出现蓝色边框*/
+button {
+    outline: none;
+}
+
 /**清除浮动**/
 .fix:after {
     content: ".";

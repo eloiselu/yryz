@@ -33,11 +33,14 @@
 }
 
 /*主体模块部分*/
-
+.main {
+    /*background-color: #442c2b;*/
+}
 /*人物图片*/
 .measure-step2-img {
     width: 24.94rem;
     height: 37.76rem;
+    vertical-align: middle;/*清除图片底部边框问题*/
 }
 
 /*底部相机按钮图片*/

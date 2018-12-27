@@ -6,13 +6,14 @@
 /*主体部分*/
 .main {
     background-color: #6d5a5a;
-    padding: 3.88rem 4.2rem 4.2rem 4.13rem;
+    padding-bottom: 4.2rem;
+    padding-top: 3.88rem;
+    /*padding:  4.2rem  4.13rem;*/
 }
 
 .main .introduce-text {
+    text-align: left;
+    width: 16.8rem;
     font-size: 0.8rem;
-}
-
-.alla{
-    height: 100%;
+    margin: 0 auto;
 }

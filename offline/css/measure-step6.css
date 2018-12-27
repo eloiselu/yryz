@@ -1,13 +1,13 @@
 /*主体模块部分*/
 .main {
     background-color: #442c2b;
+    text-align: center;
 }
 
 /*一人一枕描述部分*/
 .measure-step6-desc {
     width: 19.59rem;
     height: 4.49rem;
-    margin-left: 3.7rem;
     margin-top: 2.02rem;
 }
 
@@ -16,13 +16,17 @@
     width: 7.14rem;
     height: 7.14rem;
     margin-top: 1.56rem;
-    margin-left: 8.92rem;
 }
 
 /*扫码保存描述部分*/
 .measure-step6-keep {
+    width: 15.2rem;
+    height: 1.74rem;
+    text-align: left;
     font-size: 0.8rem;
-    padding: 1.53rem 4.61rem 6.33rem 5.28rem;
+    margin: 0 auto;
+    padding-top: 1.53rem;
+    padding-bottom: 6.33rem;
     color: #bd8d80;
     background-color: #442c2b;
 }

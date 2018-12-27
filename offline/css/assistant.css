@@ -17,9 +17,10 @@
 }
 
 .main .assistant {
-    background-color: skyblue;
+    background-color: #ffffff;
     margin-top: 1.56rem;
     margin-left: 0.46rem;
+    position: relative;
 }
 
 /*左边部分*/
@@ -28,6 +29,7 @@
     padding-left: 0.46rem;
     padding-bottom: 0.7rem;
     width: 15.9rem;
+
 }
 
 /*左边图片*/
@@ -60,7 +62,31 @@
 }
 
 .text-intro {
-    width: 7.66rem;
+    width: 7.5rem;
     font-size: 0.48rem;
     padding-top: 0.3rem;
+}
+
+/*右边增加部分*/
+.assistant-right {
+    position: absolute;
+    left: 19.05rem;
+    top: 5.38rem;
+}
+
+.assistant-right .button-minus {
+    display: inline-block;
+    font-size: 1rem;
+    background-color: #ffffff;
+    border: 0;
+}
+
+.assistant-right .button-count {
+    text-align: center;
+    display: inline-block;
+    font-size: 0.5rem;
+    background-color: #f0f0f0;
+    width: 2.32rem;
+    height: 1.22rem;
+    line-height: 1.22rem;
 }

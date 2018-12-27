@@ -11,22 +11,24 @@
     background-color: #442c2b;
 }
 
+.userlist{
+    width: 19.45rem;
+    margin: 0 auto
+}
+
 .userlist .userlist-dot{
     display: inline-block;
     background-color: #6d4e40;
     width: 4.83rem;
     height: 4.83rem;
     border-radius: 4.83rem;
-    margin-top: 2.26rem;
+    margin: 1.09rem 0.81rem 1.09rem 0.81rem;
 }
 
-.userlist .userlist-left {
-    margin-left: 3.66rem;
-}
-
-.userlist .userlist-middle {
-    margin-left: 1.63rem;
-    margin-right: 1.63rem;
+.userlist-link {
+    display: inline-block;
+    width: 4.83rem;
+    height: 4.83rem;
 }
 
 /*底部文字*/
