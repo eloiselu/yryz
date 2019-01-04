@@ -1,3 +1,7 @@
+/*主体的背景颜色，一般来按最下边的一个元素的颜色处理*/
+body {
+    background-color: #442c2b;
+}
 
 /*P标签修改*/
 .userlist-text {
@@ -12,7 +16,7 @@
 }
 
 .userlist{
-    width: 19.45rem;
+    width: 19.95rem;
     margin: 0 auto
 }
 

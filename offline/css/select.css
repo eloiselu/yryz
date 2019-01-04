@@ -1,6 +1,7 @@
 body{
     position: relative;
 }
+
 .main {
     text-align: center;
 
@@ -16,6 +17,7 @@ body{
 .main a {
     display: inline-block;
 }
+
 .main .select-pillow {
     /*display: inline-block;*/
     width: 13.08rem;
