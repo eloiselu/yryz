@@ -3,8 +3,8 @@ body {
     text-align: center;
     color: #d9a18f;
 }
-.index {
-    margin-top: 11.62rem;
+.index-first {
+    padding-top: 11.62rem;
 }
 .logo {
     width: 14.02rem;
@@ -24,5 +24,10 @@ body {
 
 .subtitle {
     font-size: 1.57rem;
+}
+
+/*轮播*/
+.select-img {
+    width: 24.94rem;
 }
 

@@ -1,69 +1,52 @@
 /**
- * Created by lupan on 2018/12/25.
+ * Created by lupan on 2018/12/30.
  */
-var selectPage = function () {
+
+var indexPage = function () {
     return this;
 }
 
-//初始化
-selectPage.prototype.init = function () {
-    this.setDate();
-    this.setDataListHtml();
-    //初始化事件
+// 初始化
+indexPage.prototype.init = function () {
+    // 初始化轮播图
+    this.initSwiper();
+    // 初始化事件
     this.initEvent();
 }
 
-//枕头列表数据
-selectPage.prototype.setDate = function () {
-    this.listDate = {
-        'white': {
-            'selectImg': 'select-img.png',
+// 初始化轮播图
+indexPage.prototype.initSwiper = function () {
+    this.mySwiper = new Swiper('.swiper-container', {
+        // 循环模式选项
+        loop: true,
+        speed: 500,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination'
+        },
+        on: {
+            init: function () {
+                swiperAnimateCache(this); //隐藏动画元素
+                this.emit('slideChangeTransitionEnd');//在初始化时触发一次slideChangeTransitionEnd事件
+            },
+            slideChangeTransitionEnd: function () {
+                swiperAnimate(this); //每个slide切换结束时运行当前slide动画
+                // this.slides.eq(this.activeIndex).find('.ani').removeClass('ani');//动画只展示一次
+            }
         }
-    }
+    })
 }
 
-//数据列表
-selectPage.prototype.setDataListHtml = function () {
-    var htmlArr = [];
-
-//    获取链接重的参数
-    var type = window.location.href.split('?')[1].split('=')[1];
-//    获取对应的数据
-    var data = this.listDate[type];
-
-    var htmlArr = [];
-    <!--主题部分-->
-    htmlArr.push('<div class="main">');
-    htmlArr.push('<img class="select-img" src="../images/' + data.selectImg + '">');
-    htmlArr.push('<div class="select-pillow">');
-    htmlArr.push('<p>专属定制</p>');
-    htmlArr.push('<p>One PILLOW</p>');
-    htmlArr.push('</div>');
-
-    htmlArr.push('<div class="select-pillow select-sleep">');
-    htmlArr.push('<p>好睡专题</p>');
-    htmlArr.push('<p>Good Sleep</p>');
-    htmlArr.push('</div>');
-
-    htmlArr.push('<div class="select-pillow select-assistant">');
-    htmlArr.push('<p>选枕助手</p>');
-    htmlArr.push('<p>Assistant</p>');
-    htmlArr.push('</div>');
-
-    htmlArr.push('<div class="select-pillow select-choose">');
-    htmlArr.push('<p>购物车</p>');
-    htmlArr.push('<p>Choose Assistant</p>');
-    htmlArr.push('</div>');
-
-    $('.main').html(htmlArr.join(''));
-}
-
-//初始化事件
-selectPage.prototype.initEvent = function () {
+// 初始化事件
+indexPage.prototype.initEvent = function () {
 
 }
 
 $(function () {
-    var selectPageObj = new selectPage();
-    selectPageObj.init();
+    var indexPageObj = new indexPage();
+    indexPageObj.init();
 })

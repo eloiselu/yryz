@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/commen.css">
     <link rel="stylesheet" href="../css/measure-step2.css">
     <link rel="stylesheet" href="../css/select.css">
+    <link rel="stylesheet" href="../plugins/swiper-4.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="../plugins/swiper-4.4.1/css/animate.min.css">
 </head>
 <body>
 <body>
@@ -21,9 +23,29 @@
 
 <!--主题部分-->
 <div class="main">
-    <!--<div class="select-img"></div>-->
-    <img class="select-img" src="../images/select-img.png" alt="">
-
+    <!--轮播图部分-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="select-img" src="../images/select-img1.png">
+            </div>
+            <div class="swiper-slide">
+                <img class="select-img" src="../images/select-img2.png">
+            </div>
+            <div class="swiper-slide">
+                <img class="select-img" src="../images/select-img3.png">
+            </div>
+            <div class="swiper-slide">
+                <img class="select-img" src="../images/select-img4.png">
+            </div>
+            <div class="swiper-slide">
+                <img class="select-img" src="../images/select-img5.png">
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!--导航-->
     <div class="select-pillow">
         <p>专属定制</p>
         <p>One PILLOW</p>
@@ -49,5 +71,7 @@
 </body>
 <script src="../js/jQuery-2.1.4.min.js"></script>
 <script src="../js/flexible.js"></script>
+<script src="../plugins/swiper-4.4.1/js/swiper.min.js"></script>
+<script src="../plugins/swiper-4.4.1/js/swiper.animate.min.js"></script>
 <script src="../js/select.js"></script>
 </html>

@@ -1,6 +1,9 @@
+body{
+    position: relative;
+}
 .main {
     text-align: center;
-    position: relative;
+
 }
 
 .select-img {

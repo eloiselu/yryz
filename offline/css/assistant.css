@@ -1,92 +1,96 @@
 /*修改公共head*/
-.assistant-head {
-    height: 2.86rem;
-    font-size: 0.86rem;
-    line-height: normal;
-    margin-top: 0.64rem;
-    margin-bottom: 0.7rem;
-}
-
-.assistant-text {
-    margin-top: 0.3rem;
+.assistant-title {
+    width: 9rem;
 }
 
 /*主体部分*/
 .main {
-    background-color: #fcfcfc;
-}
-
-.main .assistant {
+    border-top: 0.05rem solid #ababab;
     background-color: #ffffff;
-    margin-top: 1.56rem;
-    margin-left: 0.46rem;
-    position: relative;
 }
-
-/*左边部分*/
-.assistant .assistant-left {
-    padding-top: 0.74rem;
-    padding-left: 0.46rem;
-    padding-bottom: 0.7rem;
-    width: 15.9rem;
-
-}
-
-/*左边图片*/
-.assistant .left-img {
-    display: inline-block;
+/*左边列表选择部分*/
+.assistant-list {
+    width: 5.88rem;
+    color: #333333;
     float: left;
 }
 
-.assistant .assistant-img {
-    width: 6.92rem;
+.assistant-list .assistant-ul {
+    font-size: 0.56rem;
 }
 
-/*右边文字*/
-.assistant .right-text {
-    float: right;
+.assistant-list .assistant-li {
+    padding-left: 0.44rem;
+    height: 2.14rem;
+    line-height: 2.14rem;
+}
+
+.assistant-list .assistant-li a {
     display: inline-block;
-    font-size: 0.78rem;
     color: #333333;
-    padding-top: 0.4rem;
 }
 
-.text-subtitle {
-    font-size: 0.52rem;
-    padding-top: 0.2rem;
+.assistant-list .assistant-li a:hover{
+    color: #ac3028;
 }
 
-.text-money {
-    font-size: 0.74rem;
-    color: #ba0909;
+.list-small {
+    font-size: 0.46rem;
+    margin-right: 0.7rem;
 }
 
-.text-intro {
-    width: 7.5rem;
-    font-size: 0.48rem;
-    padding-top: 0.3rem;
-}
-
-/*右边增加部分*/
+/*右边详情*/
 .assistant-right {
-    position: absolute;
-    left: 19.05rem;
-    top: 5.38rem;
+    width: 12.84rem;
+    float: left;
+    border-left: 0.05rem solid #ababab;
 }
 
-.assistant-right .button-minus {
+/*上边大图*/
+.assistant-right img{
+    width: 12.84rem;
+}
+
+/*详情*/
+.assistant-particulars {
+    margin-top: 0.56rem;
+}
+
+.assistant-right .particulars-img {
     display: inline-block;
-    font-size: 1rem;
-    background-color: #ffffff;
-    border: 0;
+    width: 4.7rem;
+    padding-left: 0.43rem;
 }
 
-.assistant-right .button-count {
+/*右边介绍*/
+.assistant-right .particulars-text {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.particulars-text .text-title {
+    font-size: 0.55rem;
+}
+
+.particulars-text .text-subtitle {
+    font-size: 0.38rem;
+     padding-top: 0;
+}
+
+.particulars-text .text-join {
+    display: inline-block;
+    font-size: 0.48rem;
+    width: 3.28rem;
+    height: 0.98rem;
+    line-height: 0.98rem;
+    color: #ffffff;
+    background-color: #ba0909;
     text-align: center;
-    display: inline-block;
-    font-size: 0.5rem;
-    background-color: #f0f0f0;
-    width: 2.32rem;
-    height: 1.22rem;
-    line-height: 1.22rem;
+    border-radius: 2rem;
+    margin-left: 3.58rem;
 }
+
+.particulars-text .text-intro {
+    font-size: 0.4rem;
+}
+

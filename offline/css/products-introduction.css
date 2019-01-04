@@ -1,0 +1,114 @@
+/*修改公共head*/
+.products-head {
+    font-size: 0.46rem;
+    width: 5.7rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    background-color: #9f786c;
+    color: #000000;
+    margin-top: 0.55rem;
+    margin-bottom: 0.43rem;
+}
+
+/*主体部分*/
+.main {
+    background-color: #ffffff;
+}
+/*图片介绍部分*/
+.products-img {
+    width: 24.94rem;
+}
+
+/*商品描述*/
+.products-describe {
+    /*width: 16.74rem;*/
+    margin-top: 0.98rem;
+    margin-left: 0.68rem;
+    text-align: right;
+}
+
+.products-title {
+    font-size: 0.86rem;
+    text-align: left;
+}
+
+.products-subtitle {
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+.products-text {
+    margin-top: 0.2rem;
+    font-size: 0.48rem;
+    text-align: left;
+}
+
+.products-select {
+    display: inline-block;
+    width: 4.34rem;
+    height: 1.44rem;
+    line-height: 1.44rem;
+    font-size: 0.7rem;
+    text-align: center;
+    margin-bottom: 0.4rem;
+    margin-right: 1.32rem;
+    background-color: #dddddd;
+    color: #000;
+}
+
+.products-select a:hover {
+    color: #000;
+}
+
+    /*选择规格数量*/
+.products-specification {
+    border-top: 0.05rem solid #e0e0e0;
+    border-bottom: 0.3rem solid #e0e0e0;
+    height: 1.68rem;
+    line-height: 1.2rem;
+    font-size: 0.58rem;
+    position: relative;
+    color: #000;
+}
+
+.products-specification a:hover {
+    color: #000;
+}
+
+.specification-num {
+    display: inline-block;
+    padding-left: 0.68rem;
+}
+
+.specification-gt {
+    display: inline-block;
+    font-size: 0.8rem;
+    position: absolute;
+    /*top: 0.56rem;*/
+    right: 1.7rem;
+}
+
+/*商品参数*/
+.products-parameter {
+    position: relative;
+}
+
+.parameter-text {
+    font-size: 0.9rem;
+    padding-left: 0.68rem;
+    padding-top: 0.46rem;
+}
+
+.parameter-join {
+    display: inline-block;
+    width: 5.6rem;
+    height: 1.64rem;
+    line-height: 1.64rem;
+    font-size: 0.74rem;
+    text-align: center;
+    background-color: #b08f5a;
+    color: #ffffff;
+    border-radius: 2.2rem;
+    position: absolute;
+    right: 0.38rem;
+}
