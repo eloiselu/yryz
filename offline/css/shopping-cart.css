@@ -1,3 +1,7 @@
+body {
+    background-color: #ffffff;
+}
+
 /*修改公共head*/
 .cart-head {
     height: 2.86rem;

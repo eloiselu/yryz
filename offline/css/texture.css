@@ -1,3 +1,7 @@
+body {
+    background-color: #ffffff;
+}
+
 /*丰富材质底部高度*/
 .tit-bottom {
  margin-bottom: 1.1rem;

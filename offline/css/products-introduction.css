@@ -1,3 +1,7 @@
+body {
+    background-color: #442c2b;
+}
+
 /*修改公共head*/
 .products-head {
     font-size: 0.46rem;
