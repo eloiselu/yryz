@@ -91,7 +91,7 @@ li {
     font-size: 1rem;
     background-color: #ffffff;
     border: 0.01rem solid #ffffff;
-    /*cursor:pointer; !*鼠标变小手*!*/
+    cursor:pointer; /*鼠标变小手*/
 }
 
 .cart-right .button-count {
