@@ -19,8 +19,8 @@ productsIntroductionPage.prototype.init = function () {
 //枕头列表数据
 productsIntroductionPage.prototype.setData = function () {
     this.listData = {
-        'child': {
-            'bigImg': 'productsIntroduction-img-child.png',
+        'lightgray': {
+            'bigImg': 'productsIntroduction-img-lightgray.png',
             'title': '智能测量＋专属调节',
             'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
             'feature': '可水洗TPE弹性粒子',
@@ -33,8 +33,8 @@ productsIntroductionPage.prototype.setData = function () {
             'feature': '可水洗TPE弹性粒子',
             'hotNum': '20'
         },
-        'gray': {
-            'bigImg': 'productsIntroduction-img-gray.png',
+        'brown': {
+            'bigImg': 'productsIntroduction-img-brown.png',
             'title': '智能测量＋专属调节',
             'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
             'feature': '可水洗TPE弹性粒子',
@@ -49,6 +49,13 @@ productsIntroductionPage.prototype.setData = function () {
         },
         'white': {
             'bigImg': 'productsIntroduction-img-white.png',
+            'title': '智能测量＋专属调节',
+            'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
+            'feature': '可水洗TPE弹性粒子',
+            'hotNum': '20'
+        },
+        'gray': {
+            'bigImg': 'productsIntroduction-img-gray.png',
             'title': '智能测量＋专属调节',
             'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
             'feature': '可水洗TPE弹性粒子',
