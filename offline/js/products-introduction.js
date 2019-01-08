@@ -23,31 +23,36 @@ productsIntroductionPage.prototype.setData = function () {
             'bigImg': 'productsIntroduction-img-child.png',
             'title': '智能测量＋专属调节',
             'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
-            'feature': '可水洗TPE弹性粒子 热销 20万件'
+            'feature': '可水洗TPE弹性粒子',
+            'hotNum': '20'
         },
         'blue': {
             'bigImg': 'productsIntroduction-img-blue.png',
             'title': '智能测量＋专属调节',
             'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
-            'feature': '可水洗TPE弹性粒子 热销 20万件'
+            'feature': '可水洗TPE弹性粒子',
+            'hotNum': '20'
         },
         'gray': {
             'bigImg': 'productsIntroduction-img-gray.png',
             'title': '智能测量＋专属调节',
             'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
-            'feature': '可水洗TPE弹性粒子 热销 20万件'
+            'feature': '可水洗TPE弹性粒子',
+            'hotNum': '20'
         },
         'cheese': {
             'bigImg': 'productsIntroduction-img-cheese.png',
             'title': '智能测量＋专属调节',
             'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
-            'feature': '可水洗TPE弹性粒子 热销 20万件'
+            'feature': '可水洗TPE弹性粒子',
+            'hotNum': '20'
         },
         'white': {
             'bigImg': 'productsIntroduction-img-white.png',
             'title': '智能测量＋专属调节',
             'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
-            'feature': '可水洗TPE弹性粒子 热销 20万件'
+            'feature': '可水洗TPE弹性粒子',
+            'hotNum': '20'
         }
     }
 }
@@ -63,24 +68,30 @@ productsIntroductionPage.prototype.setDataListHtml = function () {
 
     var htmlArr = [];
     <!--图片介绍-->
-    htmlArr.push('<img class="products-img" src="../images/'+data.bigImg+'" alt="">');
-        <!--商品描述-->
+    htmlArr.push('<img class="products-img" src="../images/' + data.bigImg + '" alt="">');
+    htmlArr.push('<div class="products-imgtext">7天无忧退货<span class="imgtext-hg">-</span>48小时极速退款<span class="imgtext-hg">-</span>满200元免邮费</div>');
+    <!--商品描述-->
     htmlArr.push('<div class="products-describe ">');
-    htmlArr.push('<p class="products-title">'+data.title+'</p>');
-    htmlArr.push('<p class="products-subtitle">'+data.subtitle+'</p>');
-    htmlArr.push('<p class="products-text">'+data.feature+'</p>');
-    htmlArr.push('<a href="javascript:;" class="products-select">更多选择</a>');
-        htmlArr.push('</div>');
-        <!--请选择规格数量-->
-        htmlArr.push('<div class="products-specification fix">');
-        htmlArr.push('<span class="specification-num">请选择规格数量</span>');
-        htmlArr.push('<a href="javascript:;" class="specification-gt">&gt;</a>');
-        htmlArr.push('</div>');
-        <!--商品参数-->
-        htmlArr.push('<div class="products-parameter fix">');
-        htmlArr.push('<p class="parameter-text">商品参数</p>');
-        htmlArr.push('<a href="javascript:;" class="parameter-join">加入购物车</a>');
-        htmlArr.push('</div>');
+    htmlArr.push('<p class="products-title">' + data.title + '</p>');
+    htmlArr.push('<p class="products-subtitle">' + data.subtitle + '</p>');
+    htmlArr.push('<p class="products-text">' + data.feature + '</p>');
+    htmlArr.push('<p class="products-text">' + data.feature + '热销' + data.hotNum + '万件</p>');
+    htmlArr.push('<div class="products-select">');
+    htmlArr.push('<a href="javascript:;" class="pro-link">更多选择</a>');
+    htmlArr.push('</div>');
+    htmlArr.push('</div>');
+    <!--请选择规格数量-->
+    htmlArr.push('<div class="products-specification fix">');
+    htmlArr.push('<span class="specification-num">请选择规格数量</span>');
+    htmlArr.push('<a href="javascript:;" class="specification-gt">&gt;</a>');
+    htmlArr.push('</div>');
+    <!--商品参数-->
+    htmlArr.push('<div class="products-parameter fix">');
+    htmlArr.push('<p class="parameter-text">商品参数</p>');
+    htmlArr.push('<div class="parameter-join">');
+    htmlArr.push('<a href="javascript:;" class="par-join">加入购物车</a>');
+    htmlArr.push('</div>');
+    htmlArr.push('</div>');
 
     $('.main').html(htmlArr.join(''));
 }
