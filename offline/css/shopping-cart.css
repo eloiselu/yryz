@@ -20,16 +20,16 @@ body {
     background-color: #fcfcfc;
 }
 
-.main .cart {
-    background-color: #ffffff;
-    margin-top: 0.7rem;
-    margin-left: 0.46rem;
-    margin-right: 0.6rem;
-    position: relative;
+.cart-cont {
+    margin-top: 1.56rem;
 }
 
-.main .cart-first {
-    margin-top: 1.56rem;
+.main .cart-cont .cart {
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 0.7rem;
+    padding-left: 0.46rem;
+    position: relative;
 }
 
 /*左边部分*/
@@ -38,12 +38,12 @@ body {
     padding-left: 0.46rem;
     padding-bottom: 0.7rem;
     width: 15.9rem;
+    float: left;
 
 }
 
 /*左边图片*/
 .cart .left-img {
-    display: inline-block;
     float: left;
 }
 
@@ -54,7 +54,6 @@ body {
 /*右边文字*/
 .cart .right-text {
     float: right;
-    display: inline-block;
     font-size: 0.78rem;
     color: #333333;
     padding-top: 0.4rem;
@@ -73,42 +72,47 @@ body {
 .text-intro {
     width: 7.5rem;
     font-size: 0.48rem;
-    padding-top: 0.3rem;
+    padding-top: 0.2rem;
 }
 
 /*右边增加部分*/
 .cart-right {
-    position: absolute;
-    left: 19.05rem;
-    top: 5.38rem;
-}
-li {
-   display: inline-block;
+    float: right;
+    margin-top: 5.12rem;
+    margin-right: .6rem;
+    /*定位版*/
+    /*position: absolute;*/
+    /*left: 19.05rem;*/
+    /*top: 5.38rem;*/
 }
 
 .cart-right .button-minus {
-    display: inline-block;
     font-size: 1rem;
     background-color: #ffffff;
     border: 0.01rem solid #ffffff;
     cursor:pointer; /*鼠标变小手*/
+    vertical-align:middle;
+}
+
+.cart-right .but {
+    font-size: 1.3rem;
 }
 
 .cart-right .button-count {
     text-align: center;
-    display: inline-block;
     font-size: 0.5rem;
     background-color: #f0f0f0;
     width: 2.32rem;
     height: 1.22rem;
     line-height: 1.22rem;
     border: 0;
+    vertical-align:middle;
 }
 
 .button-down {
-    margin-right: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .button-up {
-    margin-left: 0.5rem;
+    padding-left: 0.5rem;
 }
