@@ -58,10 +58,9 @@ body {
     position: relative;
     display: inline-block;
 }
+/*选中对勾*/
 .choose:after {
-    /*content: url(../images/measure-step1-pink.png);*/
-
-    content: "/";
+    content: "  ";
     background-image: url("../images/measure-step1-pink.png");
     background-size: 1.3rem;
     display: block;

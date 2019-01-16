@@ -10,11 +10,11 @@ measureStep2.prototype.init = function () {
     // 视频大小
     this.constraints = {
         audio: false,
-        video: true
-        // video: {
-        //     width: {ideal: 1280},
-        //     height: {ideal: 1280}
-        // }
+        video: {
+            width: {ideal: 1280},
+            height: {ideal: 720},
+            facingMode: {exact: "environment"}
+        }
     };
     // 视频元素
     this.video;
@@ -31,21 +31,20 @@ measureStep2.prototype.initMediaDevices = function () {
     var that = this;
 
     // 开启视频
-    navigator.mediaDevices.getUserMedia(this.constraints).then(function (mediaStream) {
-        console.log('getUserMedia:', mediaStream);
+    navigator.mediaDevices.getUserMedia(this.constraints)
+        .then(function (mediaStream) {
+            console.log('getUserMedia:', mediaStream);
 
-        that.video = document.querySelector('#video');
-        that.video.srcObject = mediaStream;
-        that.video.videoWidth = "859px";
-        that.video.videoHeight = "1326px";
+            that.video = document.querySelector('#video');
+            that.video.srcObject = mediaStream;
 
-        that.video.onloadedmetadata = function (e) {
-            that.video.play();
-        };
-
-    }).catch(function (err) {
-        console.log(err.name + ": " + err.message);
-    });
+            that.video.onloadedmetadata = function (e) {
+                that.video.play();
+            };
+        })
+        .catch(function (err) {
+            console.log(err.name + ": " + err.message);
+        });
 };
 
 //初始化事件
