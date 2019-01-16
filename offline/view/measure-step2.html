@@ -38,17 +38,22 @@
 </div>
 
 <!--主体模块部分-->
-<div class="main fix">
-    <!--人物图片-->
-    <img class="measure-step2-img" src="../images/measure-step2-img.png" alt="">
-    <!--摄像头-->
-    <video class="video" src=""></video>
-    <button class='shot'>拍照</button>
-    <canvas id='canvas'></canvas>
-    <img src=''>
+<div class="main">
+    <!--拍照部分-->
+    <div class="photograph">
+        <!--摄像头-->
+        <video id="video" class="video" src=""></video>
+        <canvas class="canvas" id="canvas"></canvas>
+        <img class="picture" id="picture" src="">
+
+        <!--人物图片-->
+        <!--<img class="measure-step2-img" src="../images/measure-step2-img.png" alt="">-->
+        <!--<button class='shot'>拍照</button>-->
+    </div>
+
     <!--底部相机按钮图片-->
     <div class="measure-step2-camera shot">
-        <a href="javascript:;">
+        <a id="take" href="javascript:;">
             <img src="../images/measure-camera.png" alt="">
         </a>
     </div>
