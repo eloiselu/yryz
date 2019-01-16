@@ -7,6 +7,7 @@ body {
     text-align: center;
     background-color: #442c2b;
 }
+
 .measure1-title {
     display: inline-block;
     width: 9.95rem;
@@ -35,13 +36,59 @@ body {
     color: #b4a078;
 }
 
+/*选择性别*/
+.measure1-gender {
+    margin-top: 0.7rem;
+    text-align: center;
+    margin-bottom: 0.6rem;
+    
+}
+
+.gender {
+    width: 3.54rem;
+    margin-left: 1.05rem;
+    margin-right: 1.05rem;
+}
+
+.gender-text {
+    display: inline-block;
+}
+
+.gender-man {
+    position: relative;
+    display: inline-block;
+}
+
+.gender-woman {
+    position: relative;
+    display: inline-block;
+}
+
+.gender-pink {
+    position: absolute;
+    top: 2.66rem;
+    right: 1rem;
+    width: 1.3rem;
+}
+
+.hair {
+    display: inline-block;
+    position: relative;
+}
+
+/*选择发型*/
+.measure1-hair {
+    text-align: center;
+    margin-bottom: 1.1rem;
+}
+
 /*测量描述*/
 .measure1-describe {
     font-size: 0.84rem;
 
 }
 
-    /*小圆圈*/
+/*小圆圈*/
 .measure1-describe span {
     display: inline-block;
     width: 0.48rem;
@@ -54,7 +101,7 @@ body {
 
 /*二级图片介绍部分*/
 
-.measure1-subimg img{
+.measure1-subimg img {
     width: 21.76rem;
     height: 7.04rem;
     margin-top: 1.22rem;

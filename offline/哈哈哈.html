@@ -1,26 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        div {
-            background-color: #007aff;
-            width: 100px;
-            height: 100px;
-        }
-        a {
-            display: inline-block;
-            width: 100px;
-            height: 100px;
-        }
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <script type="text/javascript" src="./js/jQuery-2.1.4.min.js"></script>
+    <style type="text/css">
+        body{font-size:13px}
+        img{display:none;cursor:pointer}
     </style>
-</head>
-<body>
-<!--<div><a href="./01-test.html"></a></div>-->
-<div><a href="./02-test.html"></a></div>
-</body>
-<script>
+    <script type="text/javascript" >
+        $(function(){
+            $("a").click(function(){ //显示连接
+                $("img").show(function(){
+                })
+            })
+        })
+    </script>
 
-</script>
+</head>
+
+<body>
+<a>显示</a>
+<img src="./images/head-img.png" />
+</body>
 </html>
