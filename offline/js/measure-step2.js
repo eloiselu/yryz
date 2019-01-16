@@ -36,6 +36,9 @@ measureStep2.prototype.initMediaDevices = function () {
 
         that.video = document.querySelector('#video');
         that.video.srcObject = mediaStream;
+        that.video.videoWidth = "859px";
+        that.video.videoHeight = "1326px";
+
         that.video.onloadedmetadata = function (e) {
             that.video.play();
         };
