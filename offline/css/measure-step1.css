@@ -59,28 +59,23 @@ body {
     display: inline-block;
 }
 
-.gender-woman {
-    position: relative;
-    display: inline-block;
-}
-
-.gender-pink {
+.gender-pick {
     position: absolute;
     top: 2.66rem;
     right: 1rem;
     width: 1.3rem;
 }
 
-.hair {
-    display: inline-block;
-    position: relative;
-}
+/*.hair {*/
+    /*display: inline-block;*/
+    /*position: relative;*/
+/*}*/
 
 /*选择发型*/
-.measure1-hair {
-    text-align: center;
-    margin-bottom: 1.1rem;
-}
+/*.measure1-hair {*/
+    /*text-align: center;*/
+    /*margin-bottom: 1.1rem;*/
+/*}*/
 
 /*测量描述*/
 .measure1-describe {
