@@ -1,5 +1,7 @@
 body {
     background-color: #442c2b;
+    /*让视频超出宽度后不显示横向滚动条*/
+    overflow-x: hidden;
 }
 
 /*模块名称部分*/
@@ -51,7 +53,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    /*width: 100%;*/
     height: 37.76rem;
     object-fit: cover;
     /*background-image: url("../images/measure-step2-img.png");*/
@@ -61,6 +63,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 37.76rem;
+}
+
+.picture {
     width: 100%;
     height: 37.76rem;
 }
@@ -82,7 +89,6 @@ body {
     text-align: center;
     padding-top: 1.16rem;
     padding-bottom: 1rem;
-
 }
 
 .measure-step2-camera a {
