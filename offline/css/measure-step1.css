@@ -58,6 +58,18 @@ body {
     position: relative;
     display: inline-block;
 }
+.choose:after {
+    /*content: url(../images/measure-step1-pink.png);*/
+
+    content: "/";
+    background-image: url("../images/measure-step1-pink.png");
+    background-size: 1.3rem;
+    display: block;
+    position: absolute;
+    top: 2.66rem;
+    right: 1rem;
+    width: 1.3rem;
+}
 
 .choose-pick {
     position: absolute;
