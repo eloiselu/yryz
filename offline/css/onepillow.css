@@ -44,3 +44,27 @@ body {
     margin-top: 2.32rem;
     font-size: 0.52rem;
 }
+
+/*第二屏轮播*/
+.carousel-2 {
+    background-color: #6d5a5a;
+    padding-bottom: 4.2rem;
+    padding-top: 3.88rem;
+    margin-top: 4.26rem;
+}
+
+.carousel-2 .introduce-text {
+    text-align: left;
+    width: 16.8rem;
+    font-size: 0.8rem;
+    margin: 0 auto;
+}
+
+/*第三屏轮播*/
+.carousel-1 {
+   background-color: #1b0706;
+}
+
+.carousel-1  .sleep-img {
+    width: 100%;
+}

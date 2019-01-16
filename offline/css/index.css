@@ -3,9 +3,15 @@ body {
     text-align: center;
     color: #d9a18f;
 }
+
+.main {
+    margin-top: 0.9rem;
+}
+
 .index-first {
     padding-top: 11.62rem;
 }
+
 .logo {
     width: 14.02rem;
     height: 10.46rem;
@@ -27,7 +33,34 @@ body {
 }
 
 /*轮播*/
-.select-img {
-    width: 24.94rem;
+.carousel .select-img {
+    width: 100%;
+}
+
+/*导航*/
+.carousel-nav {
+    position: relative;
+}
+
+.carousel-nav .car-nav {
+    position: absolute;
+    top: 6.73rem;
+    /*left: 5.9rem;*/
+}
+
+.carousel-nav .nav-link {
+    display: inline-block;
+    /*background-color: #44282d;*/
+    background: RGBA(57, 37, 36, 0.85);
+    width: 13.08rem;
+    height: 4.4rem;
+    font-size: 1.32rem;
+    color: #d9a18f;
+    border-radius: 2.2rem;
+    margin-top: 2.56rem;
+}
+
+.carousel-nav .nav-title {
+    padding-top: 0.2rem;
 }
 

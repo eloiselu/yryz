@@ -40,13 +40,17 @@
 
 
 <!--主体模块部分-->
-<div class="main">
+<div class="main fix">
     <!--人物图片-->
     <img class="measure-step3-img" src="../images/measure-step3-img.png" alt="">
-
+    <!--摄像头-->
+    <video class="video" src=""></video>
+    <canvas id='canvas'></canvas>
+    <button class='shot'>拍照</button>
+    <img src=''>
     <!--底部相机按钮图片-->
     <div class="measure-step3-camera">
-        <a href="javascript:;">
+        <a href="../view/measure-step4.html">
             <img src="../images/measure-camera.png" alt="">
         </a>
     </div>
@@ -56,4 +60,6 @@
 </body>
 <script src="../js/jQuery-2.1.4.min.js"></script>
 <script src="../js/flexible.js"></script>
+<script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+<script src="../js/measure-step2.js"></script>
 </html>
