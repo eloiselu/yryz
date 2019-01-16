@@ -37,14 +37,14 @@ body {
 }
 
 /*选择性别*/
-.measure1-gender {
+.measure1-gender,.measure1-hair {
     margin-top: 0.7rem;
     text-align: center;
     margin-bottom: 0.6rem;
     
 }
 
-.gender {
+.gender, .hair-length {
     width: 3.54rem;
     margin-left: 1.05rem;
     margin-right: 1.05rem;
@@ -54,12 +54,12 @@ body {
     display: inline-block;
 }
 
-.gender-man {
+.gender-man, .hair {
     position: relative;
     display: inline-block;
 }
 
-.gender-pick {
+.gender-pick, .hair-pick {
     position: absolute;
     top: 2.66rem;
     right: 1rem;
