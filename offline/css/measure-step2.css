@@ -55,21 +55,20 @@ body {
     left: 0;
     /*width: 100%;*/
     height: 37.76rem;
-    object-fit: cover;
-    /*background-image: url("../images/measure-step2-img.png");*/
+    /*object-fit: cover;*/
 }
 
 .canvas {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 37.76rem;
+    /*width: 100%;*/
+    /*height: 37.76rem;*/
 }
 
 .picture {
-    width: 100%;
-    height: 37.76rem;
+    /*width: 100%;*/
+    /*height: 37.76rem;*/
 }
 
 /*人物图片*/

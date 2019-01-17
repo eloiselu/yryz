@@ -7,6 +7,16 @@ var measureStep2 = function () {
 
 //初始化
 measureStep2.prototype.init = function () {
+    // 视频元素
+    this.video = document.querySelector('#video');
+    // 视频信息
+    this.videoInfo = {
+        videoWidth: "",
+        videoHeight: "",
+        eleWidth: "",
+        eleHeight: ""
+    };
+
     // 视频大小
     this.constraints = {
         audio: false,
@@ -15,8 +25,7 @@ measureStep2.prototype.init = function () {
             height: {ideal: 720}
         }
     };
-    // 视频元素
-    this.video;
+
 
     // 初始化摄像头
     this.initMediaDevices();
@@ -33,22 +42,18 @@ measureStep2.prototype.initMediaDevices = function () {
         .then(function (mediaStream) {
             console.log('getUserMedia:', mediaStream);
 
-            that.video = document.querySelector('#video');
             that.video.srcObject = mediaStream;
-
             that.video.onloadedmetadata = function (e) {
-                console.log(e);
                 that.video.play();
 
-                // 获取视频的宽度
-                console.log(that.video.clientWidth);
-                console.log(that.video.clientHeight);
-                // 获取屏幕的宽度
-                console.log(document.body.clientWidth);
+                // 获取视频信息
+                that.videoInfo.eleWidth = that.video.clientWidth;
+                that.videoInfo.eleHeight = that.video.clientHeight;
+                that.videoInfo.videoWidth = e.target.videoWidth;
+                that.videoInfo.videoHeight = e.target.videoHeight;
 
                 // 设置video的位置偏移
-                $(that.video).css({left: -((that.video.clientWidth -document.body.clientWidth) / 2)});
-                // $(that.video).offsetLeft((that.video.clientWidth -document.body.clientWidth) / 2);
+                $(that.video).css({left: -((that.videoInfo.eleWidth - document.body.clientWidth) / 2)});
             };
         })
         .catch(function (err) {
@@ -63,17 +68,22 @@ measureStep2.prototype.initEvent = function () {
     $('#take').on('click', function () {
         // 使用canvas进行拍照
         var canvas = document.getElementById('canvas');
+        // 设置canvas的宽为屏幕宽度, 高为视频元素高度
+        canvas.width = document.body.clientWidth;
+        canvas.height = that.videoInfo.eleHeight;
 
-        // 获取video的宽高
-        // canvas.getContext('2d').drawImage(video, 0, 0, that.video.clientWidth, that.video.clientHeight);
-        // $('#picture').css('src', canvas.toDataURL("image/png"))
+        // 设置显示比例，视频实际高度/视频元素高度
+        var proportion = that.videoInfo.videoHeight / that.videoInfo.eleHeight;
 
+        // 设置开始截取的坐标位置，偏移位置*显示比例
+        var cutX =((that.videoInfo.eleWidth - document.body.clientWidth) / 2) * proportion;
+        // 设置实际要截取的宽高
+        var cutWidth = canvas.width * proportion;
+        var cutHeight = canvas.height * proportion;
 
-        //绘制canvas图形
-        // canvas.getContext('2d').drawImage(video, 0, 0, that.video.clientWidth, that.video.clientHeight);
-        canvas.getContext('2d').drawImage(video, -432, -191, that.video.clientWidth, that.video.clientHeight);
-
-        //把canvas图像转为img图片
+        // 绘制canvas图形
+        canvas.getContext('2d').drawImage(video, cutX, 0, cutWidth, cutHeight, 0, 0, canvas.width, canvas.height);
+        // 设置图片
         document.getElementById('picture').src = canvas.toDataURL("image/png");
     })
 };
