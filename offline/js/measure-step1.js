@@ -2,23 +2,30 @@
  * Created by lupan on 2019/1/16.
  */
 
-// function gender(){
-//
-//     if($(".gender").css("display")=='none'){//如果show是隐藏的
-//
-//         $("#show").css("display","block");//show的display属性设置为block（显示）
-//
-//     }else{//如果show是显示的
-//
-//         $("#show").css("display","none");//show的display属性设置为none（隐藏）
-//
-//     }
-//
-// }
+var measureStep1 = function () {
+    return this;
+}
 
-$(function(){
-    $("#gender").click(function(){ //显示连接
-        $("#gender-pink").show(function(){
-        })
+//初始化
+measureStep1.prototype.init = function () {
+    //初始化事件
+    this.initEvent();
+};
+
+//初始化事件
+measureStep1.prototype.initEvent = function () {
+    $('.choose').on('click', function () {
+        if($(this).hasClass('active')){
+            $(this).siblings().removeClass('active');
+        }
+        else{
+            $(this).addClass("active");
+        }
+
     })
-})
+};
+
+$(function () {
+    var measureStep1Obj = new measureStep1();
+    measureStep1Obj.init();
+});

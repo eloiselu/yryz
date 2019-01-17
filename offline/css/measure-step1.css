@@ -57,9 +57,10 @@ body {
 .choose {
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 /*选中对勾*/
-.choose:after {
+.choose.active:after {
     content: "  ";
     background-image: url("../images/measure-step1-pink.png");
     background-size: 1.3rem;
