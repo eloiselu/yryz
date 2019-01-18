@@ -18,7 +18,9 @@ body {
     background-color: #442c2b;
     color: #d9a18f;
 }
-
+.main .onepillow {
+    padding-top: 1rem;
+}
 /*title部分*/
 .main .onepillow-title {
     font-size: 1.3rem;
