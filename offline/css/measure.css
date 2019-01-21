@@ -49,6 +49,12 @@ body {
     margin-top: 0.62rem;
 }
 
+/*底部模块部分*/
+.measure-foot {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
 /*开始测量按钮*/
 .measure-button {
     display: inline-block;
@@ -63,4 +69,8 @@ body {
     margin: 0 auto;
     margin-top: 2.0rem;
     cursor:pointer; /*变小手*/
+}
+
+.step-right {
+    margin-left: 1.86rem;
 }

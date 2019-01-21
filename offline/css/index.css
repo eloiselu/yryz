@@ -9,7 +9,7 @@ body {
 }
 
 .index-first {
-    padding-top: 11.62rem;
+    padding-top: 9rem;
 }
 
 .logo {
@@ -21,15 +21,17 @@ body {
 .logo-img {
     width: 13.97rem;
     height: 3.11rem;
-    margin-top: 0.7rem;
+    margin-top: 1.5rem;
 }
 
 .title {
     font-size: 1.09rem;
+    margin-top: .9rem;
 }
 
 .subtitle {
     font-size: 1.57rem;
+    margin-top: .9rem;
 }
 
 /*轮播*/
