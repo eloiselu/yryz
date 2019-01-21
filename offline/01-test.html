@@ -1,64 +1,61 @@
+
 <!DOCTYPE html>
-<html lang="ZH-CN">
+<html>
 <head>
     <meta charset="utf-8">
-    <title>web RTC 测试</title>
-    <style>
-        .booth {
-            width:400px;
-
-            background:#ccc;
-            border: 10px solid #ddd;
-            margin: 0 auto;
+    <title>进度条效果</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <style type="text/css">
+        #progress
+        {
+            background:white;
+            height:20px;
+            padding:2px;
+            border:1px solid green;
+            margin:2px;
+        }
+        #progress span
+        {
+            background:green;
+            height:16px;
+            text-align:center;
+            padding:1px;
+            margin:1px;
+            display:block;
+            color:yellow;
+            font-weight:bold;
+            font-size:14px;
+            width:0%;
         }
     </style>
+    <script type="text/javascript">
+        var progress_node_id = "progress";
+        function SetProgress(progress) {
+            if (progress) {
+                $("#" + progress_node_id + " > span").css("width", String(progress) + "%");
+                $("#" + progress_node_id + " > span").html(String(progress) + "%");
+            }
+        }
+        var i = 0;
+        function doProgress() {
+            if (i > 100) {
+                alert("Progress Bar Finished!");
+                return;
+            }
+            if (i <= 100) {
+                setTimeout("doProgress()", 500);
+                SetProgress(i);
+                i++;
+            }
+        }
+        $(document).ready(function() {
+            doProgress();
+        });
+    </script>
 </head>
 <body>
-<div class="booth">
-    <video id="video" width="400" height="300"></video>
-    <button id='tack'> snap shot</button>
-    <canvas id='canvas' width='400' height='300'></canvas>
-    <img id='img' src=''>
-</div>
-
-
-<script>
-    var video = document.getElementById('video'),
-        canvas = document.getElementById('canvas'),
-        snap = document.getElementById('tack'),
-        img = document.getElementById('img'),
-        vendorUrl = window.URL || window.webkitURL;
-
-    //媒体对象
-    navigator.getMedia = navigator.getUserMedia ||
-        navagator.webkitGetUserMedia ||
-        navigator.mozGetUserMedia ||
-        navigator.msGetUserMedia;
-
-    navigator.getMedia({
-        video: true, //使用摄像头对象
-        audio: false  //不适用音频
-    }, function(strem){
-        console.log(strem);
-        // video.src = vendorUrl.createObjectURL(strem);
-        video.srcObject = strem;
-        video.play();
-    }, function(error) {
-        //error.code
-        console.log(error);
-    });
-
-
-
-    snap.addEventListener('click', function(){
-
-        //绘制canvas图形
-        canvas.getContext('2d').drawImage(video, 0, 0, 400, 300);
-
-        //把canvas图像转为img图片
-        img.src = canvas.toDataURL("image/png");
-
-    })
-</script>
+<h1>jQuery实现进度条效果代码</h1>
+<p>原理就是使用 Javascript 控制 SPAN CSS 的宽度（以及其他的样式），刷新查看</p>
+<div id="progress"><span></span></div>
 </body>
 </html>
