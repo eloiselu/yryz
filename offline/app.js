@@ -3,7 +3,7 @@ var path = require('path');
 var app = express();
 
 // 设定静态文件目录，比如本地文件
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/')));
 
 // 首页
 app.get('/', function (req, res) {
@@ -55,35 +55,36 @@ app.get('/view/measure-step6.html', function (req, res) {
     res.sendFile(__dirname + '/view/measure-step6.html');
 });
 
-//
-app.get('/view/.html', function (req, res) {
-    res.sendFile(__dirname + '/view/.html');
+// 专属定制
+app.get('/view/onepillow.html', function (req, res) {
+    res.sendFile(__dirname + '/view/onepillow.html');
 });
 
-//
-app.get('/view/.html', function (req, res) {
-    res.sendFile(__dirname + '/view/.html');
+// 产品购物页
+app.get('/view/products-introduction.html', function (req, res) {
+    res.sendFile(__dirname + '/view/products-introduction.html');
 });
 
-//
-app.get('/view/.html', function (req, res) {
-    res.sendFile(__dirname + '/view/.html');
+// 购物车
+app.get('/view/shopping-cart.html', function (req, res) {
+    res.sendFile(__dirname + '/view/shopping-cart.html');
 });
 
-//
-app.get('/view/.html', function (req, res) {
-    res.sendFile(__dirname + '/view/.html');
+// 丰富材质
+app.get('/view/texture.html', function (req, res) {
+    res.sendFile(__dirname + '/view/texture.html');
 });
 
-//
-app.get('/view/.html', function (req, res) {
-    res.sendFile(__dirname + '/view/.html');
+// 材质详情页
+app.get('/view/texture-detail.html', function (req, res) {
+    res.sendFile(__dirname + '/view/texture-detail.html');
 });
 
-//
-app.get('/view/.html', function (req, res) {
-    res.sendFile(__dirname + '/view/.html');
+// 用户列表
+app.get('/view/userlist.html', function (req, res) {
+    res.sendFile(__dirname + '/view/userlist.html');
 });
 
-
-app.listen(3010);
+app.listen(3010, function () {
+    console.log("已启动一人一枕项目，监听3010端口")
+});
