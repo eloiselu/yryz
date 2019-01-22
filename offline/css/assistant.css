@@ -45,7 +45,6 @@ body {
 
 /*右边详情*/
 .assistant-right {
-    width: 12.84rem;
     float: left;
     border-left: 0.05rem solid #ababab;
 }
@@ -96,5 +95,79 @@ body {
 
 .particulars-text .text-intro {
     font-size: 0.4rem;
+}
+
+
+
+
+
+/*左侧图片部分*/
+.right {
+    padding-left: 0.43rem;
+}
+.list-left {
+    /*position: relative;*/
+    float: left;
+    /*width: 2.9rem;*/
+    /*height: 3rem;*/
+    background-color: #ddd;
+    padding: .3rem;
+}
+
+.list-left img {
+    width: 4rem;
+    height: 3.3rem;
+}
+
+.list-left .img-bottom {
+    /*position: absolute;*/
+    /*bottom: .3rem;*/
+    /*left: .2rem;*/
+    margin-top: -.15rem;
+    width: 4rem;
+    height: .96rem;
+    background: url("../images/assistant-img-bottom.png") no-repeat;
+    background-size: 4rem;
+
+}
+
+/*右侧文本部分*/
+.list-right {
+    position: relative;
+    float: left;
+    width:  7.84rem;
+    padding: 0 .5rem;
+}
+
+.list-right .list-title {
+    font-size: .55rem;
+    padding-top: 0.3rem;
+}
+
+.list-right .list-subtitle {
+    font-size: .38rem;
+}
+
+.list-right .buy-button {
+    position: absolute;
+    top: 1.2rem;
+    right: .38rem;
+    width: 3.28rem;
+    height: .98rem;
+    line-height: .98rem;
+    font-size: .48rem;
+    color: #fff;
+    text-align: center;
+    background: #ba0909;
+    border-radius: .6rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.list-right .list-desc {
+    margin-top: .6rem;
+    font-size: .4rem;
+    /*line-height: .50rem;*/
 }
 
