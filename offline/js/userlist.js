@@ -13,11 +13,10 @@ userlist.prototype.init = function () {
 // 获取用户列表数据
 userlist.prototype.getUserData = function () {
     var data = {};
-    data.areaId = $("#areaPermit").val();
-    data.dateId = $("#dateId").val();
-    data.queryFrom = "business"
-    data.pageChoose = $("#pageChoose").val();
-    var url = "/dashboard/getCinemaByArea";
+    data.device_sn = "test_lp";
+    data.page = "1";
+    data.pageSize = "100";
+    var url = "https://store.1001pillows.com/webpillow/list.html";
     ajax.load(url, data, function (result) {
         console.log(result);
     });
