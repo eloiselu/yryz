@@ -22,50 +22,74 @@ productsIntroductionPage.prototype.setData = function () {
         'lightgray': {
             'bigImg': 'productsIntroduction-img-lightgray.png',
             'title': '智能测量＋专属调节',
-            'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
+            'subtitle': '浅灰色 3D 网 TPE 弹性体枕  TPE Elastomer',
             'feature': '可水洗TPE弹性粒子',
             'hotNum': '20'
         },
         'blue': {
             'bigImg': 'productsIntroduction-img-blue.png',
             'title': '智能测量＋专属调节',
-            'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
+            'subtitle': '宝蓝色 3D 网 TPE 弹性体枕  TPE Elastomer',
+            'feature': '可水洗TPE弹性粒子',
+            'hotNum': '20'
+        },
+        'pink': {
+            'bigImg': 'productsIntroduction-img-pink.png',
+            'title': '智能测量＋专属调节',
+            'subtitle': '浅粉色 3D 网 TPE 弹性体枕  TPE Elastomer',
             'feature': '可水洗TPE弹性粒子',
             'hotNum': '20'
         },
         'brown': {
             'bigImg': 'productsIntroduction-img-brown.png',
             'title': '智能测量＋专属调节',
-            'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
-            'feature': '可水洗TPE弹性粒子',
+            'subtitle': '深咖色 3D 网 进口三棱荞麦壳枕  Buckwheat Shell',
+            'feature': '阳光下晾晒清洁',//
             'hotNum': '20'
         },
         'cheese': {
             'bigImg': 'productsIntroduction-img-cheese.png',
             'title': '智能测量＋专属调节',
-            'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
-            'feature': '可水洗TPE弹性粒子',
+            'subtitle': '本白色 60 支绗缝 天然乳胶枕  Cheese Latex',
+            'feature': '可水洗TPE弹性粒子',//
             'hotNum': '20'
         },
         'white': {
             'bigImg': 'productsIntroduction-img-white.png',
             'title': '智能测量＋专属调节',
-            'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
-            'feature': '可水洗TPE弹性粒子',
+            'subtitle': '本白色 3D 网 双重纤维棉枕  Fiber cotton',
+            'feature': '可水洗TPE弹性粒子',//
             'hotNum': '20'
         },
         'gray': {
             'bigImg': 'productsIntroduction-img-gray.png',
             'title': '智能测量＋专属调节',
-            'subtitle': '浅灰色3D网TPE弹性体枕  TPE Elastomer',
-            'feature': '可水洗TPE弹性粒子',
+            'subtitle': '深灰色 3D 网 竹炭TPE弹性体+香木球枕  Bamboo charcoal',
+            'feature': '可水洗TPE弹性粒子',//
             'hotNum': '20'
         }
     }
-}
+};
+
+// 数据列表
+productsIntroductionPage.prototype.setDataListHtml = function () {
+    //获取链接重的参数
+    var type = window.location.href.split('?')[1].split('=')[1];
+    //获取对应的数据
+    var data = this.listData[type];
+
+    // 设置图片
+    $(".products-img").attr("src", "../images/" + data.bigImg);
+    // 标题
+    $(".products-title").html(data.title);
+    // 副标题
+    $(".products-subtitle").html(data.subtitle);
+    // 描述
+    $(".products-text").html(data.feature + " 热销 20万件");
+};
 
 //数据列表
-productsIntroductionPage.prototype.setDataListHtml = function () {
+productsIntroductionPage.prototype.setDataListHtml_jing = function () {
     var htmlArr = [];
 
     //获取链接重的参数
@@ -106,10 +130,42 @@ productsIntroductionPage.prototype.setDataListHtml = function () {
 
 //初始化事件
 productsIntroductionPage.prototype.initEvent = function () {
+    // 减少按钮的点击事件
+    $("#minusNum").on("click", function () {
+        // 获取购物数量
+        var numText = Number($("#numText").val());
 
-}
+        // 如果购物车数量为1
+        if (numText > 1) {
+            // 数量-1
+            $("#numText").val(numText - 1);
+        }
+
+        if (Number($("#numText").val()) == 1) {
+            // 添加禁用属性
+            $(this).addClass("forbidden");
+        }
+    });
+
+    // 添加按钮的点击事件
+    $("#addNum").on("click", function () {
+        // 获取购物数量
+        var numText = Number($("#numText").val());
+        // 去掉减少按钮的禁用属性
+        $("#minusNum").removeClass("forbidden");
+        // 数量+1
+        $("#numText").val(numText + 1);
+    });
+
+    // 加入购物车按钮点击事件
+    $("#shoppingBtn").on("click", function () {
+        // 将购物数据添加到本地
+
+        // 跳转到购物车页面
+    });
+};
 
 $(function () {
     var productsIntroductionPageObj = new productsIntroductionPage();
     productsIntroductionPageObj.init();
-})
+});

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ch">
 <head>
     <meta charset="UTF-8">
     <title>产品购物页</title>
@@ -41,29 +41,55 @@
 <div class="main">
     <!--图片介绍-->
     <div class="pro-img">
-        <img class="products-img" src="../images/productsIntroduction-img-white.png" alt="">
-        <div class="products-imgtext">7天无忧退货<span class="imgtext-hg">-</span>48小时极速退款<span class="imgtext-hg">-</span>满200元免邮费</div>
-
+        <img class="products-img" src="" alt="">
+        <div class="products-imgtext">
+            7天无忧退货
+            <span class="imgtext-hg">-</span>
+            48小时极速退款
+            <span class="imgtext-hg">-</span>
+            满200元免邮费
+        </div>
     </div>
     <!--商品描述-->
     <div class="products-describe ">
-        <p class="products-title">智能测量＋专属调节</p>
-        <p class="products-subtitle">浅灰色3D网TPE弹性体枕 TPE Elastomer</p>
-        <p class="products-text">可水洗TPE弹性粒子 热销 20万件</p>
+        <!--标题-->
+        <p class="products-title"></p>
+        <!--副标题-->
+        <p class="products-subtitle"></p>
+        <!--描述-->
+        <p class="products-text"></p>
         <div class="products-select">
-            <a href="javascript:;" class="pro-link">更多选择</a>
+            <a href="texture.html" class="pro-link">更多选择</a>
         </div>
     </div>
     <!--请选择规格数量-->
     <div class="products-specification">
-        <span class="specification-num">请选择规格数量</span>
-        <span class="specification-gt"><a href="javascript:;" class="fa fa-chevron-right"></a></span>
+        <!--添加数量部分-->
+        <div class="choose-num">
+            <span>数量：</span>
+            <a href="javascript:;" class="num-btn forbidden" id="minusNum" data-type="minus">-</a>
+            <input type="text" class="num-text" id="numText" value="1" readonly="readonly">
+            <a href="javascript:;" class="num-btn" id="addNum" data-type="add">+</a>
+        </div>
+        <!--加入购物车按钮-->
+        <button class="shopping-btn" id="shoppingBtn">加入购物车</button>
+
+        <!--<span class="specification-num">请选择规格数量</span>-->
+        <!--<span class="specification-gt"><a href="javascript:;" class="fa fa-chevron-right"></a></span>-->
     </div>
     <!--商品参数-->
     <div class="products-parameter">
         <p class="parameter-text">商品参数</p>
     </div>
 </div>
+
+<!--弹框-->
+<div class="pop-shade" id="popShade"></div>
+<!--选择购物数量弹框-->
+<div class="pop-module">
+    <div class="pop-close" id="popClose"></div>
+</div>
+
 </body>
 <script src="../js/jQuery-2.1.4.min.js"></script>
 <script src="../js/flexible.js"></script>
