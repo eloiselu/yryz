@@ -3,6 +3,18 @@ body {
     background-color: #442c2b;
 }
 
+.head-name {
+    width: 11.16rem;
+    height: 3.74rem;
+    /* line-height: 3.74rem; */
+    background-color: #32171c;
+    text-align: center;
+    color: #f0c0a1;
+    border-radius: 2.2rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
 /*P标签修改*/
 .userlist-text {
     margin-top: 0.2rem;
@@ -10,17 +22,22 @@ body {
     font-size: 1.06rem;
 }
 
+.head-name .text {
+    padding-top: .7rem;
+}
+
 /*主体部分*/
 .main {
     background-color: #442c2b;
 }
 
-.userlist{
+.userlist {
     width: 19.95rem;
-    margin: 0 auto
+    margin: 0 auto;
+    margin-top: 1.16rem;
 }
 
-.userlist .userlist-dot{
+.userlist .userlist-dot {
     display: inline-block;
     background-color: #6d4e40;
     width: 4.83rem;
