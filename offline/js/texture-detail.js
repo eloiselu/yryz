@@ -32,12 +32,12 @@ textureDetailPage.prototype.setData = function () {
         },
         'cheese': {
             'name': '芝士乳胶条',
-            'headImg': 'textureDetail-white-head.png',
-            'textureImg': 'textureDetail-white-img.png',
+            'headImg': 'textureDetail-cheese-head.png',
+            'textureImg': 'textureDetail-cheese-img.png',
             'title': '芝士乳胶条',
             'subtitle': 'Charcoal  Elastomer+Incienso',
             'color': 'white',
-            'textureHead2': 'textureDetail-white-hardness.png',
+            'textureHead2': 'textureDetail-cheese-hardness.png',
             'feature': 'VCollection Team精心选择的“天然芝士乳胶条”（天然乳胶含量达百分之八十）是乳胶枕品类中全新的呈现形式整块的乳胶被冲压成条状，保持了所有乳胶的优势的同时可以最方便的取出和填充给你最方便的高度调节方式，弹性好，有乳胶独特气味，很好的吸湿性和透气性无污染无毒',
             'suitableCrowd' : '颈椎不舒服，长时间坐姿工作压力大年轻人'
         },

@@ -2,11 +2,17 @@ body {
     background-color: #442c2b;
 }
 
+.head-back {
+    margin-top: 2.5rem;
+    left: 1.8rem;
+}
+
 /*主体模块部分*/
 .main {
     background-color: #442c2b;
     position: relative;
 }
+
 
 /*拍照部分*/
 .photograph {

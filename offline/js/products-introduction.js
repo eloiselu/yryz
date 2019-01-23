@@ -78,7 +78,7 @@ productsIntroductionPage.prototype.setDataListHtml = function () {
     htmlArr.push('<img class="products-img" src="../images/' + data.bigImg + '" alt="">');
     htmlArr.push('<div class="products-imgtext">7天无忧退货<span class="imgtext-hg">-</span>48小时极速退款<span class="imgtext-hg">-</span>满200元免邮费</div>');
     <!--商品描述-->
-    htmlArr.push('<div class="products-describe ">');
+    htmlArr.push('<div class="products-describe">');
     htmlArr.push('<p class="products-title">' + data.title + '</p>');
     htmlArr.push('<p class="products-subtitle">' + data.subtitle + '</p>');
     htmlArr.push('<p class="products-text">' + data.feature + '</p>');
@@ -88,9 +88,9 @@ productsIntroductionPage.prototype.setDataListHtml = function () {
     htmlArr.push('</div>');
     htmlArr.push('</div>');
     <!--请选择规格数量-->
-    htmlArr.push('<div class="products-specification fix">');
+    htmlArr.push('<div class="products-specification">');
     htmlArr.push('<span class="specification-num">请选择规格数量</span>');
-    htmlArr.push('<a href="javascript:;" class="specification-gt">&gt;</a>');
+    htmlArr.push('<span class="specification-gt"><a href="javascript:;" class="fa fa-chevron-right"></a></span>');
     htmlArr.push('</div>');
     <!--商品参数-->
     htmlArr.push('<div class="products-parameter fix">');

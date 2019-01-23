@@ -3,11 +3,12 @@ body {
 }
 
 /*修改公共head*/
-.onepillow-head{
+.onepillow-head {
     height: 4.38rem;
     /* line-height: 3.07rem; */
     line-height: normal;
 }
+
 .onepillow-text {
     margin-top: 0.5rem;
 }
@@ -18,9 +19,11 @@ body {
     background-color: #442c2b;
     color: #d9a18f;
 }
+
 .main .onepillow {
     padding-top: 1rem;
 }
+
 /*title部分*/
 .main .onepillow-title {
     font-size: 1.3rem;
@@ -39,7 +42,7 @@ body {
 }
 
 /*底部文字*/
-.onepillow-foot{
+.onepillow-foot {
     width: 19.22rem;
     text-align: left;
     margin: 0 auto;
@@ -52,7 +55,7 @@ body {
     background-color: #6d5a5a;
     padding-bottom: 4.2rem;
     padding-top: 3.88rem;
-    margin-top: 4.26rem;
+    margin-top: 5rem;
 }
 
 .carousel-2 .introduce-text {
@@ -64,9 +67,15 @@ body {
 
 /*第三屏轮播*/
 .carousel-1 {
-   background-color: #1b0706;
+    background-color: #1b0706;
 }
 
-.carousel-1  .sleep-img {
+.carousel-1 .sleep-img {
     width: 100%;
+}
+
+/*视频*/
+
+.carousel-video {
+    margin-top: 5rem;
 }
