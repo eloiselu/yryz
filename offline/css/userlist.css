@@ -46,10 +46,17 @@ body {
     margin: 1.09rem 0.81rem 1.09rem 0.81rem;
 }
 
-.userlist-link {
+.userlist .userlist-link {
     display: inline-block;
     width: 4.83rem;
     height: 4.83rem;
+}
+
+.userlist .userlist-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 100%;
 }
 
 /*底部文字*/

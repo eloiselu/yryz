@@ -7,11 +7,19 @@ var indexPage = function () {
 
 // 初始化
 indexPage.prototype.init = function () {
+    // 运行系统打开首页后，获取本机机器唯一标识，保存到本地
+    this.initFingerprint();
+
     // 初始化轮播图
     this.initSwiper();
     // 初始化事件
     this.initEvent();
-}
+};
+
+// 运行系统打开首页后，设置本机机器唯一标识
+indexPage.prototype.initFingerprint = function () {
+    commonJs.deviceCode = "test_lu";
+};
 
 // 初始化轮播图
 indexPage.prototype.initSwiper = function () {

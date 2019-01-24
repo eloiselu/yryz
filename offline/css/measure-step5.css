@@ -121,6 +121,7 @@ body {
 .strip-bar .strip-dot {
     width: 1.17rem;
     margin-top: -.18rem;
+    margin-right: -.5rem;
 }
 
 /*刻度文字*/

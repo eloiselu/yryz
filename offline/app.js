@@ -85,6 +85,6 @@ app.get('/view/userlist.html', function (req, res) {
     res.sendFile(__dirname + '/view/userlist.html');
 });
 
-app.listen(3010, function () {
-    console.log("已启动一人一枕项目，监听3010端口")
+app.listen(3011, function () {
+    console.log("已启动一人一枕项目，监听3011端口")
 });
