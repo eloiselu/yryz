@@ -21,7 +21,17 @@ measureStep1.prototype.initEvent = function () {
         else{
             $(this).addClass("active");
         }
+        //接收男女、长中短发值
+        var chooseGender = $(this).attr("data_type");
+        var chooseHair = $(this).attr("data_type");
 
+        if ((chooseGender = 1 && 2 ) || (chooseGender = !0)){
+            // $(location).attr("href","../view/measure-step2.html")
+            // window.location.href="../view/measure-step2.html";
+            console.log(chooseType = 1 || 2);
+        }else if('chooseType = 1 || 2 || 3'){
+            console.log("chooseType = 1 || 2 || 3");
+        }
     })
 };
 
