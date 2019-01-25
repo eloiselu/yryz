@@ -161,6 +161,7 @@ productsIntroductionPage.prototype.initEvent = function () {
     $("#shoppingBtn").on("click", function () {
         // 将购物数据添加到本地
 
+
         // 跳转到购物车页面
     });
 };

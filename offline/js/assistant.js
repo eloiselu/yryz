@@ -111,7 +111,7 @@ assistantPage.prototype.setDataListHtml = function (classifyDataObj) {
         // 获取对应的枕头数据
         var pillowData = this.pillowDatas[classifyDataObj.pillows[i]];
 
-        htmlArr.push('<li>');
+        htmlArr.push('<li data-type="' + classifyDataObj.pillows[i] + '">');
         // 左侧图片部分
         htmlArr.push('<div class="list-left">');
         htmlArr.push('<img src="../images/' + pillowData.leftImg + '">');
@@ -203,6 +203,16 @@ assistantPage.prototype.initEvent = function () {
         var classifyDataObj = that.classifyData[$(this).attr("data-type")];
         // 设置数据列表
         that.setDataListHtml(classifyDataObj);
+    });
+
+    // 图片点击事件，跳转到材质详情页
+    $("#assistantRightList").on("click", ".list-left", function () {
+        window.location.href = window.location.origin + "/view/texture-detail.html?type=" + $(this).parents("li").attr("data-type");
+    });
+
+    // 立即购买点击事件，跳转到购买详情页
+    $("#assistantRightList").on("click", ".buy-button", function () {
+        window.location.href = window.location.origin + "/view/products-introduction.html?type=" + $(this).parents("li").attr("data-type");
     });
 };
 

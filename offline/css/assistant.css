@@ -78,6 +78,7 @@ body {
     float: left;
     background-color: #ddd;
     padding: .3rem;
+    cursor: pointer;
 }
 
 .list-left img {
