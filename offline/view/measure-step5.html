@@ -51,8 +51,15 @@
     <div class="measure5-curve fix">
         <!--左边头像和人物-->
         <div class="measure5-curve-left">
-            <div class="curve-profile"></div>
-            <div class="curve-person"></div>
+            <!--头像-->
+            <div class="curve-profile">
+                <img id="avatarImg" src="" alt="">
+            </div>
+            <!--曲线图-->
+            <div class="curve-person">
+                <!--侧面曲线图-->
+                <canvas id="sideImg"></canvas>
+            </div>
         </div>
         <!--右边测量数据-->
         <div class="measure5-curve-right">
@@ -61,7 +68,7 @@
                 <li>
                     <!--数据部分-->
                     <div class="data-height">
-                        <span class="data-height-text" >头部高度</span>
+                        <span class="data-height-text">头部高度</span>
                         <span class="data-height-num" id="acNum"></span>
                     </div>
                     <!--刻度部分-->
@@ -169,6 +176,8 @@
 
 </div>
 </body>
+<script src="../plugins/pdfJs/pdf.js"></script>
+<script src="../plugins/pdfJs/pdf.worker.js"></script>
 <script src="../js/jQuery-2.1.4.min.js"></script>
 <script src="../js/flexible.js"></script>
 <script src="../js/ajaxUtil.js"></script>

@@ -55,7 +55,8 @@ userlist.prototype.initEvent = function () {
         // 获取头像id
         var avatarId = $(this).attr("data-id");
         // 调转链接
-        window.location.href = window.location.origin + "/view/measure-step5.html?avatarid=" + avatarId;
+        // window.location.href = window.location.origin + "/view/measure-step5.html?avatarid=" + avatarId;
+        $(location).attr("href","../view/measure-step5.html?avatarid=" + avatarId);
     });
 
 };

@@ -26,17 +26,6 @@ measureStep5Page.prototype.initData = function () {
     else {
 
     }
-
-    // 假数据
-    // this.data = {
-    //     "data_id": "e34kkdjlsjd65l44",
-    //     "ac": "5.23",
-    //     "bc": "5.34",
-    //     "head_neck": "7.34",
-    //     "head_shoulder": "7.55",
-    //     "body_url": "http://",
-    //     "avatar_url": "http://"
-    // }
 };
 
 // 根据用户id获取数据
@@ -47,17 +36,23 @@ measureStep5Page.prototype.getDataByAvatarid = function (id) {
     var data = {};
     data.data_id = id;
     var url = commonJs.apiUrl + "/webpillow/detail.html";
-    ajax.load(url, data, function (resultData) {
+    ajax.load(url, data, ajaxFun);
+
+    function ajaxFun(resultData) {
         console.log("根据用户id获取数据: ", resultData);
 
         // 设置数据
         that.data = resultData.content;
         // 绑定数据
         that.setData();
-    });
+        // 绑定左侧头像
+        that.setAvatarImg();
+        // 绑定曲线数据
+        that.setCurveImg();
+    }
 };
 
-// 绑定数据
+// 绑定右侧数据
 measureStep5Page.prototype.setData = function () {
     console.log("a", this.data.ac);
 
@@ -94,6 +89,49 @@ measureStep5Page.prototype.setData = function () {
     $('#headShoulderNum').html(head_shoulder + 'cm');
     $('#headShoulderBar').css("width", head_shoulder / 35 * 100 + '%');
 };
+
+// 绑定左侧头像
+measureStep5Page.prototype.setAvatarImg = function () {
+    $("#avatarImg").attr('src', commonJs.apiUrl + this.data.avatar);
+};
+
+// 绑定曲线数据
+measureStep5Page.prototype.setCurveImg = function () {
+    // 渲染PDF
+    this.renderingPDF(commonJs.apiUrl + this.data.bodyImage, "sideImg");
+};
+
+// 渲染PDF
+measureStep5Page.prototype.renderingPDF = function (fileURL, canvasId) {
+
+    PDFJS.getDocument(fileURL).then(function (pdf) {
+        pdf.getPage(1).then(function (page) {
+
+            var scale = 1.5;
+            var viewport = page.getViewport(scale);
+
+            // var desiredWidth = 100;
+            // var viewport = page.getViewport({ scale: 1, });
+            // var scale = desiredWidth / viewport.width;
+            // var scaledViewport = page.getViewport({ scale: scale, });
+
+            //  准备用于渲染的 canvas 元素
+            var canvas = document.getElementById(canvasId);
+            var context = canvas.getContext('2d');
+            canvas.height = $(".curve-person").height();
+            canvas.width = $(".curve-person").width();
+
+
+            // 将 PDF 页面渲染到 canvas 上下文中
+            var renderContext = {
+                canvasContext: context,
+                viewport: viewport
+            };
+            page.render(renderContext);
+        });
+    });
+};
+
 
 //初始化事件
 measureStep5Page.prototype.initEvent = function () {
