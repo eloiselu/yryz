@@ -138,6 +138,7 @@ body {
 .measure-step5-foot {
     text-align: center;
     margin-top: 1.4rem;
+    margin-bottom: .7rem;
 }
 
 .measure5-link{
@@ -149,6 +150,7 @@ body {
     text-align: center;
     font-size: 0.62rem;
     border-radius: 2.2rem;
+    margin: 0 .93rem 0 .93rem;
 }
 
 .measure-step5-foot .foot-top {
