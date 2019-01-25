@@ -9,7 +9,7 @@ body {
 }
 
 .index-first {
-    padding-top: 9rem;
+    padding-top: 4rem;
 }
 
 .logo {
@@ -64,5 +64,9 @@ body {
 
 .carousel-nav .nav-title {
     padding-top: 0.2rem;
+}
+
+.sorter span{
+    background: #000;
 }
 

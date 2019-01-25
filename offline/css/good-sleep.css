@@ -2,6 +2,10 @@ body {
     background-color: #442c2b;
 }
 
+/*修改公共*/
+.head-back {
+    margin-top: .55rem;
+}
 .main {
     background-color: #442c2b;
     height: 100%;
@@ -19,6 +23,10 @@ body {
     text-align: center;
     border-radius: 2.2rem;
     margin: 0 auto;
+}
+
+.good-sleep .sleep-title {
+    padding-top: .2rem;
 }
 
 /*曲线测量*/
