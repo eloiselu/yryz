@@ -7,6 +7,10 @@ body {
     width: 9rem;
 }
 
+.head-back {
+    margin-top: 1rem;
+}
+
 /*主体部分*/
 .main {
     /*border-top: 0.05rem solid #ababab;*/
