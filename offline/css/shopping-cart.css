@@ -3,16 +3,30 @@ body {
 }
 
 /*修改公共head*/
+.head-name {
+    text-align: center;
+    background-color: #442c2b;
+    color: #d9a18f;
+}
+
+.head-back {
+    margin-top: 1rem;
+}
+
 .cart-head {
     height: 2.86rem;
     font-size: 0.86rem;
     line-height: normal;
-    margin-top: 0.64rem;
+    margin-top: 0.66rem;
     margin-bottom: 0.7rem;
+    display: inline-block;
+    width: 8.62rem;
+    background-color: #30181c;
+    border-radius: 2rem;
 }
 
 .cart-text {
-    margin-top: 0.3rem;
+    padding-top: 0.1rem;
 }
 
 /*主体部分*/
@@ -45,10 +59,22 @@ body {
 /*左边图片*/
 .cart .left-img {
     float: left;
+    background-color: #ddd;
+    padding: .4rem;
+    cursor: pointer;
 }
 
 .cart .cart-img {
-    width: 6.92rem;
+    width: 5.96rem;
+    height: 4.74rem;
+}
+
+.cart .img-bottom {
+    margin-top: -.15rem;
+    width: 5.96rem;
+    height: 1.4rem;
+    background: url("../images/assistant-img-bottom.png") no-repeat;
+    background-size: 5.96rem;
 }
 
 /*右边文字*/

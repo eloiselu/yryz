@@ -20,25 +20,25 @@ shoppingCartPage.prototype.init = function () {
 shoppingCartPage.prototype.setData = function () {
     this.listData = {
         'white': {
-            'leftImg': 'cart-img-cheese.png',
+            'leftImg': 'assistant-img-white.png',
             'title': '芝士乳胶条枕/本白色',
             'subtitle': 'Cheese Latex',
             'feature': '颜色Color：本白 Creamy White 硬度Hardness：中低 Lower-mid 弹性Elasticity：高 High',
         },
         'gray': {
-            'leftImg': 'cart-img-gray.png',
+            'leftImg': 'assistant-img-gray.png',
             'title': 'TPE弹性体枕／浅灰色 ',
             'subtitle': 'TPE Elastome',
             'feature': '颜色Color：浅灰 French grey; 硬度Hardness：中低 Lower-mid 弹性Elasticity：高High',
         },
-        'chocolate': {
-            'leftImg': 'cart-img-chocolate.png',
+        'brown': {
+            'leftImg': 'assistant-img-brown.png',
             'title': '三角荞麦壳枕／深咖色',
             'subtitle': 'Cheese Latex',
             'feature': '颜色Color：浅灰 chocolate; 硬度Hardness：中低 Lower-mid 弹性Elasticity：高 High',
         },
         'pink': {
-            'leftImg': 'cart-img-pink.png',
+            'leftImg': 'assistant-img-pink.png',
             'title': '粉色软管枕／浅粉色 ',
             'subtitle': 'TPE Elastome',
             'feature': '颜色Color：浅粉色 pink; 硬度Hardness：中低 Lower-mid 弹性Elasticity：高 High',
