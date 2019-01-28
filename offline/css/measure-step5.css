@@ -13,6 +13,10 @@ body {
     background-color: #442c2b;
 }
 
+.measure-step1-Cal p {
+    display: inline-block;
+}
+
 /*我的曲线测量模块部分*/
 .head-name .measure-step5-title {
     display: inline-block;
