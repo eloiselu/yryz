@@ -101,6 +101,7 @@ body {
 .texture-desc {
     /*这里设置为占比1，填充满剩余空间*/
     flex: 1;
+    padding-right: 1rem;
     /*margin-left: 4.36rem;*/
 }
 
@@ -110,6 +111,12 @@ body {
     font-weight: 400;
     line-height: 1.2rem;
 }
+
+/*硬度与弹性图片*/
+.texture-desc img {
+    width: 100%;
+}
+
 
 /*底部按钮*/
 .foot-btn {
