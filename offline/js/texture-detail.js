@@ -7,7 +7,6 @@ var textureDetailPage = function () {
 
 //初始化
 textureDetailPage.prototype.init = function () {
-
     this.type = window.location.href.split('?')[1].split('=')[1];
 
     //设置购买枕头列表数据
@@ -93,8 +92,6 @@ textureDetailPage.prototype.setData = function () {
 
 //数据列表
 textureDetailPage.prototype.setDataListHtml = function () {
-    var htmlArr = [];
-
     //获取链接重的参数
     // this.type= window.location.href.split('?')[1].split('=')[1];
     //获取对应的数据
@@ -148,7 +145,7 @@ textureDetailPage.prototype.setDataListHtml = function () {
     <!--底部按钮-->
     htmlArr.push('<div class="foot-btn">');
     htmlArr.push('<!--<p>马上了解产品</p>-->');
-    htmlArr.push('<a href="" class="btn">马上了解产品</a>');
+    htmlArr.push('<a href="javascript:;" class="btn">马上了解产品</a>');
     htmlArr.push('</div>');
 
     $('.main').html(htmlArr.join(''));
@@ -159,13 +156,15 @@ textureDetailPage.prototype.setDataListHtml = function () {
 
 //初始化事件
 textureDetailPage.prototype.initEvent = function () {
-    $(".btn").on('click',function () {
-        $(location).attr("href","../view/products-introduction.html?=type"+type);
+    var that = this;
+
+    $(".btn").on('click', function () {
+        $(location).attr("href", "../view/products-introduction.html?type=" + that.type);
     })
 
-}
+};
 
 $(function () {
     var textureDetailPageObj = new textureDetailPage();
     textureDetailPageObj.init();
-})
+});
