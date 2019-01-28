@@ -106,7 +106,10 @@ measureStep5Page.prototype.getDataByParam = function () {
 
                 // 判断如果没有获取功能则弹出错误数据
                 if (dataJson.code != "1000") {
-                    alert(dataJson.message);
+                    // 隐藏等待页面
+                    $(".load-model").hide();
+                    layer.alert(dataJson.message)
+                    // alert(dataJson.message);
                     return;
                 }
 
