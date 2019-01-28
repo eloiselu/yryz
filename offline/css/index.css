@@ -73,16 +73,20 @@ body {
 
 /*视频*/
 
+.main .carousel-video {
+    width: 24.94rem;
+ }
+
 .carousel-video {
     /*margin-top: 5rem;*/
     /*height: 38.59rem;*/
 }
 
-video {
-    object-fit:fill;
-    width:100%;
-    height:100%;
-}
+/*video {*/
+    /*object-fit:fill;*/
+    /*width:100%;*/
+    /*height:100%;*/
+/*}*/
 
 .sorter span {
     background: #000;
