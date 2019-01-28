@@ -25,43 +25,57 @@ shoppingCartPage.prototype.setData = function () {
             'leftImg': 'assistant-img-white.png',
             'title': '芝士乳胶条枕/本白色',
             'subtitle': 'Cheese Latex',
-            'feature': '颜色Color：本白 Creamy White 硬度Hardness：中低 Lower-mid 弹性Elasticity：高 High',
+            'color': '颜色Color：本白 Creamy White',
+            'hardness':'硬度Hardness：中低 Lower-mid',
+            'elasticity':'弹性Elasticity：高 High'
         },
         'gray': {
             'leftImg': 'assistant-img-gray.png',
             'title': 'TPE弹性体枕／深灰色 ',
             'subtitle': 'TPE Elastome',
-            'feature': '颜色Color：深灰色 Dark Gray; 硬度Hardness：中低 Lower-mid 弹性Elasticity：高High',
+            'color': '颜色Color：深灰色 Dark Gray',
+            'hardness':'硬度Hardness：中低 Lower-mid',
+            'elasticity':'弹性Elasticity：高 High'
         },
         'brown': {
             'leftImg': 'assistant-img-brown.png',
             'title': '三角荞麦壳枕／深咖色',
             'subtitle': 'Cheese Latex',
-            'feature': '颜色Color：深咖色 Dark Brown; 硬度Hardness：中低 Lower-mid 弹性Elasticity：高 High',
+            'color': '颜色Color：深咖色 Dark Brown',
+            'hardness':'硬度Hardness：中低 Lower-mid',
+            'elasticity':'弹性Elasticity：高 High'
         },
         'pink': {
             'leftImg': 'assistant-img-pink.png',
             'title': '粉色软管枕／浅粉色 ',
             'subtitle': 'TPE Elastome',
-            'feature': '颜色Color：浅粉色 pink; 硬度Hardness：中低 Lower-mid 弹性Elasticity：高 High'
+            'color': '颜色Color：浅粉色 pink',
+            'hardness':'硬度Hardness：中低 Lower-mid',
+            'elasticity':'弹性Elasticity：高 High'
         },
         'blue': {
             'leftImg': 'assistant-img-blue.png',
             'title': '蓝色软管枕／宝蓝色 ',
             'subtitle': 'TPE Elastome',
-            'feature': '颜色Color：宝蓝色 blue; 硬度Hardness：中低 Lower-mid 弹性Elasticity：高 High'
+            'color': '颜色Color：宝蓝色 blue',
+            'hardness':'硬度Hardness：中低 Lower-mid',
+            'elasticity':'弹性Elasticity：高 High'
         },
         'lightgray': {
             'leftImg': 'assistant-img-lightgray.png',
             'title': 'TPE弹体枕／浅灰色 ',
             'subtitle': 'TPE Elastome',
-            'feature': '颜色Color：浅灰色 White; 硬度Hardness：中低 Lower-mid 弹性Elasticity：高 High'
+            'color': '颜色Color：浅灰色 White',
+            'hardness':'硬度Hardness：中低 Lower-mid',
+            'elasticity':'弹性Elasticity：高 High'
         },
         'white': {
             'leftImg': 'assistant-img-white.png',
             'title': '纤维棉枕／白色 ',
             'subtitle': 'TPE Elastome',
-            'feature': '颜色Color：白色 White; 硬度Hardness：中低 Lower-mid 弹性Elasticity：高 High'
+            'color': '颜色Color：白色 White',
+            'hardness':'硬度Hardness：中低 Lower-mid',
+            'elasticity':'弹性Elasticity：高 High'
         }
     }
 };
@@ -95,8 +109,10 @@ shoppingCartPage.prototype.setDataListHtml = function () {
         htmlArr.push('<span class="right-text">');
         htmlArr.push('<p class="text-title">' + data.title + '</p>');
         htmlArr.push('<p class="text-subtitle">' + data.subtitle + '</p>');
-        htmlArr.push('<p class="text-money">&yen;499</p>');
-        htmlArr.push('<p class="text-intro">' + data.feature + '</p>');
+        htmlArr.push('<p class="text-money">&yen;499</p>')
+        htmlArr.push('<p class="text-intro">' + data.color + '</p>');
+        htmlArr.push('<p class="text-intro">' + data.hardness + '</p>');
+        htmlArr.push('<p class="text-intro">' + data.elasticity + '</p>');
         htmlArr.push('</span>');
         htmlArr.push('</div>');
         <!--增加数量-->
