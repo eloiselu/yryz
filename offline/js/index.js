@@ -7,6 +7,11 @@ var indexPage = function () {
 
 // 初始化
 indexPage.prototype.init = function () {
+    // 只有index页面才清空导航列表
+    // 将导航列表保存到本地
+    var pagesArr = [window.location.href];
+    localStorage.setItem("pagesArr", JSON.stringify(pagesArr));
+
     // 运行系统打开首页后，获取本机机器唯一标识，保存到本地
     this.initFingerprint();
 
@@ -56,4 +61,4 @@ indexPage.prototype.initEvent = function () {
 $(function () {
     var indexPageObj = new indexPage();
     indexPageObj.init();
-})
+});
