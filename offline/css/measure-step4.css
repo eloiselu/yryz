@@ -37,6 +37,10 @@ body {
     border-bottom: 0.13rem solid #a77e71;
 }
 
+.measure-step1-Cal p {
+    display: inline-block;
+}
+
 /*曲线测量计算中部分*/
 .measure-step1-subCal {
     padding-top: 1.2rem;
