@@ -3,7 +3,7 @@
  */
 var measureStep2 = function () {
     return this;
-}
+};
 
 //初始化
 measureStep2.prototype.init = function () {
@@ -76,7 +76,7 @@ measureStep2.prototype.initEvent = function () {
         var proportion = that.videoInfo.videoHeight / that.videoInfo.eleHeight;
 
         // 设置开始截取的坐标位置，偏移位置*显示比例
-        var cutX =((that.videoInfo.eleWidth - document.body.clientWidth) / 2) * proportion;
+        var cutX = ((that.videoInfo.eleWidth - document.body.clientWidth) / 2) * proportion;
         // 设置实际要截取的宽高
         var cutWidth = canvas.width * proportion;
         var cutHeight = canvas.height * proportion;
@@ -85,13 +85,15 @@ measureStep2.prototype.initEvent = function () {
         canvas.getContext('2d').drawImage(video, cutX, 0, cutWidth, cutHeight, 0, 0, canvas.width, canvas.height);
         // 设置图片
         document.getElementById('picture').src = canvas.toDataURL("image/png");
-        var img = new Image();
-        img.src=canvas.toDataURL("image/png");
+        // var img = new Image();
+        // img.src = canvas.toDataURL("image/png");
 
-
+        // 将数据保存到本地
+        localStorage.setItem("sideFile", canvas.toDataURL("image/png"));
 
         // 跳转到下一页
-        window.location.href = window.location.origin + "/view/measure-step3.html";
+        // window.location.href = window.location.origin + "/view/measure-step3.html";
+        $(location).attr("href","../view/measure-step3.html");
     })
 };
 

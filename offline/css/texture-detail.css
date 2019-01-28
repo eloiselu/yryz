@@ -20,7 +20,6 @@ body {
     border-radius: 2.2rem;
 }
 
-
 /*主体部分*/
 .main {
     background-color: #fff;
@@ -79,7 +78,7 @@ body {
     /*设为伸缩容器*/
     display: flex;
     /*伸缩项目单行排列*/
-    flex-flow:row;
+    flex-flow: row;
     margin-bottom: 1rem;
 }
 
@@ -101,10 +100,9 @@ body {
 /*右侧描述部分*/
 .texture-desc {
     /*这里设置为占比1，填充满剩余空间*/
-    flex:1;
+    flex: 1;
     /*margin-left: 4.36rem;*/
 }
-
 
 /*描述文字样式*/
 .texture-desc p {
@@ -113,4 +111,20 @@ body {
     line-height: 1.2rem;
 }
 
+/*底部按钮*/
+.foot-btn {
+    text-align: center;
+    padding-bottom: 1.4rem;
+}
+
+.foot-btn .btn {
+    display: inline-block;
+    background-color: #32171c;
+    width: 11.5rem;
+    height: 1.94rem;
+    line-height: 1.94rem;
+    font-size: 1rem;
+    color: #efb588;
+    border-radius: 2rem;
+}
 

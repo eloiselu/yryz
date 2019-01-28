@@ -4,6 +4,7 @@ body {
 
 /*主体部分*/
 .main {
+    position: relative;
     background-color: #442c2b;
 }
 
@@ -167,3 +168,38 @@ body {
     font-size: 0.88rem;
 }
 
+
+
+/*等待加载数据部分*/
+.load-model {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #442c2b;
+    text-align: center;
+    color: #eeb7a3;
+    z-index: 999;
+}
+
+/*英文Calculating部分*/
+.measure-step1-Cal{
+    font-size: 1.66rem;
+    padding-top: 9.97rem;
+    padding-bottom: 2.37rem;
+    border-bottom: 0.13rem solid #a77e71;
+}
+
+/*曲线测量计算中部分*/
+.measure-step1-subCal {
+    padding-top: 1.2rem;
+    font-size: 1.28rem;
+}
+
+/**/
+.measure-step1-subimg {
+    width: 6.07rem;
+    height: 0.89rem;
+    margin-top: 0.6rem;
+}

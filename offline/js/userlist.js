@@ -17,6 +17,27 @@ userlist.prototype.init = function () {
 userlist.prototype.getUserData = function (page) {
     var that = this;
 
+    // var data = {};
+    // data.device_sn = commonJs.deviceCode;
+    // data.page = (page || 1);
+    // data.pageSize = "100";//this.pageSize
+    //
+    // $.ajax( {
+    //     url: commonJs.apiUrl + "/webpillow/list.html",
+    //     type: "GET",
+    //     // data: data,
+    //     // dataType: 'json',
+    //     processData:false,
+    //     contentType:false,
+    //     success : function (data) {
+    //         //代码
+    //         console.log(data)
+    //     }
+    // });
+    //
+    // return;
+
+
     // 获取头像接口
     var data = {};
     data.device_sn = commonJs.deviceCode;

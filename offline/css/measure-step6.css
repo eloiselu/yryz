@@ -45,42 +45,62 @@ body {
     height: 1.28rem;
     line-height: 1.28rem;
     background-color: #f4f4f4;
-    font-size: 0.84rem;
     font-size: 0.6rem;
     color: #ff0101;
     padding-left: 0.74rem;
     margin-top: 0.7rem;
 }
 
-/*更多选择部分*/
-.measure-step6-footer .measure-step6-foomore {
+.cart-cont {
     margin-top: 1.2rem;
-    width: 9.95rem;
-    margin-left: 0.74rem;
+    padding-bottom: 1.2rem;
+}
+
+.cart-cont .cart {
+    float: left;
+    padding-left: 1rem;
+}
+
+.cart-cont  .cart-blockright {
+    padding-left: 1.6rem;
 }
 
 /*左边图片*/
-.measure-step6-footer .measure-foomore-left img {
-    width: 4.06rem;
+.cart .left-img {
     float: left;
+    background-color: #ddd;
+    padding: .3rem;
+    cursor: pointer;
+}
+
+.cart .cart-img {
+    background-color: #ddd;
+    cursor: pointer;
+    width: 3.64rem;
+    height: 2.85rem;
+}
+
+.cart .img-bottom {
+    width: 3.64rem;
+    height: .74rem;
+    background-size: 3.64rem;
 }
 
 /*右边文字*/
-.measure-step6-footer  .measure-foomore-text {
-    width: 5.50rem;
-    color: #000000;
+.cart .right-text {
+    float: left;
     font-size: 0.32rem;
-    float: right;
+    color: #333333;
+    padding-top: 0.22rem;
+    margin-left: .3rem;
 }
 
-.measure-step6-footer  .foomore-title{
-    font-size: 0.5rem;
+.step6-title {
+    font-size: .5rem;
+    font-weight: 700;
 }
 
-.measure-step6-footer a {
-    display: inline-block;
-}
-.measure-step6-footer  .foomore-details {
+.step6-details {
     display: inline-block;
     width: 2.76rem;
     height: 0.83rem;
@@ -90,9 +110,6 @@ body {
     text-align: center;
     background-color: #ab8a59;
     border-radius: 2rem;
-    margin-left: 2.72rem;
+    margin-left: 2.8rem;
 }
 
-.measure-step6-footer .foomore-text {
-    margin-top: 0.42rem;
-}

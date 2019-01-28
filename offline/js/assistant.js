@@ -207,12 +207,14 @@ assistantPage.prototype.initEvent = function () {
 
     // 图片点击事件，跳转到材质详情页
     $("#assistantRightList").on("click", ".list-left", function () {
-        window.location.href = window.location.origin + "/view/texture-detail.html?type=" + $(this).parents("li").attr("data-type");
+        // window.location.href = window.location.origin + "/view/texture-detail.html?type=" + $(this).parents("li").attr("data-type");
+        $(location).attr("href","../view/texture-detail.html?type=" + $(this).parents("li").attr("data-type"));
     });
 
     // 立即购买点击事件，跳转到购买详情页
     $("#assistantRightList").on("click", ".buy-button", function () {
-        window.location.href = window.location.origin + "/view/products-introduction.html?type=" + $(this).parents("li").attr("data-type");
+        // window.location.href = window.location.origin + "/view/products-introduction.html?type=" + $(this).parents("li").attr("data-type");
+        $(location).attr("href","../view/products-introduction.html?type=" + $(this).parents("li").attr("data-type"));
     });
 };
 

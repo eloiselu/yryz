@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="../css/head.css">
     <link rel="stylesheet" href="../css/commen.css">
-    <link rel="stylesheet" href="../css/measure-step2.css">
+    <link rel="stylesheet" href="../plugins/loaders/loaders.css">
     <link rel="stylesheet" href="../css/measure-step5.css">
     <!--Font Awesome字体图标-->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -42,6 +42,18 @@
 
 <!--主体部分-->
 <div class="main">
+    <!--等待加载数据部分-->
+    <div class="load-model">
+        <!--英文Calculating部分-->
+        <div class="measure-step1-Cal">
+            <p>Calculating</p>
+        </div>
+
+        <!--曲线测量计算中部分-->
+        <p class="measure-step1-subCal">曲线提取计算中</p>
+
+        <img class="measure-step1-subimg" src="../images/measure-step1-subimg.png" alt="">
+    </div>
 
     <!--我的曲线测量模块部分-->
     <div class="head-name">
@@ -92,7 +104,7 @@
                     <!--数据部分-->
                     <div class="data-height">
                         <span class="data-height-text">颈部高度</span>
-                        <span class="data-height-num" id="bcNum">7.6cm</span>
+                        <span class="data-height-num" id="bcNum"></span>
                     </div>
                     <!--刻度部分-->
                     <div class="strip-wrap">
@@ -115,7 +127,7 @@
                     <!--数据部分-->
                     <div class="data-height">
                         <span class="data-height-text">头颈高度差</span>
-                        <span class="data-height-num" id="headNeckNum">7.6cm</span>
+                        <span class="data-height-num" id="headNeckNum"></span>
                     </div>
                     <!--刻度部分-->
                     <div class="strip-wrap">
@@ -138,7 +150,7 @@
                     <!--数据部分-->
                     <div class="data-height">
                         <span class="data-height-text">头肩距离</span>
-                        <span class="data-height-num" id="headShoulderNum">7.6cm</span>
+                        <span class="data-height-num" id="headShoulderNum"></span>
                     </div>
                     <!--刻度部分-->
                     <div class="strip-wrap">
@@ -175,9 +187,11 @@
     </div>
 
 </div>
+
 </body>
 <script src="../plugins/pdfJs/pdf.js"></script>
 <script src="../plugins/pdfJs/pdf.worker.js"></script>
+<script src="../plugins/loaders/loaders.css.js"></script>
 <script src="../js/jQuery-2.1.4.min.js"></script>
 <script src="../js/flexible.js"></script>
 <script src="../js/ajaxUtil.js"></script>

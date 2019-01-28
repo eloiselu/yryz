@@ -85,6 +85,15 @@ measureStep3.prototype.initEvent = function () {
         canvas.getContext('2d').drawImage(video, cutX, 0, cutWidth, cutHeight, 0, 0, canvas.width, canvas.height);
         // 设置图片
         document.getElementById('picture').src = canvas.toDataURL("image/png");
+        // var img = new Image();
+        // img.src = canvas.toDataURL("image/png");
+
+        // 将数据保存到本地
+        localStorage.setItem("positiveFile", canvas.toDataURL("image/png"));
+
+        // 跳转到下一页
+        window.location.href = window.location.origin + "/view/measure-step5.html";
+        $(location).attr("href","../view/measure-step5.html");
     })
 };
 

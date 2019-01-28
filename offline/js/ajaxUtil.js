@@ -1,9 +1,10 @@
 
 var ajax = {
-    load:function(url, data, onsuccess,dataType){
+    load:function(url, data, onsuccess, dataType){
         if(!dataType){
             dataType = "json";
         }
+
         $.ajax({
             url: url,
             type: "get",
