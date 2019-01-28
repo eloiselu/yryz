@@ -184,6 +184,12 @@ shoppingCartPage.prototype.initEvent = function () {
         console.log(localStorage.getItem("shopCartData"));
     });
 
+    // 跳转到购物详情页
+    $(".cart-left").on("click", function () {
+        // 获取类型
+        var itemType = $(this).parents(".cart").attr("data-type");
+        $(location).attr("href","../view/products-introduction.html?type=" + itemType);
+    });
 };
 
 $(function () {

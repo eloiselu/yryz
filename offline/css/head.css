@@ -1,5 +1,6 @@
 
 .head-common {
+    position: relative;
     width: 100%;
     background-color: #392524;
     text-align: center;
@@ -26,8 +27,10 @@
 .head-back {
     position: absolute;
     left: 2.1rem;
+    top: 50%;
     width: 2rem;
     height: 2rem;
+    margin-top: -1rem;
     border-radius: 1rem;
     border: solid .05rem #efb588;
 }
