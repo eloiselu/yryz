@@ -20,17 +20,28 @@ textureDetailPage.prototype.init = function () {
 //枕头列表数据
 textureDetailPage.prototype.setData = function () {
     this.listData = {
+        'white': {
+            'name': '绒纤云锦棉',
+            'headImg': 'textureDetail-white-head.png',
+            'textureImg': 'textureDetail-white-img.png',
+            'title': '云绒纤维棉',
+            'subtitle': 'Soft  Fiber  Cotton',
+            'color': 'white',
+            'textureHead2': 'textureDetail-white-hardness.png',
+            'feature': 'VCollection经过超过1000次的试验找到接受度最高的纤维棉混合体，云绒纤维棉是由两种不同结构的纤维通过一定比例交织在一起而形成，提供最细腻的睡眠头部支撑感。提供最柔软的触感的1.33d云朵棉和提供加强支撑的3d弹性纤维两种材料分别打散通过螺旋气流混合－纤维交织－形成既拥有柔软度又具备一定弹性的支撑力',
+            'suitableCrowd': '柔软睡眠，适合大多数人使用',
+            'washingMethod': '可机洗，或用冷水手洗，清洗时要注意不要用洗衣粉，且洗涤的时间不要太久，洗后务必彻底晒干'
+        },
         'pink': {
             'name': '粉色TPE弹性体',
-            'headImg': 'texture-head1.png',
+            'headImg': 'textureDetail-pink-head.png',
             'textureImg': 'textureDetail-pink-img.png',
             'title': 'PE+TPE 弹性体',
             'subtitle': 'PE+TPE Elastomer',
             'color': 'Pink',
-            'textureHead2': 'textureDetail-pink-head2.png',
+            'textureHead2': 'textureDetail-pink-hardness.png',
             'feature': 'VCollection从日本精心选购的PE+TPE弹性体是一种热塑性弹性体材料，具有高强度高回弹性，环保无毒触感柔软等特点由于拥有舒适的手感，广泛用于人造皮肤通过欧盟EU-10/2011食品级测试标准及欧盟RoHS环保安全标准。 中医养生云：头凉脚热七分饱在睡眠时，头部保持低温有效降低大脑皮层活跃度利于大脑皮层休息。软管枕具有透气排热的特点，能够有效排出枕头内的热量，保持枕头内部温度提高睡眠质量。',
             'suitableCrowd': '颈椎不舒服，长时间坐姿工作压力大年轻人'
-
         },
         'cheese': {
             'name': '芝士乳胶条',
@@ -88,7 +99,7 @@ textureDetailPage.prototype.setData = function () {
             'suitableCrowd': '老少皆宜，尤其是易出汗体质的人群'
         }
     }
-}
+};
 
 //数据列表
 textureDetailPage.prototype.setDataListHtml = function () {
@@ -149,10 +160,7 @@ textureDetailPage.prototype.setDataListHtml = function () {
     htmlArr.push('</div>');
 
     $('.main').html(htmlArr.join(''));
-
-
-}
-
+};
 
 //初始化事件
 textureDetailPage.prototype.initEvent = function () {

@@ -19,11 +19,11 @@ indexPage.prototype.initSwiper = function () {
     this.mySwiper = new Swiper('.swiper-container', {
         // 循环模式选项
         loop: true,
-        // speed: 500,
-        // autoplay: {
-        //     delay: 2500,
-        //     disableOnInteraction: false,
-        // },
+        speed: 500,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         // 如果需要分页器
         pagination: {
             el: '.swiper-pagination'
