@@ -2,6 +2,11 @@ body {
     background-color: #442c2b;
 }
 
+.head-name {
+    text-align: center;
+    color: #e1b397;
+}
+
 /*主体部分*/
 .main {
     position: relative;
