@@ -24,22 +24,18 @@
 }
 
 .head-back {
-    display: inline-block;
+    position: absolute;
+    left: 2.1rem;
     width: 2rem;
     height: 2rem;
     border-radius: 1rem;
-    /* background-color: red; */
-    position: absolute;
-    margin-top: 1.5rem;
-    left: 2.1rem;
     border: solid .05rem #efb588;
 }
 
-.head-back a {
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
+.head-back i {
+    position: absolute;
+    top: .15rem;
+    left: .65rem;
+    font-size: 1.5rem!important;
     color: #efb588;
-    margin-left: -.09rem;
 }
