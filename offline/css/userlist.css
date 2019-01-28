@@ -15,6 +15,10 @@ body {
     margin-top: 1.5rem;
 }
 
+.head-name .head-back {
+    margin-left: -6.5rem;
+}
+
 /*P标签修改*/
 .userlist-text {
     margin-top: 0.2rem;

@@ -11,6 +11,10 @@ body {
     color: #eeb7a3;
 }
 
+.head-name .head-back {
+    margin-top: 0;
+}
+
 /*曲线测量部分*/
 .measure-step2-title {
     display: inline-block;

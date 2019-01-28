@@ -8,6 +8,10 @@ body {
     color: #efb588;
     text-align: center;
 }
+.main  .head-back {
+    margin-top:0;
+}
+
 /*曲线测量部分*/
 .measure-title {
     display: inline-block;

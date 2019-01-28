@@ -7,6 +7,10 @@ body {
     color: #e1b397;
 }
 
+.head-name  .head-back {
+    margin-top: -.38rem;
+}
+
 /*主体部分*/
 .main {
     position: relative;
