@@ -43,7 +43,6 @@ measureStep1.prototype.initEvent = function () {
             localStorage.setItem("chooseHair",chooseHair);
             $(location).attr("href","../view/measure-step2.html");
         }
-
     })
 };
 

@@ -4,17 +4,20 @@
 
 var productsIntroductionPage = function () {
     return this;
-}
+};
 
 //初始化
 productsIntroductionPage.prototype.init = function () {
+    //获取链接重的参数
+    this.type = window.location.href.split('?')[1].split('=')[1];
+
     //设置购买枕头列表数据
     this.setData();
     //设置购买枕头列表数据
     this.setDataListHtml();
     //初始化事件
     this.initEvent();
-}
+};
 
 //枕头列表数据
 productsIntroductionPage.prototype.setData = function () {
@@ -73,10 +76,8 @@ productsIntroductionPage.prototype.setData = function () {
 
 // 数据列表
 productsIntroductionPage.prototype.setDataListHtml = function () {
-    //获取链接重的参数
-    var type = window.location.href.split('?')[1].split('=')[1];
     //获取对应的数据
-    var data = this.listData[type];
+    var data = this.listData[this.type];
 
     // 设置图片
     $(".products-img").attr("src", "../images/" + data.bigImg);
@@ -86,6 +87,18 @@ productsIntroductionPage.prototype.setDataListHtml = function () {
     $(".products-subtitle").html(data.subtitle);
     // 描述
     $(".products-text").html(data.feature + " 热销 20万件");
+
+    // 设置购物数量
+    // 获取本地数据
+    var shopCartData = localStorage.getItem("shopCartData");
+    if (shopCartData) {
+        shopCartData = JSON.parse(shopCartData);
+        $("#numText").val(shopCartData[this.type] || 1);
+        // 如果选中数量不等于1，则移除减少的禁用样式
+        if ($("#numText").val() != "1") {
+            $("#minusNum").removeClass("forbidden");
+        }
+    }
 };
 
 //数据列表
@@ -130,6 +143,8 @@ productsIntroductionPage.prototype.setDataListHtml_jing = function () {
 
 //初始化事件
 productsIntroductionPage.prototype.initEvent = function () {
+    var that = this;
+
     // 减少按钮的点击事件
     $("#minusNum").on("click", function () {
         // 获取购物数量
@@ -160,9 +175,18 @@ productsIntroductionPage.prototype.initEvent = function () {
     // 加入购物车按钮点击事件
     $("#shoppingBtn").on("click", function () {
         // 将购物数据添加到本地
+        // 先获取本地购物车数据
+        var shopCartData = localStorage.getItem("shopCartData");
+        shopCartData = shopCartData ? JSON.parse(shopCartData) : {};
+        // 设置对应加入购物车的数量
+        shopCartData[that.type] = $("#numText").val();
+        // 再设置到本地
+        localStorage.setItem("shopCartData", JSON.stringify(shopCartData));
 
+        console.log(localStorage.getItem("shopCartData"));
 
         // 跳转到购物车页面
+        $(location).attr("href","../view/shopping-cart.html");
     });
 };
 

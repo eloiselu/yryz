@@ -142,3 +142,12 @@ body {
 .button-up {
     padding-left: 0.5rem;
 }
+
+.no-data {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: #666;
+}

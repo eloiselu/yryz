@@ -91,6 +91,9 @@ measureStep2.prototype.initEvent = function () {
         // 将数据保存到本地
         localStorage.setItem("sideFile", canvas.toDataURL("image/png"));
 
+        // 点击侧面拍照后，清空购物车数据
+        localStorage.removeItem("shopCartData");
+
         // 跳转到下一页
         // window.location.href = window.location.origin + "/view/measure-step3.html";
         $(location).attr("href","../view/measure-step3.html");

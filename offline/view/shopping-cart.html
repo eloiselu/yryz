@@ -43,106 +43,34 @@
 
 <!--主体部分-->
 <div class="main">
-    <ul class="cart-cont fix">
-            <li class="cart fix">
-                <!--左边介绍部分-->
-                <div class="cart-left">
-                    <!--左边图片-->
-                    <!--&lt;!&ndash;左侧图片部分&ndash;&gt;-->
-                    <span class="left-img">
-                        <img class="cart-img" src="../images/assistant-img-cheese.png" alt="">
-                        <div class="img-bottom"></div>
-                    </span>
-                    <!--右边文字-->
-                    <span class="right-text">
-                    <p class="text-title">芝士乳胶条枕/本白色</p>
-                    <p class="text-subtitle">Cheese Latex</p>
-                    <p class="text-money">&yen;499</p>
-                    <p class="text-intro">颜色Color：浅灰 French grey</p>
-                    <p class="text-intro">硬度Hardness：中低 Lower-mid</p>
-                    <p class="text-intro">弹性Elasticity：高 High</p>
-                </span>
-                </div>
-                <!--增加数量-->
-                <div class="cart-right">
-                    <button type="button" class="but button-minus button-down">-</button>
-                    <input type="text" class="button-count" value="1" readonly="readonly">
-                    <button type="button" class="button-minus button-up">+</button>
-                </div>
-            </li>
-        <li class="cart fix">
-            <!--左边介绍部分-->
-            <div class="cart-left">
-                <!--左边图片-->
-                <span class="left-img">
-                    <img class="cart-img" src="../images/assistant-img-gray.png" alt="">
-                    <div class="img-bottom"></div>
-                </span>
-                <!--右边文字-->
-                <span class="right-text">
-                <p class="text-title">TPE弹性体枕／浅灰色</p>
-                <p class="text-subtitle">TPE Elastome</p>
-                <p class="text-money">&yen;499</p>
-                <p class="text-intro">颜色Color：浅灰 French grey</p>
-                <p class="text-intro">硬度Hardness：中低 Lower-mid</p>
-                <p class="text-intro">弹性Elasticity：高 High</p>
-            </span>
-            </div>
-            <!--增加数量-->
-            <div class="cart-right">
-                <button type="button" class="but button-minus button-down">-</button>
-                <input type="text" class="button-count" value="1" readonly="readonly">
-                <button type="button" class="button-minus button-up">+</button>
-            </div>
-        </li>
-        <li class="cart fix">
-            <!--左边介绍部分-->
-            <div class="cart-left">
-                <!--左边图片-->
-                <span class="left-img">
-                    <img class="cart-img" src="../images/assistant-img-brown.png" alt="">
-                    <div class="img-bottom"></div>
-                </span>
-                <!--右边文字-->
-                <span class="right-text">
-                <p class="text-title">三角荞麦壳枕／深咖色</p>
-                <p class="text-subtitle">TPE Elastome</p>
-                <p class="text-money">&yen;499</p>
-                <p class="text-intro">颜色Color：浅灰 French grey</p>
-                <p class="text-intro">硬度Hardness：中低 Lower-mid</p>
-                <p class="text-intro">弹性Elasticity：高 High</p>
-            </span>
-            </div>
-            <!--增加数量-->
-            <div class="cart-right">
-                <button type="button" class="but button-minus button-down">-</button>
-                <input type="text" class="button-count" value="1" readonly="readonly">
-                <button type="button" class="button-minus button-up">+</button>
-            </div>
-        </li>
-        <li class="cart fix">
-            <!--左边介绍部分-->
-            <div class="cart-left">
-                <!--左边图片-->
-                <span class="left-img">
-                    <img class="cart-img" src="../images/assistant-img-pink.png" alt="">
-                    <div class="img-bottom"></div>
-                </span>
-                <!--右边文字-->
-                <span class="right-text">
-                <p class="text-title">粉色软管枕／浅粉色</p>
-                <p class="text-subtitle">TPE Elastome</p>
-                <p class="text-money">&yen;499</p>
-                <p class="text-intro">颜色Color：浅粉色 pink; 硬度Hardness：中低 Lower-mid 弹性Elasticity：高 High</p>
-            </span>
-            </div>
-            <!--增加数量-->
-            <div class="cart-right">
-                <button type="button" class="but button-minus button-down">-</button>
-                <input type="text" class="button-count" value="1" readonly="readonly">
-                <button type="button" class="button-minus button-up">+</button>
-            </div>
-        </li>
+    <span class="no-data">您的购物车是空的哦！</span>
+    <ul class="cart-cont" id="cartCont">
+        <!--<li class="cart fix">-->
+            <!--&lt;!&ndash;左边介绍部分&ndash;&gt;-->
+            <!--<div class="cart-left">-->
+                <!--&lt;!&ndash;左边图片&ndash;&gt;-->
+                <!--&lt;!&ndash;&lt;!&ndash;左侧图片部分&ndash;&gt;&ndash;&gt;-->
+                <!--<span class="left-img">-->
+                        <!--<img class="cart-img" src="../images/assistant-img-cheese.png" alt="">-->
+                        <!--<div class="img-bottom"></div>-->
+                    <!--</span>-->
+                <!--&lt;!&ndash;右边文字&ndash;&gt;-->
+                <!--<span class="right-text">-->
+                    <!--<p class="text-title">芝士乳胶条枕/本白色</p>-->
+                    <!--<p class="text-subtitle">Cheese Latex</p>-->
+                    <!--<p class="text-money">&yen;499</p>-->
+                    <!--<p class="text-intro">颜色Color：浅灰 French grey</p>-->
+                    <!--<p class="text-intro">硬度Hardness：中低 Lower-mid</p>-->
+                    <!--<p class="text-intro">弹性Elasticity：高 High</p>-->
+                <!--</span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;增加数量&ndash;&gt;-->
+            <!--<div class="cart-right">-->
+                <!--<button type="button" class="but button-minus button-down">-</button>-->
+                <!--<input type="text" class="button-count" value="1" readonly="readonly">-->
+                <!--<button type="button" class="button-minus button-up">+</button>-->
+            <!--</div>-->
+        <!--</li>-->
     </ul>
 </div>
 </body>
