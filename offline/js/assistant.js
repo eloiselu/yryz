@@ -13,7 +13,7 @@ assistantPage.prototype.init = function () {
     this.initEvent();
 
     // 默认选中儿童
-    $('.assistant-left .assistant-li[data-type="child"]').trigger("click");
+    $('.assistant-left .assistant-li[data-type="baby"]').trigger("click");
 };
 
 //枕头列表数据
@@ -64,6 +64,14 @@ assistantPage.prototype.initData = function () {
     };
 
     this.classifyData = {
+        'baby': {
+            'topImg': 'assistant-bigimg-child.png',
+            'pillows': []
+        },
+        'infant': {
+            'topImg': 'assistant-bigimg-child.png',
+            'pillows': []
+        },
         'child': {
             'topImg': 'assistant-bigimg-child.png',
             'pillows': ["pink", "blue", "brown"]

@@ -23,7 +23,10 @@ indexPage.prototype.init = function () {
 
 // 运行系统打开首页后，设置本机机器唯一标识
 indexPage.prototype.initFingerprint = function () {
-    commonJs.deviceCode = "test_lu";
+    var fingerprint = new Fingerprint().get();
+    localStorage.setItem("fingerprint", fingerprint);
+    console.log(fingerprint);
+
 };
 
 // 初始化轮播图
