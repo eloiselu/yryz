@@ -34,27 +34,22 @@ body {
 	width: 3.9rem;
 	height: .92rem;
 	line-height: .92rem;
-	margin: 0 auto;
-	margin-top: .13rem;
-	margin-bottom: .13rem;
-	border-radius: .5rem;
+	margin: .5rem auto;
 	display: block;
 	font-size: .3rem;
 }
 
-.full-link a:focus {
-	color: #333333;
-	background-color: #9f776c;
-	width: 3.9rem;
-	height: .92rem;
-	line-height: .92rem;
-	margin: 0 auto;
-	margin-top: .13rem;
-	margin-bottom: .13rem;
-	border-radius: .5rem;
-	display: block;
-	font-size: .3rem;
-}
+/*.full-link a:focus {*/
+	/*color: #333333;*/
+	/*background-color: #9f776c;*/
+	/*width: 3.9rem;*/
+	/*height: .92rem;*/
+	/*line-height: .92rem;*/
+	/*margin: .5rem auto;*/
+	/*border-radius: .5rem;*/
+	/*display: block;*/
+	/*font-size: .3rem;*/
+/*}*/
 
 .age-choose {
 	color: #eec2a9;
@@ -66,6 +61,20 @@ body {
 	border-radius: .5rem;
 	display: block;
 	font-size: .3rem;
+}
+
+.full-link a.active:after{
+	content: "  ";
+	color: #333333;
+	background-color: #9f776c;
+	width: 3.9rem;
+	height: .92rem;
+	line-height: .92rem;
+	margin: .5rem auto;
+	border-radius: .5rem;
+	display: block;
+	font-size: .3rem;
+
 }
 
 	/*精选*/
