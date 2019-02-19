@@ -9,7 +9,7 @@ body {
 
 /*选择枕头*/
 .sugges-pillow {
-    padding-top: 1.2rem;
+    padding-top: 2rem;
 }
 
 .pillow {
@@ -90,7 +90,7 @@ body {
     border-radius: 1.5rem;
     margin: 0 auto;
     margin-top: 1.33rem;
-    margin-bottom: 1.16rem;
+    margin-bottom: 3rem;
 }
 
 .suggesction .suggesction-link  .suggesction-text {

@@ -27,6 +27,9 @@ body {
 
 .choise-link {
 	position: relative;
+	margin: 0 auto;
+	width: 4.72rem;
+	cursor: pointer;
 }
 
 /*选枕按钮*/
@@ -55,7 +58,7 @@ body {
 .choise-btn {
 	text-align: center;
 	margin-top: 1.4rem;
-	margin-bottom: 1.1rem;
+	padding-bottom: 3rem;
 }
 
 .choise-btn .btn-link {
@@ -75,6 +78,11 @@ body {
 
 /*底部文字*/
 .choise-foot {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
 	text-align: center;
 	background-color: #2f1a19;
 	padding-top: .3rem;

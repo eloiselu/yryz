@@ -10,14 +10,14 @@ body {
 .age-title {
 	color: #e9b88f;
 	font-size: .58rem;
-	padding-top: .66rem;
+	padding-top: 2rem;
 	display: block;
 }
 
 .age-subtitle {
 	color: #e2c0a8;
 	font-size: .46rem;
-	margin-top: .58rem;
+	margin-top: .8rem;
 	margin-bottom: .6rem;
 	display: block;
 }
@@ -62,9 +62,7 @@ body {
 	width: 3.9rem;
 	height: .92rem;
 	line-height: .92rem;
-	margin: 0 auto;
-	margin-top: .13rem;
-	margin-bottom: .13rem;
+	margin: .5rem auto;
 	border-radius: .5rem;
 	display: block;
 	font-size: .3rem;
@@ -73,7 +71,7 @@ body {
 	/*精选*/
 .age-choice {
 	margin-top: 1.2rem; 
-	margin-bottom: 1rem;
+	margin-bottom: 3rem;
 }
 
 .age-choice .choice {
