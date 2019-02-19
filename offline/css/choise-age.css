@@ -63,19 +63,24 @@ body {
 	font-size: .3rem;
 }
 
-.full-link a.active:after{
-	content: "  ";
+.age-choose.active {
 	color: #333333;
 	background-color: #9f776c;
-	width: 3.9rem;
-	height: .92rem;
-	line-height: .92rem;
-	margin: .5rem auto;
-	border-radius: .5rem;
-	display: block;
-	font-size: .3rem;
-
 }
+
+/*.full-link a.active:after{*/
+	/*content: "  ";*/
+	/*color: #333333;*/
+	/*background-color: #9f776c;*/
+	/*width: 3.9rem;*/
+	/*height: .92rem;*/
+	/*line-height: .92rem;*/
+	/*margin: .5rem auto;*/
+	/*border-radius: .5rem;*/
+	/*display: block;*/
+	/*font-size: .3rem;*/
+
+/*}*/
 
 	/*精选*/
 .age-choice {
