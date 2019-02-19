@@ -16,10 +16,10 @@ choiseAge.prototype.bindData = function () {
     var chooseGender = localStorage.getItem("chooseGender");
     var chooseAge = localStorage.getItem("chooseAge");
     if(chooseGender){
-        $("#choose-gender .choice[class='active']").addClass("active");
+        $("#choose-gender .choice[data-type='" + chooseGender + "']").addClass("active");
     }
     if(chooseAge){
-        $("#choose-gender .choice[class='active']").addClass("active");
+        $("#choose-age .age-choose[data-type='" + chooseAge + "']").addClass("active");
     }
 }
 
