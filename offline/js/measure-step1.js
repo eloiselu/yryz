@@ -20,10 +20,10 @@ measureStep1.prototype.bindData = function () {
     var chooseGender = localStorage.getItem("chooseGender");
     var chooseHair = localStorage.getItem("chooseHair");
     if(chooseGender){
-        $("#gender .choose[class='active']").addClass("active");
+        $("#gender .choose[data-type='" + chooseGender + "']").addClass("active");
     }
     if(chooseHair){
-        $("#gender .choose[class='active']").addClass("active");
+        $("#hair .choose[data-type='" + chooseHair + "']").addClass("active");
     }
 }
 
