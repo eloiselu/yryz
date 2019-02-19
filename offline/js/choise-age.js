@@ -16,10 +16,10 @@ choiseAge.prototype.bindData = function () {
     var chooseGender = localStorage.getItem("chooseGender");
     var chooseAge = localStorage.getItem("chooseAge");
     if(chooseGender){
-        $("#gender .choose[class='active']").addClass("active");
+        $("#choose-gender .choice[class='active']").addClass("active");
     }
     if(chooseAge){
-        $("#gender .choose[class='active']").addClass("active");
+        $("#choose-gender .choice[class='active']").addClass("active");
     }
 }
 
@@ -31,7 +31,7 @@ choiseAge.prototype.initEvent = function () {
         //    接受性别和枕头的值
         var chooseAge = $("#choose-age .age-choose[class*='active']").attr("data-type");
         var chooseGender = $("#choose-gender .choice[class*='active']").attr("data-type");
-        
+
         if(chooseGender && chooseAge){
             localStorage.setItem("chooseGender",chooseGender);
             localStorage.setItem("chooseHair",chooseAge);

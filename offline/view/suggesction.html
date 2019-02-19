@@ -39,18 +39,18 @@
     <!--选择枕头-->
     <div class="sugges-pillow">
         <p><img src="../images/choiseAge-triangle.png" alt="">偏好软枕还是稍硬的枕头？</p>
-        <div class="sugges-fullLink">
-            <a href="javascript:;" class="sugges-link">
+        <div class="sugges-fullLink" id="texture">
+            <a href="javascript:;" class="sugges-link" data-type="texture-soft">
                 <p>稍软</p>
                 <p class="sugges-text">(例如：纤维棉)</p>
             </a>
 
-            <a href="javascript:;" class="sugges-link">
+            <a href="javascript:;" class="sugges-link" data-type="texture-hard">
                 <p>中</p>
                 <p class="sugges-text">(例如：TPE软管)</p>
             </a>
 
-            <a href="javascript:;" class="sugges-link">
+            <a href="javascript:;" class="sugges-link" data-type="texture-tougher">
                 <p>稍硬</p>
                 <p class="sugges-text">(例如：荞麦)</p>
             </a>
@@ -60,12 +60,12 @@
     <!--颈椎-->
     <div class="sugges-pillow pillow">
         <p><img src="../images/choiseAge-triangle.png" alt="">颈椎是否有不舒服？</p>
-        <div class="sugges-fullLink">
-            <a href="javascript:;" class="sugges-link">
+        <div class="sugges-fullLink" id="comfort">
+            <a href="javascript:;" class="sugges-link" data-type="comfort-true">
                 <p class="sugges-choose">是</p>
             </a>
 
-            <a href="javascript:;" class="sugges-link">
+            <a href="javascript:;" class="sugges-link" data-type="comfort-false">
                 <p class="sugges-choose">否</p>
             </a>
 
@@ -75,16 +75,16 @@
     <!--选择枕头高度-->
     <div class="sugges-pillow pillow">
         <p><img src="../images/choiseAge-triangle.png" alt="">偏好枕头的高度？</p>
-        <div class="sugges-fullLink">
-            <a href="javascript:;" class="sugges-link">
+        <div class="sugges-fullLink" id="hight">
+            <a href="javascript:;" class="sugges-link" data-type="hight-low">
                 <p class="sugges-choose">低</p>
             </a>
 
-            <a href="javascript:;" class="sugges-link">
+            <a href="javascript:;" class="sugges-link" data-type="hight-middle">
                 <p class="sugges-choose">中</p>
             </a>
 
-            <a href="javascript:;" class="sugges-link">
+            <a href="javascript:;" class="sugges-link" data-type="hight-tall">
                 <p class="sugges-choose">高</p>
             </a>
         </div>
@@ -112,6 +112,7 @@
 <script src="../js/flexible.js"></script>
 <script src="../js/commonJs.js"></script>
 <!-- <script src="../js/goBack.js"></script> -->
+ <script src="../js/suggesction.js"></script>
 
 </html>
 

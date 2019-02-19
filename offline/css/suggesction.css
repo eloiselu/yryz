@@ -44,27 +44,13 @@ body {
 }
 
 .sugges-pillow .sugges-fullLink a:hover {
-    display: inline-block;
-    height: 1.22rem;
-    width: 2.78rem;
     color: #241208;
     background-color: #a0786c;
-    text-align: center;
-    font-size: .36rem;
-    border-radius: 1rem;
-    margin: 0 .14rem 0 .14rem;
 }
 
-.sugges-pillow .sugges-fullLink a:focus {
-    display: inline-block;
-    height: 1.22rem;
-    width: 2.78rem;
+.sugges-pillow .sugges-link.active {
     color: #241208;
     background-color: #a0786c;
-    text-align: center;
-    font-size: .36rem;
-    border-radius: 1rem;
-    margin: 0 .14rem 0 .14rem;
 }
 
 .sugges-pillow  .sugges-choose {
