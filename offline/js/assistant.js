@@ -65,11 +65,11 @@ assistantPage.prototype.initData = function () {
 
     this.classifyData = {
         'baby': {
-            'topImg': 'assistant-bigimg-child.png',
+            'topImg': 'assistant-bigimg-baby.png',
             'pillows': []
         },
         'infant': {
-            'topImg': 'assistant-bigimg-child.png',
+            'topImg': 'assistant-bigimg-infant.png',
             'pillows': []
         },
         'child': {
