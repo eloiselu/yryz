@@ -1,0 +1,101 @@
+body {
+	background-color: #442c2b;
+}
+
+.main {
+	text-align: center;
+	background-color: #442c2b;
+}
+
+.age-title {
+	color: #e9b88f;
+	font-size: .58rem;
+	padding-top: .66rem;
+	display: block;
+}
+
+.age-subtitle {
+	color: #e2c0a8;
+	font-size: .46rem;
+	margin-top: .58rem;
+	margin-bottom: .6rem;
+	display: block;
+}
+
+.age-subtitle img {
+	height: .5rem;
+	padding-right: .34rem;
+	vertical-align: middle;
+}
+
+.full-link a:hover {
+	color: #333333;
+	background-color: #9f776c;
+	width: 3.9rem;
+	height: .92rem;
+	line-height: .92rem;
+	margin: 0 auto;
+	margin-top: .13rem;
+	margin-bottom: .13rem;
+	border-radius: .5rem;
+	display: block;
+	font-size: .3rem;
+}
+
+.full-link a:focus {
+	color: #333333;
+	background-color: #9f776c;
+	width: 3.9rem;
+	height: .92rem;
+	line-height: .92rem;
+	margin: 0 auto;
+	margin-top: .13rem;
+	margin-bottom: .13rem;
+	border-radius: .5rem;
+	display: block;
+	font-size: .3rem;
+}
+
+.age-choose {
+	color: #eec2a9;
+	background-color: #30191d;
+	width: 3.9rem;
+	height: .92rem;
+	line-height: .92rem;
+	margin: 0 auto;
+	margin-top: .13rem;
+	margin-bottom: .13rem;
+	border-radius: .5rem;
+	display: block;
+	font-size: .3rem;
+}
+
+	/*精选*/
+.age-choice {
+	margin-top: 1.2rem; 
+	margin-bottom: 1rem;
+}
+
+.age-choice .choice {
+	display: inline-block;
+	width: 3.22rem;
+	height: .92rem;
+	line-height: .92rem;
+	background-color: #30191d;
+	color: #eec2a9;
+	text-align: center;
+	border-radius: .5rem;
+	position: relative;
+	margin-left: 1rem;
+}
+
+.age-choice .choice img {
+	height: .95rem;
+	position: absolute;
+    left: -.32rem;
+    top: -.6rem;
+}
+
+.age-choice .choice p {
+	font-size: .34rem;
+}

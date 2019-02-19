@@ -3,8 +3,23 @@ body {
 }
 
 /*丰富材质底部高度*/
+.head-name {
+    background-color: #442c2b;
+    text-align: center;
+    color: #eeb7a3;
+}
+
 .tit-bottom {
- margin-bottom: 1.1rem;
+    display: inline-block;
+    width: 9.95rem;
+    height: 3.07rem;
+    line-height: 3.07rem;
+    background-color: #32171c;
+    font-size: 1.24rem;
+    text-align: center;
+    border-radius: 2.2rem;
+    margin-top: 2.09rem;
+    margin-bottom: 1.1rem;
 }
 
 /*主体部分*/
