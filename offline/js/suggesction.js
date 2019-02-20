@@ -13,18 +13,18 @@ suggesction.prototype.init = function () {
 
 //从本地获取数据
 suggesction.prototype.bindData = function () {
-    var texture = localStorage.getItem("texture");
-    var comfort = localStorage.getItem("comfort");
-    var hight = localStorage.getItem("hight");
+    var chooseTexture = localStorage.getItem("chooseTexture");
+    var chooseComfort = localStorage.getItem("chooseComfort");
+    var chooseHight = localStorage.getItem("chooseHight");
 
-    if (texture) {
-        $("#texture .sugges-link[data-type='" + texture + "']").addClass("active");
+    if (chooseTexture) {
+        $("#texture .sugges-link[data-type='" + chooseTexture + "']").addClass("active");
     }
-    if (comfort) {
-        $("#comfort .sugges-link[data-type='" + comfort + "']").addClass("active");
+    if (chooseComfort) {
+        $("#comfort .sugges-link[data-type='" + chooseComfort + "']").addClass("active");
     }
-    if (hight) {
-        $("#hight .sugges-link[data-type='" + hight + "']").addClass("active");
+    if (chooseHight) {
+        $("#hight .sugges-link[data-type='" + chooseHight + "']").addClass("active");
     }
 }
 
@@ -33,15 +33,26 @@ suggesction.prototype.initEvent = function () {
     //点击年龄添加选中、兄弟之间不选
     $(".sugges-link").on('click', function () {
         $(this).addClass("active").siblings().removeClass("active");
+    });
 
-        //    接收值
-        var texture = $("#texture .sugges-link[class*='active']").attr("data-type");
-        var comfort = $("#comfort .sugges-link[class*='active']").attr("data-type");
-        var hight = $("#hight .sugges-link[class*='active']").attr("data-type");
+    // 推荐枕头按钮点击事件
+    $(".suggesction-link").on('click', function () {
 
-        localStorage.setItem("texture", texture);
-        localStorage.setItem("comfort", comfort);
-        localStorage.setItem("hight", hight);
+        // 接收值
+        var chooseTexture = $("#texture .sugges-link[class*='active']").attr("data-type");
+        var chooseComfort = $("#comfort .sugges-link[class*='active']").attr("data-type");
+        var chooseHight = $("#hight .sugges-link[class*='active']").attr("data-type");
+
+        if(chooseTexture && chooseComfort && chooseHight) {
+            localStorage.setItem("chooseTexture", chooseTexture);
+            localStorage.setItem("chooseComfort", chooseComfort);
+            localStorage.setItem("chooseHight", chooseHight);
+
+            $(location).attr("href","../view/choise-assistant.html");
+        }
+        else {
+            layer.alert("问题没有回答完哦，请继续答题！");
+        }
     });
 }
 

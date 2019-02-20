@@ -34,8 +34,8 @@ choiseAge.prototype.initEvent = function () {
 
         if(chooseGender && chooseAge){
             localStorage.setItem("chooseGender",chooseGender);
-            localStorage.setItem("chooseHair",chooseAge);
-            $(location).attr("href","../view/measure-step1.html");
+            localStorage.setItem("chooseAge",chooseAge);
+            $(location).attr("href","../view/suggesction.html");
         }
     });
 
