@@ -7,25 +7,106 @@ choiseAssistant.prototype.init = function () {
     // 初始化事件
     this.initEvent();
 
+    //枕头列表数据
+    this.setData();
+    //处理枕头标签
+    this.setPillowLabel();
     // 从本地获取数据
-    this.bindData();
+    this.getChooseData();
+    // 根据标签获取枕头数据
+    this.getPillowData();
 }
+
+//枕头列表数据
+choiseAssistant.prototype.setData = function () {
+    this.listData = {
+        'cheese': {
+            'leftImg': 'assistant-img-white.png',
+            'title': '芝士乳胶条枕/本白色',
+            'subtitle': 'Cheese Latex',
+            'color': '颜色Color：本白 Creamy White',
+            'hardness': '硬度Hardness：中低 Lower-mid',
+            'elasticity': '弹性Elasticity：高 High'
+        },
+        'gray': {
+            'leftImg': 'assistant-img-gray.png',
+            'title': 'TPE弹性体枕／深灰色 ',
+            'subtitle': 'TPE Elastome',
+            'color': '颜色Color：深灰色 Dark Gray',
+            'hardness': '硬度Hardness：中低 Lower-mid',
+            'elasticity': '弹性Elasticity：高 High'
+        },
+        'brown': {
+            'leftImg': 'assistant-img-brown.png',
+            'title': '三角荞麦壳枕／深咖色',
+            'subtitle': 'Cheese Latex',
+            'color': '颜色Color：深咖色 Dark Brown',
+            'hardness': '硬度Hardness：中低 Lower-mid',
+            'elasticity': '弹性Elasticity：高 High'
+        },
+        'pink': {
+            'leftImg': 'assistant-img-pink.png',
+            'title': '粉色软管枕／浅粉色 ',
+            'subtitle': 'TPE Elastome',
+            'color': '颜色Color：浅粉色 pink',
+            'hardness': '硬度Hardness：中低 Lower-mid',
+            'elasticity': '弹性Elasticity：高 High'
+        },
+        'blue': {
+            'leftImg': 'assistant-img-blue.png',
+            'title': '蓝色软管枕／宝蓝色 ',
+            'subtitle': 'TPE Elastome',
+            'color': '颜色Color：宝蓝色 blue',
+            'hardness': '硬度Hardness：中低 Lower-mid',
+            'elasticity': '弹性Elasticity：高 High'
+        },
+        'lightgray': {
+            'leftImg': 'assistant-img-lightgray.png',
+            'title': 'TPE弹体枕／浅灰色 ',
+            'subtitle': 'TPE Elastome',
+            'color': '颜色Color：浅灰色 White',
+            'hardness': '硬度Hardness：中低 Lower-mid',
+            'elasticity': '弹性Elasticity：高 High'
+        },
+        'white': {
+            'leftImg': 'assistant-img-white.png',
+            'title': '纤维棉枕／白色 ',
+            'subtitle': 'TPE Elastome',
+            'color': '颜色Color：白色 White',
+            'hardness': '硬度Hardness：中低 Lower-mid',
+            'elasticity': '弹性Elasticity：高 High'
+        }
+    }
+};
 
 //处理枕头标签
 choiseAssistant.prototype.setPillowLabel = function () {
-    this.pillowLabel = [
-        'cheese'
-    'gray'
-    'brown'
-    'pink'
-    'blue'
-    'lightgray'
-    'white'
-    ]
+    // "baby,infant,child,juvenile,youth,middleAge,oldAge"
+    // "man,woman"
+    // "texture-soft,texture-hard,texture-tougher"
+    // "comfort-true,comfort-false"
+    // "hight-low,hight-middle,hight-tall"
+
+    this.pillowLabel = {
+        // 乳胶枕（男／女）（软／中）（颈椎不舒适不推荐）（年龄19-99）
+        'cheese': ['man', 'woman', 'texture-soft', 'texture-hard', 'comfort-false', 'youth', 'middleAge', 'oldAge'],
+        // 竹炭崖柏（男／女）（中／硬）（颈椎不舒适推荐）（年龄19-99）
+        'gray': ['man', 'woman', 'texture-hard', 'texture-tougher', 'comfort-true', 'youth', 'middleAge', 'oldAge'],
+        // 荞麦（男／女）（中／硬）（颈椎不舒适推荐）（年龄19-99）
+        'brown': ['man', 'woman', 'texture-hard', 'texture-tougher', 'comfort-true', 'youth', 'middleAge', 'oldAge'],
+        // 粉色软管（女性）（软／中）（颈椎不舒适推荐）（年龄19-99）
+        'pink': ['woman', 'texture-soft', 'texture-hard', 'comfort-true', 'youth', 'middleAge', 'oldAge'],
+        // 蓝色软管（男性）（中／硬）（颈椎不舒适推荐）（年龄19-99）
+        'blue': ['man', 'texture-hard', 'texture-tougher', 'comfort-true', 'youth', 'middleAge', 'oldAge'],
+        // 灰色软管（男／女）（软／中）（颈椎不舒适不推荐）（年龄19-99）
+        'lightgray': ['man', 'woman', 'texture-soft', 'texture-hard', 'comfort-false', 'youth', 'middleAge', 'oldAge'],
+        // 纤维棉枕（男／女）（软／中）（颈椎不舒适不推荐）（年龄19-99）
+        'white': ['man', 'woman', 'texture-soft', 'texture-hard', 'comfort-false', 'youth', 'middleAge', 'oldAge']
+    }
 }
 
 //从本地获取数据
-choiseAssistant.prototype.bindData = function () {
+choiseAssistant.prototype.getChooseData = function () {
     this.chooseGender = localStorage.getItem("chooseGender");
     this.chooseAge = localStorage.getItem("chooseAge");
     this.chooseTexture = localStorage.getItem("chooseTexture");
@@ -33,9 +114,25 @@ choiseAssistant.prototype.bindData = function () {
     this.chooseHight = localStorage.getItem("chooseHight");
 }
 
+// 根据标签获取枕头数据
+choiseAssistant.prototype.getPillowData = function () {
+    var pillowDataArr = [];
+
+    for (var key in this.pillowLabel) {
+        var labels = this.pillowLabel[key];
+        if (labels.includes(this.chooseGender) &&
+            labels.includes(this.chooseAge) &&
+            labels.includes(this.chooseTexture) &&
+            labels.includes(this.chooseComfort)) {
+            pillowDataArr.push(key);
+        }
+    }
+
+    console.log(pillowDataArr.join(","));
+}
+
 // 初始化事件
 choiseAssistant.prototype.initEvent = function () {
-
 
 }
 
