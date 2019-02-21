@@ -15,6 +15,8 @@ choiseAssistant.prototype.init = function () {
     this.getChooseData();
     // 根据标签获取枕头数据
     this.getPillowData();
+    // 拼接数据
+    this.setList();
 }
 
 //枕头列表数据
@@ -116,7 +118,7 @@ choiseAssistant.prototype.getChooseData = function () {
 
 // 根据标签获取枕头数据
 choiseAssistant.prototype.getPillowData = function () {
-    var pillowDataArr = [];
+    this.pillowDataArr = [];
 
     for (var key in this.pillowLabel) {
         var labels = this.pillowLabel[key];
@@ -124,11 +126,39 @@ choiseAssistant.prototype.getPillowData = function () {
             labels.includes(this.chooseAge) &&
             labels.includes(this.chooseTexture) &&
             labels.includes(this.chooseComfort)) {
-            pillowDataArr.push(key);
+            this.pillowDataArr.push(key);
         }
     }
+    // console.log(pillowDataArr.join(","));
+}
 
-    console.log(pillowDataArr.join(","));
+//拼接数据
+choiseAssistant.prototype.setList = function () {
+    var htmlArr = [];
+
+    for (var )
+
+    htmlArr.push('li class="cart fix">');
+    <!--左边介绍部分-->
+    htmlArr.push('<div class="cart-left">');
+    <!--左边图片-->
+    <!--&lt;!&ndash;左侧图片部分&ndash;&gt;-->
+    htmlArr.push('<div class="left-img">');
+    htmlArr.push('<img class="cart-img" src="../images/assistant-img-cheese.png" alt="">');
+    htmlArr.push('<div class="img-bottom"></div>');
+    htmlArr.push('</div>');
+    <!--右边文字-->
+    htmlArr.push('<div class="right-text">');
+    htmlArr.push('<p class="text-title">芝士乳胶条枕/本白色</p>');
+    htmlArr.push('<p class="text-subtitle">Cheese Latex</p>');
+    htmlArr.push('<p class="text-intro choise-intro">颜色Color：浅灰 French grey</p>');
+    htmlArr.push('<p class="text-intro">硬度Hardness：中低 Lower-mid</p>');
+    htmlArr.push('<p class="text-intro">弹性Elasticity：高 High</p>');
+    htmlArr.push('</div>');
+    htmlArr.push('</div>');
+    <!--增加数量-->
+    htmlArr.push('<p class="cart-right">&yen;499</p>');
+    htmlArr.push('</li>')
 }
 
 // 初始化事件

@@ -100,20 +100,20 @@ shoppingCartPage.prototype.setDataListHtml = function () {
         <!--左边介绍部分-->
         htmlArr.push('<div class="cart-left">');
         <!--左边图片-->
-        htmlArr.push('<span class="left-img">');
+        htmlArr.push('<div class="left-img">');
         htmlArr.push('<img class="cart-img" src="../images/' + data.leftImg + '" alt="">');
 
         htmlArr.push('<div class="img-bottom"></div>');
-        htmlArr.push('</span>');
+        htmlArr.push('</div>');
         <!--右边文字-->
-        htmlArr.push('<span class="right-text">');
+        htmlArr.push('<div class="right-text">');
         htmlArr.push('<p class="text-title">' + data.title + '</p>');
         htmlArr.push('<p class="text-subtitle">' + data.subtitle + '</p>');
         htmlArr.push('<p class="text-money">&yen;499</p>')
         htmlArr.push('<p class="text-intro">' + data.color + '</p>');
         htmlArr.push('<p class="text-intro">' + data.hardness + '</p>');
         htmlArr.push('<p class="text-intro">' + data.elasticity + '</p>');
-        htmlArr.push('</span>');
+        htmlArr.push('</div>');
         htmlArr.push('</div>');
         <!--增加数量-->
         htmlArr.push('<div class="cart-right">');
