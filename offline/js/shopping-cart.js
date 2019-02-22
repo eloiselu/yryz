@@ -76,6 +76,22 @@ shoppingCartPage.prototype.setData = function () {
             'color': '颜色Color：白色 White',
             'hardness':'硬度Hardness：中低 Lower-mid',
             'elasticity':'弹性Elasticity：高 High'
+        },
+        'juvenile': {
+            'leftImg': 'assistant-img-pinkJuvenile.png',
+            'title': '有机棉+软管枕／粉色 ',
+            'subtitle': 'TPE Elastome',
+            'color': '颜色Color：粉色 Pink',
+            'hardness': '硬度Hardness：中低 Lower-mid',
+            'elasticity': '弹性Elasticity：高 High'
+        },
+        'child': {
+            'leftImg': 'assistant-img-whiteChild.png',
+            'title': '有机棉+软管枕／白色 ',
+            'subtitle': 'PE+TPE Elastomer',
+            'color': '颜色Color：白色 White',
+            'hardness': '硬度Hardness：中低 Lower-mid',
+            'elasticity': '弹性Elasticity：高 High'
         }
     }
 };

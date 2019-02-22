@@ -70,6 +70,20 @@ productsIntroductionPage.prototype.setData = function () {
             'subtitle': '深灰色 3D 网 竹炭TPE弹性体+香木球枕  Bamboo charcoal',
             'feature': '可水洗TPE弹性粒子',//
             'hotNum': '20'
+        },
+        'juvenile': {
+            'bigImg': 'productsIntroduction-img-pinkJuvenile.png',
+            'title': '智能测量＋专属调节',
+            'subtitle': '浅粉色 3D 网 TPE 弹性体枕  TPE Elastomer',
+            'feature': '可水洗TPE弹性粒子',
+            'hotNum': '20'
+        },
+        'child': {
+            'bigImg': 'productsIntroduction-img-whiteChild.png',
+            'title': '智能测量＋专属调节',
+            'subtitle': '白色 3D 网 TPE 弹性体枕  TPE Elastomer',
+            'feature': '可水洗TPE弹性粒子',
+            'hotNum': '20'
         }
     }
 };

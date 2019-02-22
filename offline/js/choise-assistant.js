@@ -77,6 +77,22 @@ choiseAssistant.prototype.setData = function () {
             'color': '颜色Color：白色 White',
             'hardness': '硬度Hardness：中低 Lower-mid',
             'elasticity': '弹性Elasticity：高 High'
+        },
+        'juvenile': {
+            'leftImg': 'assistant-img-pinkJuvenile.png',
+            'title': '有机棉+软管枕／粉色 ',
+            'subtitle': 'TPE Elastome',
+            'color': '颜色Color：粉色 Pink',
+            'hardness': '硬度Hardness：中低 Lower-mid',
+            'elasticity': '弹性Elasticity：高 High'
+        },
+        'child': {
+            'leftImg': 'assistant-img-whiteChild.png',
+            'title': '有机棉+软管枕／白色 ',
+            'subtitle': 'TPE Elastome',
+            'color': '颜色Color：白色 White',
+            'hardness': '硬度Hardness：中低 Lower-mid',
+            'elasticity': '弹性Elasticity：高 High'
         }
     }
 };
@@ -135,30 +151,44 @@ choiseAssistant.prototype.getPillowData = function () {
 //拼接数据
 choiseAssistant.prototype.setList = function () {
     var htmlArr = [];
+    for (var i = 0; i < this.pillowDataArr.length; i++) {
+        //获取对应的数据
+        var data = this.listData[i];
 
-    for (var )
+        // htmlArr.push('<li class="cart fix">');
+        htmlArr.push('<li class="cart fix" data-type="' + i + '">');
+        <!--左边介绍部分-->
+        htmlArr.push('<div class="cart-left">');
+        <!--左边图片-->
+        <!--&lt;!&ndash;左侧图片部分&ndash;&gt;-->
+        htmlArr.push('<div class="left-img">');
+        htmlArr.push('<img class="cart-img" src="../images/assistant-img-cheese.png" alt="">');
+        htmlArr.push('<div class="img-bottom"></div>');
+        htmlArr.push('</div>');
+        <!--右边文字-->
+        htmlArr.push('<div class="right-text">');
 
-    htmlArr.push('li class="cart fix">');
-    <!--左边介绍部分-->
-    htmlArr.push('<div class="cart-left">');
-    <!--左边图片-->
-    <!--&lt;!&ndash;左侧图片部分&ndash;&gt;-->
-    htmlArr.push('<div class="left-img">');
-    htmlArr.push('<img class="cart-img" src="../images/assistant-img-cheese.png" alt="">');
-    htmlArr.push('<div class="img-bottom"></div>');
-    htmlArr.push('</div>');
-    <!--右边文字-->
-    htmlArr.push('<div class="right-text">');
-    htmlArr.push('<p class="text-title">芝士乳胶条枕/本白色</p>');
-    htmlArr.push('<p class="text-subtitle">Cheese Latex</p>');
-    htmlArr.push('<p class="text-intro choise-intro">颜色Color：浅灰 French grey</p>');
-    htmlArr.push('<p class="text-intro">硬度Hardness：中低 Lower-mid</p>');
-    htmlArr.push('<p class="text-intro">弹性Elasticity：高 High</p>');
-    htmlArr.push('</div>');
-    htmlArr.push('</div>');
-    <!--增加数量-->
-    htmlArr.push('<p class="cart-right">&yen;499</p>');
-    htmlArr.push('</li>')
+        htmlArr.push('<p class="text-title">' + data.title + '</p>');
+        htmlArr.push('<p class="text-subtitle">' + data.subtitle + '</p>');
+        htmlArr.push('<p class="text-intro choise-intro">' + data.color + '</p>');
+        htmlArr.push('<p class="text-intro">' + data.hardness + '</p>');
+        htmlArr.push('<p class="text-intro">'  + data.elasticity +  '</p>');
+
+        // htmlArr.push('<p class="text-title">芝士乳胶条枕/本白色</p>');
+        // htmlArr.push('<p class="text-subtitle">Cheese Latex</p>');
+        // htmlArr.push('<p class="text-intro choise-intro">颜色Color：浅灰 French grey</p>');
+        // htmlArr.push('<p class="text-intro">硬度Hardness：中低 Lower-mid</p>');
+        // htmlArr.push('<p class="text-intro">弹性Elasticity：高 High</p>')
+
+        htmlArr.push('</div>');
+        htmlArr.push('</div>');
+        <!--增加数量-->
+        htmlArr.push('<p class="cart-right">&yen;499</p>');
+        htmlArr.push('</li>')
+    }
+
+    $("#cartCont").html(htmlArr.join(""));
+
 }
 
 // 初始化事件
