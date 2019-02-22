@@ -41,7 +41,7 @@ assistantPage.prototype.initData = function () {
             'leftImg': 'assistant-img-cheese.png',
             'title': '芝士乳胶条枕/本白色',
             'subtitle': 'Cheese Latex',
-            'description': '芝士乳胶的优势是让你可以最方便的 取出和填充给你最方便的高度调节方 式，弹性好，有乳胶独特气味很好的吸湿性和透气性无污染无毒'
+            'description': '芝士乳胶的优势是让你可以最方便的 取出和填充给你最方便的高度调节方式，弹性好，有乳胶独特气味很好的吸湿性和透气性无污染无毒'
         },
         'white': {
             'leftImg': 'assistant-img-white.png',
@@ -49,18 +49,20 @@ assistantPage.prototype.initData = function () {
             'subtitle': 'PE+TPE Elastomer',
             'description': '提供最柔软的触感的1.33d云朵棉和提供加强支撑的3d弹性纤维两 种材料分别打散通过螺旋气流混合－纤维交织－形成既拥有柔软度又具备一定弹性支撑力'
         },
-        'lightgray': {
-            'leftImg': 'assistant-img-lightgray.png',
-            'title': 'TPE弹性体枕／浅灰色',
-            'subtitle': 'TPE Elastome',
-            'description': '为长期压力大的年轻人准备软管枕具有透气排热的特点，能够有效排出枕头内的热量，保持枕头内部温度提高睡眠质量'
+        'juvenile': {
+            'leftImg': 'assistant-img-pinkJuvenile.png',
+            'title': '有机棉+软管枕／粉色 ',
+            'subtitle': 'Orginc+TPE Elastomer',
+            // 'description': '提供最柔软的触感的1.33d云朵棉和提供加强支撑的3d弹性纤维两 种材料分别打散通过螺旋气流混合－纤维交织－形成既拥有柔软度又具备一定弹性支撑力'
+
         },
-        'gray': {
-            'leftImg': 'assistant-img-gray.png',
-            'title': '竹炭软管枕／深棕色',
-            'subtitle': 'TPE Elastome',
-            'description': '竹炭弹性体＋天然的崖柏木颗粒同时提供柔软和弹性对于是头部压力的两个重要体验要素'
+        'child': {
+            'leftImg': 'assistant-img-whiteChild.png',
+            'title': '有机棉+软管枕／白色 ',
+            'subtitle': 'Orginc+TPE Elastomer',
+            // 'description': '提供最柔软的触感的1.33d云朵棉和提供加强支撑的3d弹性纤维两 种材料分别打散通过螺旋气流混合－纤维交织－形成既拥有柔软度又具备一定弹性支撑力'
         }
+
     };
 
     this.classifyData = {
@@ -74,7 +76,7 @@ assistantPage.prototype.initData = function () {
         },
         'child': {
             'topImg': 'assistant-bigimg-child.png',
-            'pillows': ["pink", "blue", "brown"]
+            'pillows': ["pink", "blue", "brown","child","juvenile"]
         },
         'juvenile': {
             'topImg': 'assistant-bigimg-juvenile.png',
