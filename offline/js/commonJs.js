@@ -5,5 +5,5 @@ var commonJs = {
     pagesArr: [],
     // 接口url
     apiUrl: "https://store.1001pillows.com",
-    // apiUrl: "http://localhost:3012"
+    apiUrl: "http://localhost:3012"
 };

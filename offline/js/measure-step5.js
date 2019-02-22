@@ -44,6 +44,20 @@ measureStep5Page.prototype.initData = function () {
 measureStep5Page.prototype.getDataByAvatarid = function (id) {
     var that = this;
 
+    // 根据用户id从本地获取数据
+    that.data = localStorage.getItem(id);
+    if (that.data) {
+        that.data = JSON.parse(that.data);
+
+        // 绑定数据
+        that.setData();
+        // 绑定左侧头像
+        that.setAvatarImg();
+        // 绑定曲线数据
+        that.setCurveImg();
+        return;
+    }
+
     // 获取头像接口
     var data = {};
     data.data_id = id;
@@ -68,6 +82,20 @@ measureStep5Page.prototype.getDataByAvatarid = function (id) {
 measureStep5Page.prototype.getDataByParam = function () {
     var that = this;
 
+    // 获取数据id，如果存在，则不再进行接口数据获取
+    var dataId = localStorage.getItem("cl_data_id");
+    if (dataId) {
+        // 设置数据
+        that.data = JSON.parse(localStorage.getItem(dataId));
+
+        // 绑定数据
+        that.setData();
+        // 绑定左侧头像
+        that.setAvatarImg();
+        // 绑定曲线数据
+        that.setCurveImg();
+        return;
+    }
 
     var sideFile = this.dataURLToBlob(this.sideFile, 'image/png');
     var positiveFile = this.dataURLToBlob(this.positiveFile, 'image/png');
@@ -115,6 +143,12 @@ measureStep5Page.prototype.getDataByParam = function () {
 
                 // 设置数据
                 that.data = dataJson.content;
+
+                // 保存到本地
+                localStorage.setItem(that.data.data_id, JSON.stringify(that.data));
+                // 保存该条id到本地，返回到上页拍照页后，移除该id
+                localStorage.setItem("cl_data_id", that.data.data_id);
+
                 // 绑定数据
                 that.setData();
                 // 绑定左侧头像

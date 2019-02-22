@@ -66,6 +66,9 @@ measureStep3.prototype.initEvent = function () {
     var that = this;
 
     $('#take').on('click', function () {
+        // 清空id到本地，返回到上页拍照页后，移除该id，很重要
+        localStorage.removeItem("cl_data_id");
+
         // 使用canvas进行拍照
         var canvas = document.getElementById('canvas');
         // 设置canvas的宽为屏幕宽度, 高为视频元素高度
