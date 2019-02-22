@@ -8,7 +8,7 @@ var measureStep5Page = function () {
 //初始化
 measureStep5Page.prototype.init = function () {
     // 初始化数据测试
-    this.initBase64();
+    // this.initBase64();
 
     //初始化事件
     this.initEvent();
@@ -97,11 +97,11 @@ measureStep5Page.prototype.getDataByParam = function () {
         return;
     }
 
-    var sideFile = this.dataURLToBlob(this.sideFile, 'image/png');
-    var positiveFile = this.dataURLToBlob(this.positiveFile, 'image/png');
+    // var sideFile = this.dataURLToBlob(this.sideFile, 'image/png');
+    // var positiveFile = this.dataURLToBlob(this.positiveFile, 'image/png');
 
-    // var sideFile = this.dataURLToBlob(localStorage.getItem("sideFile"), 'image/png');
-    // var positiveFile = this.dataURLToBlob(localStorage.getItem("positiveFile"), 'image/png');
+    var sideFile = this.dataURLToBlob(localStorage.getItem("sideFile"), 'image/png');
+    var positiveFile = this.dataURLToBlob(localStorage.getItem("positiveFile"), 'image/png');
 
     // var sideFile = this.dataURLToFile(this.sideFile);
     // var positiveFile = this.dataURLToFile(this.positiveFile);
@@ -113,9 +113,9 @@ measureStep5Page.prototype.getDataByParam = function () {
     // 设备码
     formData.append("device_sn", commonJs.deviceCode);
     // 性别
-    formData.append("gender", localStorage.getItem("chooseGender"));
+    formData.append("gender", localStorage.getItem("measureGender"));
     // 头型
-    formData.append("headStyle", localStorage.getItem("chooseHair"));
+    formData.append("headStyle", localStorage.getItem("measureHair"));
     // 侧面图
     formData.append("sideFile", sideFile, "file_" + Date.parse(new Date()) + ".png");
     // 正面图
@@ -185,9 +185,9 @@ measureStep5Page.prototype.getDataByParam = function () {
     // 设备码
     data.device_sn = commonJs.deviceCode;
     // 性别
-    data.gender = localStorage.getItem("chooseGender");
+    data.gender = localStorage.getItem("measureGender");
     // 头型
-    data.headStyle = localStorage.getItem("chooseHair");
+    data.headStyle = localStorage.getItem("measureHair");
     // 侧面图
     data.sideFile = sideFile;
     // 正面图
@@ -256,11 +256,7 @@ measureStep5Page.prototype.setData = function () {
     //头部高度
     $('#acNum').html(ac + 'cm');
     // 设置ac的偏差，为了让下边的滑动块更精准一些
-    ac = 3.4;
-    console.log(ac);
     ac = (ac >= 1 && ac < 3.5) ? (ac + (1 / ac)) : ac;
-    console.log(ac);
-    console.log("------------------");
     ac = (ac > 8) ? 8 : ac;
     $('#acBar').css("width", (ac - 2) / 6 * 100 + '%');
 
@@ -273,8 +269,7 @@ measureStep5Page.prototype.setData = function () {
 
     //头颈高度差
     $('#headNeckNum').html(head_neck + 'cm');
-    // $('#headNeckBar').css("width", head_neck / 20 * 100 + '%');
-    $('#headNeckBar').css("width", 6 / 20 * 100 + '%');
+    $('#headNeckBar').css("width", head_neck / 20 * 100 + '%');
 
     //头肩距离
     $('#headShoulderNum').html(head_shoulder + 'cm');

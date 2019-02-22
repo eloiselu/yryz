@@ -40,9 +40,9 @@ indexPage.prototype.initSwiper = function () {
             disableOnInteraction: false,
         },
         // 如果需要分页器
-        pagination: {
-            el: '.swiper-pagination'
-        },
+        // pagination: {
+        //     el: '.swiper-pagination'
+        // },
         on: {
             init: function () {
                 swiperAnimateCache(this); //隐藏动画元素

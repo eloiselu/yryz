@@ -9,7 +9,9 @@ body {
 /*主体模块部分*/
 .main {
     background-color: #442c2b;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 /*拍照部分*/

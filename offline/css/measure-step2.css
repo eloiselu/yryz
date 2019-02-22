@@ -12,7 +12,7 @@ body {
 }
 
 .head-name .head-back {
-    /*margin-top: 0;*/
+    margin-top: 0;
 }
 
 /*曲线测量部分*/
@@ -44,7 +44,9 @@ body {
 /*主体模块部分*/
 .main {
     /*background-color: #442c2b;*/
-    position: relative;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 /*拍照部分*/

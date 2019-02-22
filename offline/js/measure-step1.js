@@ -17,13 +17,13 @@ measureStep1.prototype.init = function () {
 
 //从本地获取数据
 measureStep1.prototype.bindData = function () {
-    var chooseGender = localStorage.getItem("chooseGender");
-    var chooseHair = localStorage.getItem("chooseHair");
-    if(chooseGender){
-        $("#gender .choose[data-type='" + chooseGender + "']").addClass("active");
+    var measureGender = localStorage.getItem("measureGender");
+    var measureHair = localStorage.getItem("measureHair");
+    if(measureGender){
+        $("#gender .choose[data-type='" + measureGender + "']").addClass("active");
     }
-    if(chooseHair){
-        $("#hair .choose[data-type='" + chooseHair + "']").addClass("active");
+    if(measureHair){
+        $("#hair .choose[data-type='" + measureHair + "']").addClass("active");
     }
 }
 
@@ -34,13 +34,13 @@ measureStep1.prototype.initEvent = function () {
         $(this).addClass("active").siblings().removeClass("active");
 
         //接收男女、长中短发值
-        var chooseGender = $("#gender .choose[class*='active']").attr("data-type");
-        var chooseHair = $("#hair .choose[class*='active']").attr("data-type");
+        var measureGender = $("#gender .choose[class*='active']").attr("data-type");
+        var measureHair = $("#hair .choose[class*='active']").attr("data-type");
 
-        if(chooseGender && chooseHair){
+        if(measureGender && measureHair){
             //存到本地存储
-            localStorage.setItem("chooseGender",chooseGender);
-            localStorage.setItem("chooseHair",chooseHair);
+            localStorage.setItem("measureGender",measureGender);
+            localStorage.setItem("measureHair",measureHair);
             $(location).attr("href","../view/measure-step2.html");
         }
     })

@@ -194,6 +194,8 @@ body {
     text-align: center;
     color: #eeb7a3;
     z-index: 999;
+
+    display: none;
 }
 
 /*英文Calculating部分*/

@@ -6,11 +6,11 @@ var choise = function () {
 choise.prototype.init = function () {
     // 初始化事件
     this.initEvent();
-    //清空已选择的本地获取数据
+    // 清空已选择的本地获取数据
     this.clearLocalstorage();
 }
 
-//清空已选择的本地获取数据
+// 清空已选择的本地获取数据
 choise.prototype.clearLocalstorage = function () {
     localStorage.removeItem("chooseGender");
     localStorage.removeItem("chooseAge");
