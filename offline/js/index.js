@@ -58,7 +58,20 @@ indexPage.prototype.initSwiper = function () {
 
 // 初始化事件
 indexPage.prototype.initEvent = function () {
+    var that = this;
 
+    $(".carousel-video").on("playing", function () {
+        that.mySwiper.autoplay.stop();
+    })
+
+    $(".carousel-video").on("pause", function () {
+        console.log("视频暂停");
+        that.mySwiper.autoplay.start();
+    })
+
+    $(".carousel-video").on("ended", function () {
+        that.mySwiper.autoplay.start();
+    })
 }
 
 $(function () {
