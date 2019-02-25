@@ -8,7 +8,7 @@ var measureStep5Page = function () {
 //初始化
 measureStep5Page.prototype.init = function () {
     // 初始化数据测试
-    // this.initBase64();
+    this.initBase64();
 
     //初始化事件
     this.initEvent();
@@ -97,11 +97,11 @@ measureStep5Page.prototype.getDataByParam = function () {
         return;
     }
 
-    // var sideFile = this.dataURLToBlob(this.sideFile, 'image/png');
-    // var positiveFile = this.dataURLToBlob(this.positiveFile, 'image/png');
+    var sideFile = this.dataURLToBlob(this.sideFile, 'image/png');
+    var positiveFile = this.dataURLToBlob(this.positiveFile, 'image/png');
 
-    var sideFile = this.dataURLToBlob(localStorage.getItem("sideFile"), 'image/png');
-    var positiveFile = this.dataURLToBlob(localStorage.getItem("positiveFile"), 'image/png');
+    // var sideFile = this.dataURLToBlob(localStorage.getItem("sideFile"), 'image/png');
+    // var positiveFile = this.dataURLToBlob(localStorage.getItem("positiveFile"), 'image/png');
 
     // var sideFile = this.dataURLToFile(this.sideFile);
     // var positiveFile = this.dataURLToFile(this.positiveFile);

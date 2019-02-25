@@ -195,7 +195,7 @@ body {
     color: #eeb7a3;
     z-index: 999;
 
-    display: none;
+    /*display: none;*/
 }
 
 /*英文Calculating部分*/

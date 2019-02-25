@@ -49,34 +49,45 @@ assistantPage.prototype.initData = function () {
             'subtitle': 'PE+TPE Elastomer',
             'description': '提供最柔软的触感的1.33d云朵棉和提供加强支撑的3d弹性纤维两 种材料分别打散通过螺旋气流混合－纤维交织－形成既拥有柔软度又具备一定弹性支撑力'
         },
-        'juvenile': {
+        'lightgray': {
+            'leftImg': 'assistant-img-lightgray.png',
+            'title': 'TPE弹性体枕／浅灰色',
+            'subtitle': 'TPE Elastome',
+            'description': '为长期压力大的年轻人准备软管枕具有透气排热的特点，能够有效排出枕头内的热量，保持枕头内部温度提高睡眠质量'
+        },
+        'gray': {
+            'leftImg': 'assistant-img-gray.png',
+            'title': '竹炭软管枕／深棕色',
+            'subtitle': 'TPE Elastome',
+            'description': '竹炭弹性体＋天然的崖柏木颗粒同时提供柔软和弹性对于是头部压力的两个重要体验要素'
+        },
+        'pinkJuvenile': {
             'leftImg': 'assistant-img-pinkJuvenile.png',
             'title': '有机棉+软管枕／粉色 ',
             'subtitle': 'Orginc+TPE Elastomer',
             // 'description': '提供最柔软的触感的1.33d云朵棉和提供加强支撑的3d弹性纤维两 种材料分别打散通过螺旋气流混合－纤维交织－形成既拥有柔软度又具备一定弹性支撑力'
 
         },
-        'child': {
+        'whiteChild': {
             'leftImg': 'assistant-img-whiteChild.png',
             'title': '有机棉+软管枕／白色 ',
             'subtitle': 'Orginc+TPE Elastomer',
             // 'description': '提供最柔软的触感的1.33d云朵棉和提供加强支撑的3d弹性纤维两 种材料分别打散通过螺旋气流混合－纤维交织－形成既拥有柔软度又具备一定弹性支撑力'
         }
-
     };
 
     this.classifyData = {
         'baby': {
             'topImg': 'assistant-bigimg-baby.png',
-            'pillows': []
+            'pillows': ["whiteChild"]
         },
         'infant': {
             'topImg': 'assistant-bigimg-infant.png',
-            'pillows': []
+            'pillows': ["whiteChild"]
         },
         'child': {
             'topImg': 'assistant-bigimg-child.png',
-            'pillows': ["pink", "blue", "brown","child","juvenile"]
+            'pillows': ["whiteChild", "pink", "blue", "brown"]
         },
         'juvenile': {
             'topImg': 'assistant-bigimg-juvenile.png',
@@ -218,7 +229,8 @@ assistantPage.prototype.initEvent = function () {
     // 图片点击事件，跳转到材质详情页
     $("#assistantRightList").on("click", ".list-left", function () {
         // window.location.href = window.location.origin + "/view/texture-detail.html?type=" + $(this).parents("li").attr("data-type");
-        $(location).attr("href","../view/texture-detail.html?type=" + $(this).parents("li").attr("data-type"));
+        // $(location).attr("href","../view/texture-detail.html?type=" + $(this).parents("li").attr("data-type"));
+        $(location).attr("href","../view/products-introduction.html?type=" + $(this).parents("li").attr("data-type"));
     });
 
     // 立即购买点击事件，跳转到购买详情页

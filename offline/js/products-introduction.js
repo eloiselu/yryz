@@ -71,14 +71,14 @@ productsIntroductionPage.prototype.setData = function () {
             'feature': '可水洗TPE弹性粒子',//
             'hotNum': '20'
         },
-        'juvenile': {
+        'pinkJuvenile': {
             'bigImg': 'productsIntroduction-img-pinkJuvenile.png',
             'title': '智能测量＋专属调节',
             'subtitle': '浅粉色 3D 网 TPE 弹性体枕  TPE Elastomer',
             'feature': '可水洗TPE弹性粒子',
             'hotNum': '20'
         },
-        'child': {
+        'whiteChild': {
             'bigImg': 'productsIntroduction-img-whiteChild.png',
             'title': '智能测量＋专属调节',
             'subtitle': '白色 3D 网 TPE 弹性体枕  TPE Elastomer',
